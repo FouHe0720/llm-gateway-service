@@ -1,4 +1,4 @@
-from collections.abc import AsyncIterator
+from collections.abc import AsyncGenerator
 from dataclasses import dataclass
 from typing import Protocol
 
@@ -20,6 +20,6 @@ class StreamChunk:
 class BaseLLMProvider(Protocol):
     async def generate(self, request: ChatRequest, model: str) -> Generation: ...
 
-    def stream(self, request: ChatRequest, model: str) -> AsyncIterator[StreamChunk]: ...
+    def stream(self, request: ChatRequest, model: str) -> AsyncGenerator[StreamChunk, None]: ...
 
     def list_models(self) -> list[str]: ...

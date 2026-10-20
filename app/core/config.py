@@ -33,6 +33,9 @@ class Settings(BaseSettings):
     upstream_retry_base_seconds: float = Field(default=0.2, ge=0, le=10)
     upstream_concurrency: int = Field(default=8, ge=1, le=100)
     upstream_max_response_bytes: int = Field(default=1_048_576, ge=1024, le=10_485_760)
+    gateway_rate_limit_requests: int = Field(default=60, ge=1, le=100_000)
+    gateway_rate_limit_window_seconds: float = Field(default=60, gt=0, le=3600)
+    gateway_max_body_bytes: int = Field(default=131_072, ge=1024, le=1_048_576)
 
     @model_validator(mode="after")
     def validate_security(self) -> "Settings":

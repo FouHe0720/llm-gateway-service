@@ -70,6 +70,11 @@ class ChatService:
         except asyncio.CancelledError:
             state["cancelled"] = True
             raise
+        except Exception:
+            state["stream_error"] = "internal_error"
+            yield error_event(
+                GatewayError("internal_error", "Unexpected gateway error"), request_id
+            )
         finally:
             # Cleanup must finish even inside StreamingResponse's disconnect cancel scope.
             with anyio.CancelScope(shield=True):

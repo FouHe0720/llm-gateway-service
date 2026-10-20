@@ -1,8 +1,9 @@
-from fastapi import APIRouter, Request
+from fastapi import APIRouter, Depends, Request
 
+from app.core.security import guard
 from app.domain.schemas import ModelList
 
-router = APIRouter()
+router = APIRouter(dependencies=[Depends(guard)])
 
 
 @router.get("/v1/models", response_model=ModelList, tags=["models"])

@@ -1,12 +1,19 @@
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
 class Message(BaseModel):
-    model_config = ConfigDict(extra="forbid", str_strip_whitespace=True)
+    model_config = ConfigDict(extra="forbid")
     role: Literal["system", "user", "assistant"]
     content: str = Field(min_length=1, max_length=16_000)
+
+    @field_validator("content")
+    @classmethod
+    def non_blank(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("Message content cannot be blank")
+        return value  # Preserve prompt whitespace: it can matter to the model.
 
 
 class ChatRequest(BaseModel):

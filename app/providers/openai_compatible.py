@@ -1,7 +1,7 @@
 import asyncio
 import json
 import random
-from collections.abc import AsyncIterator
+from collections.abc import AsyncGenerator, AsyncIterator
 from typing import Any
 
 import httpx
@@ -131,7 +131,9 @@ class OpenAICompatibleProvider:
         if pending or event:
             raise ProviderError("Upstream SSE event was truncated")
 
-    async def stream(self, request: ChatRequest, model: str) -> AsyncIterator[StreamChunk]:
+    async def stream(
+        self, request: ChatRequest, model: str
+    ) -> AsyncGenerator[StreamChunk, None]:
         # The gateway has sent `start`: never retry or replay any streaming request.
         try:
             async with self.client.stream(
@@ -159,5 +161,5 @@ class OpenAICompatibleProvider:
             raise ProviderTimeout() from None
         except httpx.HTTPError:
             raise ProviderError("Upstream stream transport failed") from None
-        except (ValueError, KeyError, IndexError, TypeError, ValidationError):
+        except (ValueError, KeyError, IndexError, TypeError, AttributeError, ValidationError):
             raise ProviderError("Upstream SSE payload was invalid") from None
