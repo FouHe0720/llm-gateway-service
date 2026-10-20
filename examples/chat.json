@@ -1,0 +1,6 @@
+{
+  "model": "mock-echo",
+  "messages": [{"role": "user", "content": "Hello Gateway"}],
+  "temperature": 0.2,
+  "max_tokens": 64
+}

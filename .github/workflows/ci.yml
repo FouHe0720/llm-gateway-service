@@ -17,6 +17,7 @@ jobs:
       - run: uv sync --frozen --extra dev
       - run: make lint test
       - run: make demo
+      - run: .venv/bin/python -m scripts.privacy_check
   docker:
     runs-on: ubuntu-latest
     steps:
@@ -24,5 +25,8 @@ jobs:
       - run: docker compose config --quiet
       - run: docker compose up --build -d --wait
       - run: curl --fail http://127.0.0.1:8000/health
+      - run: >-
+          curl --fail http://127.0.0.1:8000/v1/chat
+          -H 'Content-Type: application/json' --data-binary @examples/chat.json
       - run: docker compose down
         if: always()

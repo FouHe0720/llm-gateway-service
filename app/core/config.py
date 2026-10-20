@@ -1,11 +1,12 @@
 from typing import Literal
 from urllib.parse import urlsplit
 
-from pydantic import BaseModel, Field, SecretStr, model_validator
+from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class ModelMapping(BaseModel):
+    model_config = ConfigDict(extra="forbid")
     model: str = Field(min_length=1, max_length=128, pattern=r"^[a-zA-Z0-9_.:/-]+$")
     provider: Literal["mock", "openai", "local"]
     upstream_model: str = Field(default="mock-echo", min_length=1, max_length=128)
@@ -13,7 +14,9 @@ class ModelMapping(BaseModel):
 
 
 class Settings(BaseSettings):
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore", case_sensitive=False)
+    model_config = SettingsConfigDict(
+        env_file=".env", extra="ignore", case_sensitive=False, hide_input_in_errors=True
+    )
 
     gateway_environment: Literal["development", "production"] = "development"
     gateway_auth_enabled: bool = True
@@ -56,6 +59,7 @@ class Settings(BaseSettings):
         for provider in {m.provider for m in enabled} - {"mock"}:
             url = self.openai_base_url if provider == "openai" else self.local_base_url
             parsed = urlsplit(url or "")
+            _ = parsed.port  # Validate malformed/out-of-range ports at startup.
             if (
                 parsed.scheme not in {"http", "https"}
                 or not parsed.hostname

@@ -73,3 +73,16 @@ async def test_enabled_local_mapping_does_not_expose_connection_info():
         assert "private-upstream" not in response.text
         assert "127.0.0.1" not in response.text
         assert "raw" not in response.text
+
+
+def test_startup_validation_does_not_print_credentials():
+    secret = "private-fixture-that-must-not-appear-in-startup-errors"
+    with pytest.raises(ValidationError) as exc:
+        Settings(
+            _env_file=None,
+            gateway_api_key=secret,
+            gateway_models=[ModelMapping(model="online", provider="openai")],
+            openai_api_key=secret,
+            openai_base_url="invalid-url",
+        )
+    assert secret not in str(exc.value)
