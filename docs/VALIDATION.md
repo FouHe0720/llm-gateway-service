@@ -40,7 +40,11 @@
 - Mock 是确定性回显，usage=null；本地故障 Server 是测试 fixture，不是真实模型推理。
 - 没有提供真实 Provider Key，没有调用 OpenAI/第三方付费 API，没有下载权重，没有运行 Ollama/vLLM。
 - 没有做性能基准、模型质量评测或多副本验证。响应中的 latency 是单次测量值，不代表性能承诺。
-- Docker 实际构建运行过；CI 配置的远端结果需在 GitHub Actions 运行后核实。
+- Docker 实际构建运行过；[首轮远端 CI](https://github.com/FouHe0720/llm-gateway-service/actions/runs/39436032137)
+  在提交 `49bd916` 上全部成功：Python 3.11/3.12/3.13 各 62 passed，Ruff/Mock Demo/隐私扫描通过，
+  Docker Compose 构建、健康检查和 Chat 请求通过。未将跨版本测试数相加当作不同用例数。
+- 根据首轮 Actions 的 Node 20 弃用提示，更新至 checkout v7.0.1/setup-python v7.0.0 并固定 SHA；
+  官方 release/API 已核对。Runner 固定为 Ubuntu 24.04，避免 ubuntu-latest 镜像迁移影响复现。
 - 隐私检查会审阅 Git index、忽略规则和公开连接配置，启发式扫描不能代替人工审阅。
 
 ## 可重复命令

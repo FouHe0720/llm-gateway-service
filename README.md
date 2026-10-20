@@ -154,7 +154,9 @@ docker compose down
 Ruff check/format 通过，Mock TCP Demo 通过，Docker 镜像构建及非 root/只读容器的 API 和健康检查通过。
 HTTP transport fixture 与真实 localhost 故障服务器覆盖 429/5xx/401/读取超时、限定重试、断流、取消和并发。
 这些结果是功能验证，没有测量吞吐/QPS 或真实模型质量。
-GitHub Actions 配置运行 Python 3.11/3.12/3.13 和 Docker；远端运行结果以 Actions 页面为准。
+GitHub Actions 的 Python 3.11/3.12/3.13 和 Docker 首轮远端任务已全部通过，
+见[实际运行记录](https://github.com/FouHe0720/llm-gateway-service/actions/runs/39436032137)；
+最新提交的状态以 Actions 页面为准。CI 固定 Ubuntu 24.04 和官方 Actions 的 commit SHA。
 
 ## 设计取舍与安全边界
 
