@@ -143,6 +143,7 @@ make benchmark-screenshot
 
 本机缺少 libnspr4/libnss3，实际从 Ubuntu 官方 apt 来源下载 deb 并仅解包到 `.venv/browser-libs`，
 没有系统安装。缺少中文字体时同样使用项目内字体。截图脚本只打开本地报告并关闭浏览器联网。
+除桌面与 390px 窄屏截图外，脚本会检查 45 种筛选组合、键盘切换和无数据时的“未测试”状态。
 
 实验结论与失败案例见 `docs/FAILURE_ANALYSIS.md` 与 README 的实测结果段落。
 
