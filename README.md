@@ -8,11 +8,13 @@
 
 **English overview:** An asynchronous FastAPI gateway for deterministic Mock and OpenAI-compatible
 text models. Includes incremental SSE, cancellation, bounded retries/concurrency, Bearer authentication,
-process-local rate limiting, structured logs and metrics. Runs independently with no paid API or GPU.
+process-local rate limiting, optional TTL/LRU caching and bounded fallback. Includes reproducible
+Mock and real Ollama benchmarks with raw data, cold/warm metrics and an offline dashboard.
 
 ## 能力与架构
 
-- `BaseLLMProvider` 协议隔离业务与 HTTP 传输，配置别名控制可用模型；Local 复用相同 HTTP 协议。
+- `BaseLLMProvider` 协议统一 Mock、OpenAI-compatible、Local 和原生 Ollama；保留真实 token/timing 元信息。
+- 可选 TTL/LRU 缓存、单跳 Fallback 和按 task_type 的配置路由；默认关闭，尝试次数和总耗时均有上限。
 - `httpx.AsyncClient` 生命周期连接池；区分连接/读取超时，总截止时间涵盖排队和退避。
 - 真正增量读取上游 SSE；Mock 明确标注模拟分块；断开连接会取消流并关闭上游连接。
 - Bearer Key 常量时间比较、单进程滑动窗口限流、安全 request ID、统一 JSON 错误。
@@ -23,11 +25,15 @@ flowchart LR
     C[HTTP client] --> M[ASGI request ID / body limit / logs / metrics]
     M --> A[FastAPI validation / auth / rate limit]
     A --> S[ChatService deadline / semaphore / SSE]
-    S --> R[ProviderRouter]
+    S --> CA[Optional TTL/LRU cache]
+    S --> R[ProviderRouter / task routes]
+    R --> F[Optional single-hop fallback]
     R --> P[BaseLLMProvider protocol]
     P --> K[MockProvider: deterministic echo]
     P --> O[OpenAICompatibleProvider: async HTTP]
     P --> L[LocalProvider: same adapter, localhost only]
+    P --> N[OllamaProvider: native NDJSON / timings]
+    N --> Q[Qwen2.5 0.5B / 1.5B]
     O --> U[Configured Chat Completions endpoint]
     L --> V[User-managed Ollama / vLLM]
 ```
@@ -82,7 +88,7 @@ Mock 不计算 token、不执行真实推理；生成参数经过校验，但 Mo
 
 | 接口 | 行为 |
 | --- | --- |
-| `POST /v1/chat` | answer / model（公开别名）/ request_id / usage / latency_ms |
+| `POST /v1/chat` | answer / model（公开别名）/ request_id / usage / latency_ms / metadata |
 | `POST /v1/chat/stream` | SSE `start → delta* → done`，发生故障以 `error` 终止 |
 | `GET /v1/models` | 启用的 model/provider 映射与 simulated_stream，不暴露上游模型名、URL、Key |
 | `GET /health` | 无需鉴权、无上游调用，仅返回 `{"status":"ok"}` |
@@ -91,6 +97,8 @@ Mock 不计算 token、不执行真实推理；生成参数经过校验，但 Mo
 
 `messages` 1–100 条，仅 system/user/assistant；每条非空且最多 16000 字符，总计最多 32000 字符；
 原始 HTTP body 默认上限 128 KiB。`temperature` 0–2，`top_p` >0 且 ≤1，`max_tokens` 整数 1–8192。
+另外支持可选 seed，以及 model=auto + task_type（extract/arithmetic/reasoning）；需配置任务路由。
+metadata 返回实际服务的公开别名、尝试/重试/回退/缓存/排队信息；Ollama 返回原生生成与加载 timing。
 未知字段会拒绝。不是 OpenAI API 的逐字段透传接口，暂不支持工具调用、多模态和 Responses API。
 
 错误格式：`{"error":{"code":"model_not_found","message":"Requested model is not enabled","request_id":"..."}}`。
@@ -133,7 +141,8 @@ LOCAL_BASE_URL=http://127.0.0.1:11434/v1
 
 Local 是共享 HTTP adapter 的薄子类，配置仅允许 localhost/127.0.0.1/::1；不会安装 Ollama、启动模型或下载权重。
 容器的 localhost 是容器自身；连接宿主机/其他容器 endpoint 时使用 `openai` provider 配置可达地址与 Key，
-或在 WSL 本机运行 Gateway。未配置的真实 LLM、Ollama/vLLM 本次没有实测。
+或在 WSL 本机运行 Gateway。已在 RTX 3050 4GB 上实测原生 Ollama Qwen2.5 0.5B/1.5B；
+未调用付费 API 或运行 vLLM。原生配置见 `.env.example` 的 provider=ollama，用于保留模型 timing。
 
 ## 验证与容器
 
@@ -150,13 +159,52 @@ make smoke
 docker compose down
 ```
 
-截至 **2026-10-20** 的实际记录见 [VALIDATION.md](docs/VALIDATION.md)：Python 3.12 本地测试 **62 passed**，
-Ruff check/format 通过，Mock TCP Demo 通过，Docker 镜像构建及非 root/只读容器的 API 和健康检查通过。
-HTTP transport fixture 与真实 localhost 故障服务器覆盖 429/5xx/401/读取超时、限定重试、断流、取消和并发。
-这些结果是功能验证，没有测量吞吐/QPS 或真实模型质量。
-GitHub Actions 的 Python 3.11/3.12/3.13 和 Docker 首轮远端任务已全部通过，
-见[实际运行记录](https://github.com/FouHe0720/llm-gateway-service/actions/runs/39436032137)；
-最新提交的状态以 Actions 页面为准。CI 固定 Ubuntu 24.04 和官方 Actions 的 commit SHA。
+截至 **2026-10-21**：本地 **77 passed**，Ruff check/format 通过；新版 Docker 镜像、
+Compose healthy、非 root 和只读容器 API smoke 已实际通过。历史与当前验证见 [VALIDATION](docs/VALIDATION.md)。
+CI 覆盖 Python 3.11/3.12/3.13、Docker，以及无需 GPU 的 Mock Benchmark，并上传数据/HTML artifact。
+
+## 可核查的 A–E 实验
+
+```bash
+make benchmark-mock-quick  # 一轮流程检查，无 GPU/Key/模型依赖
+make benchmark-mock       # 三轮 Mock A/B/C + D/E 契约验证
+# 有本地 Ollama 与指定模型后：
+make benchmark-real       # 两轮真实 D/E，随后真实 0.5B 缓存实验
+make benchmark-report
+.venv/bin/python -m scripts.verify_benchmark_results
+```
+
+配置和模型准备见 [BENCHMARK](docs/BENCHMARK.md)。实际记录：Mock **8,031 条**、
+完整真实模型实验 **308 条**，分别保存 CSV/JSONL、冷热统计、波动、硬件/模型 digest、源码快照。
+样本量为记录的请求数，预热/模型卸载/状态查询不混入推理请求数；18 道任务重复两轮仍只有 18 道独立题目。
+
+| 实验 | 当前实测结论 |
+| --- | --- |
+| A 开销 | 并发 1 的热态配对 ΔP95 中位数 **3.05ms**；并发 20/50 波动明显，保留全部轮次与负值 |
+| B 恢复 | 20% 首次 503/429：成功率 80%→100%；永久连接失败仅 Retry 仍为 0%，显式 Fallback 恢复 |
+| C 缓存 | 真实 0.5B、10 条/组、90% 重复：模型调用 **10→1**；含冷启动 P95 未改善 |
+| D 路由 | 严格匹配率：全 0.5B **22.2%**、全 1.5B **55.6%**、任务路由 **33.3%**；路由加载代价明显增加 |
+| E 模型 | 两模型真实 GPU、SSE 并发 1→2 已跑通；TTFT/E2E/生成 tokens/s/显存均来自实测 |
+
+[完整实测表](docs/BENCHMARK_RESULTS.md) · [失败与退化分析](docs/FAILURE_ANALYSIS.md) ·
+[离线 Dashboard](benchmarks/reports/index.html) · [Mock 原始数据](benchmarks/results/20261021T053001Z-mock-33f3d4/) ·
+[真实原始数据](benchmarks/results/20261021T054417Z-real-bdb4f7/)
+
+Dashboard 可直接打开，或在仓库根目录执行：
+
+```bash
+.venv/bin/python -m http.server 8080 --bind 127.0.0.1
+# http://127.0.0.1:8080/benchmarks/reports/index.html
+```
+
+以下为真实浏览器对该报告的截图，非示意数据：
+
+![Benchmark overview](docs/images/benchmark-overview.png)
+![Real model SSE comparison](docs/images/benchmark-e.png)
+![Measured GPU memory](docs/images/benchmark-gpu.png)
+
+上述结果仅描述当前笔记本和固定小样本协议，不用于宣称生产 QPS 或通用模型能力。
+冷启动未清 OS 页缓存；真实推理服务器并行为 1，客户端并发 2 主要体现排队。
 
 ## 设计取舍与安全边界
 
@@ -174,10 +222,11 @@ GitHub Actions 的 Python 3.11/3.12/3.13 和 Docker 首轮远端任务已全部�
   客户端断开只保证网关取消与关闭连接，远端模型是否停止推理由上游决定。
 
 后续可扩展 Redis 配额、公平队列、OpenTelemetry、熔断、独立 readiness 和 Provider 能力声明；当前均未实现。
-不包含持久化会话、计费系统、模型评测或 GPU 训练。
+不包含持久化会话、计费系统、通用大规模模型评测或 GPU 训练。
 
 ## 导航
 
+- [BENCHMARK](docs/BENCHMARK.md)、[BENCHMARK_RESULTS](docs/BENCHMARK_RESULTS.md)、[FAILURE_ANALYSIS](docs/FAILURE_ANALYSIS.md)
 - [ARCHITECTURE](docs/ARCHITECTURE.md)：模块交互、错误与资源生命周期
 - [DEMO](docs/DEMO.md)：可复制的正常/错误/流式演示
 - [INTERVIEW_GUIDE](docs/INTERVIEW_GUIDE.md)：10 个基于实现的面试问答

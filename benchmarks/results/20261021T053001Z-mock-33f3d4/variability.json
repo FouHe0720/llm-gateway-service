@@ -1,0 +1,3206 @@
+[
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 25.383850000253005,
+      "min": 23.042738000185636,
+      "max": 26.960298000631155,
+      "stdev": 1.971178583650164
+    },
+    "qps": {
+      "median": 39.3951272163219,
+      "min": 37.09157814118336,
+      "max": 43.3976205428341,
+      "stdev": 3.1909366948113957
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 23.77932099989266,
+      "min": 23.544259000118473,
+      "max": 23.950527999659244,
+      "stdev": 0.20396914819598497
+    },
+    "qps": {
+      "median": 42.97100071086355,
+      "min": 42.95337561201296,
+      "max": 43.21206068019813,
+      "stdev": 0.14453287828209704
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 23.699225999735063,
+      "min": 23.544259000118473,
+      "max": 23.916654000458948,
+      "stdev": 0.18706850026462524
+    },
+    "qps": {
+      "median": 43.45714311649233,
+      "min": 43.4270442597287,
+      "max": 43.688417009435845,
+      "stdev": 0.14300889775651335
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 38.42805499971291,
+      "min": 38.384581999707734,
+      "max": 41.78652799964766,
+      "stdev": 1.9516859113566154
+    },
+    "qps": {
+      "median": 26.022654542559355,
+      "min": 23.931157908319925,
+      "max": 26.052126867178444,
+      "stdev": 1.21612335677723
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.84952100025839,
+      "min": 26.818438000191236,
+      "max": 27.27969299940014,
+      "stdev": 0.25780169253193747
+    },
+    "qps": {
+      "median": 38.16577106012557,
+      "min": 37.7390411604905,
+      "max": 38.27004609558971,
+      "stdev": 0.28134733319135474
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.75121299944294,
+      "min": 26.750201999675483,
+      "max": 27.27910800058453,
+      "stdev": 0.30507259030936834
+    },
+    "qps": {
+      "median": 38.74808371497804,
+      "min": 38.35642324422551,
+      "max": 38.845728241892175,
+      "stdev": 0.258956804225451
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 25.32039000016084,
+      "min": 23.13290700021753,
+      "max": 25.436004999392026,
+      "stdev": 1.2976073556672036
+    },
+    "qps": {
+      "median": 39.4938624560541,
+      "min": 39.31434987624441,
+      "max": 43.228462380045734,
+      "stdev": 2.2098166609850285
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 27.407262999986415,
+      "min": 26.90828800041345,
+      "max": 28.2739379999839,
+      "stdev": 0.6910259916899236
+    },
+    "qps": {
+      "median": 177.44188641645366,
+      "min": 172.23512958724564,
+      "max": 177.80703155296266,
+      "stdev": 3.1168825013887855
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 27.407262999986415,
+      "min": 26.90828800041345,
+      "max": 28.2739379999839,
+      "stdev": 0.6910259916899236
+    },
+    "qps": {
+      "median": 194.14959059387772,
+      "min": 187.13502681463208,
+      "max": 194.59258837656196,
+      "stdev": 4.183610412441666
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 39.48403499998676,
+      "min": 38.295038999422104,
+      "max": 42.047097999784455,
+      "stdev": 1.9175048966687078
+    },
+    "qps": {
+      "median": 25.326692168121504,
+      "min": 23.782854169986386,
+      "max": 26.113042997947872,
+      "stdev": 1.1854368650425173
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 31.772162999914144,
+      "min": 31.764336999913212,
+      "max": 33.36110599957465,
+      "stdev": 0.9196441649469568
+    },
+    "qps": {
+      "median": 151.2103134740063,
+      "min": 149.89055444363274,
+      "max": 151.44602615081217,
+      "stdev": 0.838333326318286
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 31.602218999978504,
+      "min": 31.367648000014015,
+      "max": 32.75518499958707,
+      "stdev": 0.7426992522169757
+    },
+    "qps": {
+      "median": 168.76768084061473,
+      "min": 168.62083203724742,
+      "max": 171.4390630095998,
+      "stdev": 1.5864148825442894
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 20,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 25.36404100010259,
+      "min": 24.52384299976984,
+      "max": 25.65836699977808,
+      "stdev": 0.5887423290997552
+    },
+    "qps": {
+      "median": 39.42589432007129,
+      "min": 38.973641619852465,
+      "max": 40.77664336741126,
+      "stdev": 0.9380716741846116
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 20,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 57.54521900053078,
+      "min": 46.13172300014412,
+      "max": 155.79581600013626,
+      "stdev": 60.29049261041723
+    },
+    "qps": {
+      "median": 376.72274893563207,
+      "min": 195.76940911350007,
+      "max": 428.7127758410357,
+      "stdev": 122.27679405946692
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 20,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 57.54521900053078,
+      "min": 46.13172300014412,
+      "max": 155.79581600013626,
+      "stdev": 60.29049261041723
+    },
+    "qps": {
+      "median": 511.67253220144266,
+      "min": 240.6883299211604,
+      "max": 612.40276789333,
+      "stdev": 192.24578090948663
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 20,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 39.27158700025757,
+      "min": 38.260739000179456,
+      "max": 41.769036000005144,
+      "stdev": 1.8058798882441405
+    },
+    "qps": {
+      "median": 25.463702294318825,
+      "min": 23.941179777284706,
+      "max": 26.13645282688632,
+      "stdev": 1.1247141752650556
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 20,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 156.01057299954846,
+      "min": 128.52872399980697,
+      "max": 171.23873899981845,
+      "stdev": 21.645994415740358
+    },
+    "qps": {
+      "median": 183.64573390950724,
+      "min": 175.17292516171037,
+      "max": 213.12324979793215,
+      "stdev": 19.920423234391496
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 20,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 156.01057299954846,
+      "min": 128.52872399980697,
+      "max": 171.23873899981845,
+      "stdev": 21.645994415740358
+    },
+    "qps": {
+      "median": 233.79248829836428,
+      "min": 215.92572538503907,
+      "max": 280.8817465630707,
+      "stdev": 33.555685430346195
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 50,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 24.781144999906246,
+      "min": 23.87507999992522,
+      "max": 25.147545999971044,
+      "stdev": 0.6550283961162449
+    },
+    "qps": {
+      "median": 40.35326051333719,
+      "min": 39.76531149405797,
+      "max": 41.884676407498205,
+      "stdev": 1.0941226566281252
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 50,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 464.0547110002444,
+      "min": 451.8122389999917,
+      "max": 764.2707550003252,
+      "stdev": 176.96980694309883
+    },
+    "qps": {
+      "median": 154.14831130381057,
+      "min": 86.76259639283812,
+      "max": 164.77727711297052,
+      "stdev": 42.308588363946754
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "direct",
+    "model": "fixture",
+    "concurrency": 50,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 464.0547110002444,
+      "min": 451.8122389999917,
+      "max": 764.2707550003252,
+      "stdev": 176.96980694309883
+    },
+    "qps": {
+      "median": 191.23568646525717,
+      "min": 113.45597456744632,
+      "max": 203.3055109605853,
+      "stdev": 48.765259895948624
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 50,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 39.77052600021125,
+      "min": 38.10504699958983,
+      "max": 40.445150000778085,
+      "stdev": 1.2045068077725138
+    },
+    "qps": {
+      "median": 25.144248783500835,
+      "min": 24.724843398547463,
+      "max": 26.243242791716387,
+      "stdev": 0.7841370441656789
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 50,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 668.4135960003914,
+      "min": 528.2481859994732,
+      "max": 849.5606690003115,
+      "stdev": 161.09123499295248
+    },
+    "qps": {
+      "median": 86.7015228936204,
+      "min": 83.35547060688477,
+      "max": 121.84251442185473,
+      "stdev": 21.320326346425155
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "A",
+    "mode": "simulated",
+    "scenario": "fixed_delay",
+    "strategy": "gateway",
+    "model": "fixture",
+    "concurrency": 50,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 668.4135960003914,
+      "min": 528.2481859994732,
+      "max": 849.5606690003115,
+      "stdev": 161.09123499295248
+    },
+    "qps": {
+      "median": 113.96730162780628,
+      "min": 104.04997494495696,
+      "max": 164.5961060837696,
+      "stdev": 32.47425443088936
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 24.04202100024122,
+      "min": 23.85631699962687,
+      "max": 25.146773000415124,
+      "stdev": 0.697643610986635
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.7920792079207921,
+      "min": 0.7920792079207921,
+      "max": 0.7920792079207921,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 18.82742599991616,
+      "min": 17.500674000075378,
+      "max": 20.219021000229986,
+      "stdev": 1.3593023901515016
+    },
+    "qps": {
+      "median": 254.835843812084,
+      "min": 249.84860735943963,
+      "max": 283.6802728294967,
+      "stdev": 18.2640594303539
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.8,
+      "min": 0.8,
+      "max": 0.8,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 18.32100299998274,
+      "min": 16.46643399999448,
+      "max": 19.46254599988606,
+      "stdev": 1.5121306001929895
+    },
+    "qps": {
+      "median": 276.94905676817905,
+      "min": 272.3224777426676,
+      "max": 312.2365406607031,
+      "stdev": 21.83172069707036
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 41.15791100048227,
+      "min": 38.50458799934131,
+      "max": 43.372434999582765,
+      "stdev": 2.4372174676850733
+    },
+    "qps": {
+      "median": 24.29666559093056,
+      "min": 23.056118477314445,
+      "max": 25.970931048972833,
+      "stdev": 1.4627744353905332
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 31.658398999752535,
+      "min": 29.088576000503963,
+      "max": 33.42011899985664,
+      "stdev": 2.1782987383688113
+    },
+    "qps": {
+      "median": 254.3192011963727,
+      "min": 246.66287476635975,
+      "max": 294.4596137959164,
+      "stdev": 25.672294793947522
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 31.12507699916023,
+      "min": 28.20042699931946,
+      "max": 31.978406999769504,
+      "stdev": 1.98136664095387
+    },
+    "qps": {
+      "median": 282.1475903104299,
+      "min": 273.90657399507967,
+      "max": 330.0495951004511,
+      "stdev": 30.316539027543094
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 42.06058300042059,
+      "min": 41.263187999902584,
+      "max": 42.24142499970185,
+      "stdev": 0.5204949957062385
+    },
+    "qps": {
+      "median": 23.775229173356923,
+      "min": 23.67344378195239,
+      "max": 24.234676196186317,
+      "stdev": 0.2990077076701677
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 30.091747999904328,
+      "min": 27.91566999985662,
+      "max": 32.21801800009416,
+      "stdev": 2.151222051576999
+    },
+    "qps": {
+      "median": 267.9990105690684,
+      "min": 256.6553756513821,
+      "max": 287.42331122723016,
+      "stdev": 15.559816669892317
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "503",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 29.786425999191124,
+      "min": 26.90862300005392,
+      "max": 31.19634899940138,
+      "stdev": 2.1853385402817693
+    },
+    "qps": {
+      "median": 299.41358113581356,
+      "min": 285.9669309611011,
+      "max": 324.15374656243387,
+      "stdev": 19.369740456133385
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 23.173144999418582,
+      "min": 22.390030000678962,
+      "max": 25.323439999738184,
+      "stdev": 1.5188774315390001
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.7920792079207921,
+      "min": 0.7920792079207921,
+      "max": 0.7920792079207921,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 18.08905500001856,
+      "min": 16.784647999884328,
+      "max": 18.941479999739386,
+      "stdev": 1.0862803718613199
+    },
+    "qps": {
+      "median": 274.6456784084406,
+      "min": 256.43961874639456,
+      "max": 282.52598302311,
+      "stdev": 13.379450726240925
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.8,
+      "min": 0.8,
+      "max": 0.8,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 16.693640000084997,
+      "min": 15.77549600006023,
+      "max": 17.888696999762033,
+      "stdev": 1.0596200657467798
+    },
+    "qps": {
+      "median": 299.15046204746596,
+      "min": 278.5429100050083,
+      "max": 311.32759863678416,
+      "stdev": 16.572012880053755
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 40.42594500060659,
+      "min": 38.89946100025554,
+      "max": 41.43273199952091,
+      "stdev": 1.2754891493220424
+    },
+    "qps": {
+      "median": 24.73658933600674,
+      "min": 24.135507164035502,
+      "max": 25.707297075232756,
+      "stdev": 0.7931053752388364
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 29.970706999847607,
+      "min": 29.236160999971617,
+      "max": 31.40873700067459,
+      "stdev": 1.1051074297734442
+    },
+    "qps": {
+      "median": 269.6371021785358,
+      "min": 260.2180732567865,
+      "max": 275.24672366874523,
+      "stdev": 7.594365151183215
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 29.1418770002565,
+      "min": 28.539941999952134,
+      "max": 29.87011999994138,
+      "stdev": 0.6660877223055084
+    },
+    "qps": {
+      "median": 301.6106118269532,
+      "min": 288.83069463819425,
+      "max": 305.57557533992536,
+      "stdev": 8.750602348085758
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 40.546293999796035,
+      "min": 40.083748000142805,
+      "max": 41.44153099969117,
+      "stdev": 0.6902865059329825
+    },
+    "qps": {
+      "median": 24.663166503084856,
+      "min": 24.130382634933355,
+      "max": 24.94776686043524,
+      "stdev": 0.41492428740389115
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 32.169938999686565,
+      "min": 29.977217000123346,
+      "max": 34.513298999627295,
+      "stdev": 2.2684578374935134
+    },
+    "qps": {
+      "median": 265.68641811815934,
+      "min": 237.69398241217417,
+      "max": 272.1793069416495,
+      "stdev": 18.32562718313323
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "429",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 31.8209859997296,
+      "min": 29.43750699978409,
+      "max": 34.15082099945721,
+      "stdev": 2.3567078778333843
+    },
+    "qps": {
+      "median": 295.12492579123636,
+      "min": 260.9049250950411,
+      "max": 304.2834047919243,
+      "stdev": 22.864013522223633
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 138.3746550000069,
+      "min": 137.5141460002851,
+      "max": 139.73996000004263,
+      "stdev": 1.122406747666321
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.7920792079207921,
+      "min": 0.7920792079207921,
+      "max": 0.7920792079207921,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 126.27977299962367,
+      "min": 125.91491300008784,
+      "max": 127.22680700062483,
+      "stdev": 0.6771339216332458
+    },
+    "qps": {
+      "median": 89.3110451309215,
+      "min": 89.0464437087762,
+      "max": 90.02078219775662,
+      "stdev": 0.5038313388012707
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.8,
+      "min": 0.8,
+      "max": 0.8,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 126.18717900022602,
+      "min": 125.84306400003697,
+      "max": 127.09969500065199,
+      "stdev": 0.6493871541814391
+    },
+    "qps": {
+      "median": 106.04502170031783,
+      "min": 105.52143521423537,
+      "max": 106.61950871583278,
+      "stdev": 0.5492333375281486
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 137.87494900043384,
+      "min": 136.18459700046515,
+      "max": 140.21456399950694,
+      "stdev": 2.0236815560199455
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.7920792079207921,
+      "min": 0.7920792079207921,
+      "max": 0.7920792079207921,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 126.18723200012028,
+      "min": 125.725230000171,
+      "max": 126.22411800020927,
+      "stdev": 0.27799750045096105
+    },
+    "qps": {
+      "median": 88.80155492760942,
+      "min": 87.89004161271463,
+      "max": 91.19634499091633,
+      "stdev": 1.7077040141298894
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.8,
+      "min": 0.8,
+      "max": 0.8,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 125.88705399957689,
+      "min": 125.31162399955065,
+      "max": 126.05579200044303,
+      "stdev": 0.3901662490568769
+    },
+    "qps": {
+      "median": 105.05057092452711,
+      "min": 104.09369955854412,
+      "max": 108.1624341523138,
+      "stdev": 2.127357388640792
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 146.58648900058324,
+      "min": 145.67033000002994,
+      "max": 154.43901700018614,
+      "stdev": 4.819948391935864
+    },
+    "qps": {
+      "median": 6.821911124401248,
+      "min": 6.475047688232791,
+      "max": 6.8648159168706115,
+      "stdev": 0.21372659194357513
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 137.44999400023517,
+      "min": 134.59003499974642,
+      "max": 137.49758599988127,
+      "stdev": 1.665106768413166
+    },
+    "qps": {
+      "median": 106.12331584983131,
+      "min": 102.77638289082833,
+      "max": 110.15894277605604,
+      "stdev": 3.6966298926342764
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "timeout",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 136.69529300022987,
+      "min": 134.54258199999458,
+      "max": 137.24091699987184,
+      "stdev": 1.4267026068924298
+    },
+    "qps": {
+      "median": 124.31576695095059,
+      "min": 121.01068242981552,
+      "max": 130.07223627982253,
+      "stdev": 4.585707524520562
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 15.039111999612942,
+      "min": 14.179697000145097,
+      "max": 18.19238600000972,
+      "stdev": 2.1127945188195323
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 11.826492000182043,
+      "min": 10.025628999756009,
+      "max": 15.850101000069117,
+      "stdev": 2.9820857078200342
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "none",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 11.714474000655173,
+      "min": 10.022770999967179,
+      "max": 15.769734000059543,
+      "stdev": 2.953375933564179
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 27.290554000501288,
+      "min": 27.00706799987529,
+      "max": 28.23204799915402,
+      "stdev": 0.6412684384201559
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 37.576273000013316,
+      "min": 37.210674000561994,
+      "max": 38.06846699990274,
+      "stdev": 0.4304506149848375
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "retry",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 37.576273000013316,
+      "min": 37.210674000561994,
+      "max": 38.06846699990274,
+      "stdev": 0.4304506149848375
+    },
+    "qps": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 37.967522999679204,
+      "min": 36.91613699993468,
+      "max": 39.561401000355545,
+      "stdev": 1.331870941784614
+    },
+    "qps": {
+      "median": 26.338299709687387,
+      "min": 25.27716346524262,
+      "max": 27.08842477211983,
+      "stdev": 0.910070076088847
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 50.259869000001345,
+      "min": 49.14648199974181,
+      "max": 55.18675500024983,
+      "stdev": 3.2145174389649234
+    },
+    "qps": {
+      "median": 124.26457349476873,
+      "min": 114.80197516320627,
+      "max": 125.30091604272596,
+      "stdev": 5.785650822694092
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "B",
+    "mode": "simulated",
+    "scenario": "connect",
+    "strategy": "retry_fallback",
+    "model": "fixture",
+    "concurrency": 5,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 50.259869000001345,
+      "min": 49.14648199974181,
+      "max": 55.18675500024983,
+      "stdev": 3.2145174389649234
+    },
+    "qps": {
+      "median": 129.15666926769464,
+      "min": 119.02741556078563,
+      "max": 130.76596640822186,
+      "stdev": 6.363767148779158
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_0%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 39.651940999647195,
+      "min": 39.212528000462044,
+      "max": 40.29963199991471,
+      "stdev": 0.5468672174770282
+    },
+    "qps": {
+      "median": 25.21944638243302,
+      "min": 24.81412237218733,
+      "max": 25.502053833107034,
+      "stdev": 0.34578514990796183
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_0%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.86845800053561,
+      "min": 26.733228000011877,
+      "max": 27.89005599970551,
+      "stdev": 0.6324819688898596
+    },
+    "qps": {
+      "median": 38.34723314696148,
+      "min": 37.891539329063484,
+      "max": 38.4808589459997,
+      "stdev": 0.30897958960231814
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_0%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.86845800053561,
+      "min": 26.733228000011877,
+      "max": 27.89005599970551,
+      "stdev": 0.6324819688898596
+    },
+    "qps": {
+      "median": 38.567644569587664,
+      "min": 38.09823609473818,
+      "max": 38.72886906937182,
+      "stdev": 0.3276267195774362
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_0%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 38.94095700070466,
+      "min": 38.514793000103964,
+      "max": 39.55830899940338,
+      "stdev": 0.5246689252120734
+    },
+    "qps": {
+      "median": 25.679903038384612,
+      "min": 25.279139207266976,
+      "max": 25.964049709349357,
+      "stdev": 0.34410593688939556
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_0%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.83338399947388,
+      "min": 26.678618000005372,
+      "max": 27.03864999966754,
+      "stdev": 0.18060531840070976
+    },
+    "qps": {
+      "median": 38.310173492604385,
+      "min": 38.08747737633653,
+      "max": 38.59870427190324,
+      "stdev": 0.25631897756323163
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_0%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.83338399947388,
+      "min": 26.678618000005372,
+      "max": 27.03864999966754,
+      "stdev": 0.18060531840070976
+    },
+    "qps": {
+      "median": 38.53076738287101,
+      "min": 38.297803152521624,
+      "max": 38.81182035738033,
+      "stdev": 0.25738324019302766
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_50%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 39.52843200022471,
+      "min": 37.963646999742195,
+      "max": 39.6021610004027,
+      "stdev": 0.925447296677199
+    },
+    "qps": {
+      "median": 25.29824608257457,
+      "min": 25.251147279307087,
+      "max": 26.34098878874284,
+      "stdev": 0.6160742872178057
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_50%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.35757799998828,
+      "min": 26.158446999943408,
+      "max": 26.905820000138192,
+      "stdev": 0.38703764832537074
+    },
+    "qps": {
+      "median": 38.749677786747085,
+      "min": 38.47514296133194,
+      "max": 39.07474961347316,
+      "stdev": 0.3001580695202533
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_50%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.35757799998828,
+      "min": 26.158446999943408,
+      "max": 26.905820000138192,
+      "stdev": 0.38703764832537074
+    },
+    "qps": {
+      "median": 38.983806132851214,
+      "min": 38.699745710302814,
+      "max": 39.28871542907417,
+      "stdev": 0.2945463552117533
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_50%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 38.91302099964378,
+      "min": 38.67521400024998,
+      "max": 40.116088000104355,
+      "stdev": 0.77244635844118
+    },
+    "qps": {
+      "median": 25.698338867320384,
+      "min": 24.927654959710893,
+      "max": 25.85635337385687,
+      "stdev": 0.4968908354560816
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_50%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.281799000571482,
+      "min": 26.27697400021134,
+      "max": 26.65625600002386,
+      "stdev": 0.21759908105241665
+    },
+    "qps": {
+      "median": 70.47151653809844,
+      "min": 68.72912913707027,
+      "max": 70.67136540598781,
+      "stdev": 1.0683425753284919
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.5,
+      "min": 0.5,
+      "max": 0.5,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_50%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.281799000571482,
+      "min": 26.27697400021134,
+      "max": 26.65625600002386,
+      "stdev": 0.21759908105241665
+    },
+    "qps": {
+      "median": 71.8855510925159,
+      "min": 70.00653296726651,
+      "max": 72.01284866340802,
+      "stdev": 1.1234037905071181
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.5050505050505051,
+      "min": 0.5050505050505051,
+      "max": 0.5050505050505051,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_90%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 39.047661000040534,
+      "min": 38.831910000226344,
+      "max": 39.3748169999526,
+      "stdev": 0.2733518954726828
+    },
+    "qps": {
+      "median": 25.60972858269185,
+      "min": 25.396943432174016,
+      "max": 25.75201683342826,
+      "stdev": 0.178699275719845
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_90%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.429763999658462,
+      "min": 26.32781000011164,
+      "max": 27.18831800029875,
+      "stdev": 0.4701547277753355
+    },
+    "qps": {
+      "median": 38.85178278793624,
+      "min": 38.32387776600415,
+      "max": 38.93611211767118,
+      "stdev": 0.3318197425801657
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_90%",
+    "strategy": "cache_off",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 26.429763999658462,
+      "min": 26.32781000011164,
+      "max": 27.18831800029875,
+      "stdev": 0.4701547277753355
+    },
+    "qps": {
+      "median": 39.085497876726386,
+      "min": 38.53324981249638,
+      "max": 39.16657548469259,
+      "stdev": 0.3446381943483384
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_90%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 39.5364050000353,
+      "min": 39.49641700000939,
+      "max": 40.85369800031913,
+      "stdev": 0.7723418503211131
+    },
+    "qps": {
+      "median": 25.29314438171875,
+      "min": 24.47758829548768,
+      "max": 25.318752331376345,
+      "stdev": 0.47842526970376303
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_90%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 25.72323000003962,
+      "min": 25.604753000152414,
+      "max": 26.031002000308945,
+      "stdev": 0.22001841354247925
+    },
+    "qps": {
+      "median": 211.3437672300285,
+      "min": 200.81682081213967,
+      "max": 215.037531575563,
+      "stdev": 7.378901347111111
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.9,
+      "min": 0.9,
+      "max": 0.9,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "C",
+    "mode": "simulated",
+    "scenario": "repeat_90%",
+    "strategy": "cache_on",
+    "model": "fixture",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 25.72323000003962,
+      "min": 25.604753000152414,
+      "max": 26.031002000308945,
+      "stdev": 0.22001841354247925
+    },
+    "qps": {
+      "median": 229.11190308815583,
+      "min": 217.31710158108154,
+      "max": 233.56053173916678,
+      "stdev": 8.394012377546966
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.9090909090909091,
+      "min": 0.9090909090909091,
+      "max": 0.9090909090909091,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "all_0.5b",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 24.315571999977692,
+      "min": 22.471989000223402,
+      "max": 25.049457000022812,
+      "stdev": 1.3279512265305669
+    },
+    "qps": {
+      "median": 41.12590894431426,
+      "min": 39.921025034558205,
+      "max": 44.49984378285601,
+      "stdev": 2.3734911930346496
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "all_0.5b",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 24.315571999977692,
+      "min": 22.471989000223402,
+      "max": 25.049457000022812,
+      "stdev": 1.3279512265305669
+    },
+    "qps": {
+      "median": 86.58276194159443,
+      "min": 85.67372491730646,
+      "max": 95.77231625862495,
+      "stdev": 5.586528497736521
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "all_0.5b",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 11.611373000050662,
+      "min": 11.138189000121201,
+      "max": 12.702081000497856,
+      "stdev": 0.8020084401957015
+    },
+    "qps": {
+      "median": 93.00159751005964,
+      "min": 91.52212026397045,
+      "max": 102.7531410668952,
+      "stdev": 6.102148295727294
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "all_1.5b",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 10.914450000200304,
+      "min": 9.107003999815788,
+      "max": 11.332248999678995,
+      "stdev": 1.1827321729571454
+    },
+    "qps": {
+      "median": 91.62165752572487,
+      "min": 88.24373696945122,
+      "max": 109.80559578322656,
+      "stdev": 11.597267733840813
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "all_1.5b",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 10.954653999760922,
+      "min": 10.237737999887031,
+      "max": 11.643152999567974,
+      "stdev": 0.7027553800266818
+    },
+    "qps": {
+      "median": 98.02475756870594,
+      "min": 90.35147537065245,
+      "max": 103.85125573889259,
+      "stdev": 6.770910950638705
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "all_1.5b",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 10.954653999760922,
+      "min": 10.237737999887031,
+      "max": 11.643152999567974,
+      "stdev": 0.7027553800266818
+    },
+    "qps": {
+      "median": 98.44719870500566,
+      "min": 90.49769468003181,
+      "max": 103.53290319471736,
+      "stdev": 6.569825789434093
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "task_route",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 10.007728999880783,
+      "min": 9.050987000591704,
+      "max": 11.740826000277593,
+      "stdev": 1.3634646010695983
+    },
+    "qps": {
+      "median": 99.92276969249592,
+      "min": 85.17288306430541,
+      "max": 110.4851879617798,
+      "stdev": 12.713749869481736
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "task_route",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 11.129200000141282,
+      "min": 10.086495999530598,
+      "max": 11.780582000028517,
+      "stdev": 0.8545425208602995
+    },
+    "qps": {
+      "median": 98.35757762929993,
+      "min": 90.93610214604175,
+      "max": 105.52814647563406,
+      "stdev": 7.296381679131639
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "D",
+    "mode": "simulated",
+    "scenario": "contract_only",
+    "strategy": "task_route",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 11.129200000141282,
+      "min": 10.086495999530598,
+      "max": 11.780582000028517,
+      "stdev": 0.8545425208602995
+    },
+    "qps": {
+      "median": 98.28535531784954,
+      "min": 91.3192751175845,
+      "max": 105.26163274168758,
+      "stdev": 6.971179433559077
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "E",
+    "mode": "simulated",
+    "scenario": "sse_contract_only",
+    "strategy": "gateway",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 61.215423999783525,
+      "min": 59.10335800035682,
+      "max": 61.65414600036456,
+      "stdev": 1.363807122281327
+    },
+    "qps": {
+      "median": 18.06515222449625,
+      "min": 17.881040122236595,
+      "max": 18.53388539763596,
+      "stdev": 0.3366043690079309
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  },
+  {
+    "experiment": "E",
+    "mode": "simulated",
+    "scenario": "sse_contract_only",
+    "strategy": "gateway",
+    "model": "simulated",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 3,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 61.215423999783525,
+      "min": 59.10335800035682,
+      "max": 61.65414600036456,
+      "stdev": 1.363807122281327
+    },
+    "qps": {
+      "median": 18.06515222449625,
+      "min": 17.881040122236595,
+      "max": 18.53388539763596,
+      "stdev": 0.3366043690079309
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  }
+]

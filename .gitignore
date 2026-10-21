@@ -27,3 +27,5 @@ models/
 *.pth
 benchmarks/results/*
 # Reviewed measured runs are explicitly unignored below after privacy review.
+!benchmarks/results/20261021T053001Z-mock-33f3d4/
+!benchmarks/results/20261021T054417Z-real-bdb4f7/

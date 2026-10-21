@@ -1,0 +1,2133 @@
+[
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "all_0.5b",
+    "model": "qwen-0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2419.248176500332,
+      "min": 2384.4773050004733,
+      "max": 2454.019048000191,
+      "stdev": 49.1734380506326
+    },
+    "qps": {
+      "median": 0.41343696105700367,
+      "min": 0.407494799526887,
+      "max": 0.4193791225871204,
+      "stdev": 0.008403485425702703
+    },
+    "accuracy": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 144.33452940590195,
+      "min": 101.33765707336846,
+      "max": 187.3314017384354,
+      "stdev": 60.80675999229333
+    }
+  },
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "all_0.5b",
+    "model": "qwen-0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2419.248176500332,
+      "min": 2384.4773050004733,
+      "max": 2454.019048000191,
+      "stdev": 49.1734380506326
+    },
+    "qps": {
+      "median": 3.271125719118059,
+      "min": 3.209082210403557,
+      "max": 3.3331692278325606,
+      "stdev": 0.08774277148126194
+    },
+    "accuracy": {
+      "median": 0.2222222222222222,
+      "min": 0.2222222222222222,
+      "max": 0.2222222222222222,
+      "stdev": 0.0
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 232.0958739227537,
+      "min": 230.96466240665177,
+      "max": 233.22708543885562,
+      "stdev": 1.599774667983977
+    }
+  },
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "all_0.5b",
+    "model": "qwen-0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 330.61309149979934,
+      "min": 330.3793079994648,
+      "max": 330.8468750001339,
+      "stdev": 0.33061979683216003
+    },
+    "qps": {
+      "median": 5.625696988421414,
+      "min": 5.5052605779770865,
+      "max": 5.74613339886574,
+      "stdev": 0.17032280505389955
+    },
+    "accuracy": {
+      "median": 0.23529411764705882,
+      "min": 0.23529411764705882,
+      "max": 0.23529411764705882,
+      "stdev": 0.0
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 235.3692088363853,
+      "min": 231.41303369630896,
+      "max": 239.32538397646164,
+      "stdev": 5.594876538219239
+    }
+  },
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "all_1.5b",
+    "model": "qwen-1.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2514.13514900014,
+      "min": 2500.074401999882,
+      "max": 2528.1958960003976,
+      "stdev": 19.884899104861443
+    },
+    "qps": {
+      "median": 0.39776353288617744,
+      "min": 0.39553896973806446,
+      "max": 0.3999880960342904,
+      "stdev": 0.0031460073744167634
+    },
+    "accuracy": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 97.84544806593465,
+      "min": 95.67089213106912,
+      "max": 100.02000400080016,
+      "stdev": 3.075286495225718
+    }
+  },
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "all_1.5b",
+    "model": "qwen-1.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2514.13514900014,
+      "min": 2500.074401999882,
+      "max": 2528.1958960003976,
+      "stdev": 19.884899104861443
+    },
+    "qps": {
+      "median": 2.7556068027270753,
+      "min": 2.7442099068278996,
+      "max": 2.7670036986262514,
+      "stdev": 0.016117644749568893
+    },
+    "accuracy": {
+      "median": 0.5555555555555556,
+      "min": 0.5555555555555556,
+      "max": 0.5555555555555556,
+      "stdev": 0.0
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 137.09853720303542,
+      "min": 134.86956186659472,
+      "max": 139.32751253947612,
+      "stdev": 3.152247150989567
+    }
+  },
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "all_1.5b",
+    "model": "qwen-1.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 575.0420814997597,
+      "min": 569.3197489999875,
+      "max": 580.7644139995318,
+      "stdev": 8.09260022958613
+    },
+    "qps": {
+      "median": 4.291631936473696,
+      "min": 4.277443774488834,
+      "max": 4.305820098458558,
+      "stdev": 0.020065091104138608
+    },
+    "accuracy": {
+      "median": 0.5294117647058824,
+      "min": 0.5294117647058824,
+      "max": 0.5294117647058824,
+      "stdev": 0.0
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 140.29656937080279,
+      "min": 139.84058173682,
+      "max": 140.7525570047856,
+      "stdev": 0.6448638962528757
+    }
+  },
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "task_route",
+    "model": "auto",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 4254.360258500128,
+      "min": 4193.578966999667,
+      "max": 4315.14155000059,
+      "stdev": 85.9577267785052
+    },
+    "qps": {
+      "median": 0.25887806444532246,
+      "min": 0.2544452522841313,
+      "max": 0.26331087660651364,
+      "stdev": 0.006268943077808957
+    },
+    "accuracy": {
+      "median": 0.2589285714285714,
+      "min": 0.14285714285714285,
+      "max": 0.375,
+      "stdev": 0.16414978848973424
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 110.1332675349469,
+      "min": 98.75892945320473,
+      "max": 121.50760561668908,
+      "stdev": 16.085743178216557
+    }
+  },
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "task_route",
+    "model": "auto",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 4254.360258500128,
+      "min": 4193.578966999667,
+      "max": 4315.14155000059,
+      "stdev": 85.9577267785052
+    },
+    "qps": {
+      "median": 0.6099365180263877,
+      "min": 0.5876328000264883,
+      "max": 0.6322402360262871,
+      "stdev": 0.031542220486802636
+    },
+    "accuracy": {
+      "median": 0.3333333333333333,
+      "min": 0.3333333333333333,
+      "max": 0.3333333333333333,
+      "stdev": 0.0
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 161.81908477084082,
+      "min": 160.02560409665546,
+      "max": 163.61256544502618,
+      "stdev": 2.536364693286979
+    }
+  },
+  {
+    "experiment": "D",
+    "mode": "real",
+    "scenario": "labeled_tasks",
+    "strategy": "task_route",
+    "model": "auto",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 399.754616500104,
+      "min": 236.47421300029237,
+      "max": 563.0350199999157,
+      "stdev": 230.913361099185
+    },
+    "qps": {
+      "median": 0.4339343931359405,
+      "min": 0.35785347509712406,
+      "max": 0.510015311174757,
+      "stdev": 0.10759466612829008
+    },
+    "accuracy": {
+      "median": 0.37727272727272726,
+      "min": 0.3,
+      "max": 0.45454545454545453,
+      "stdev": 0.10928013891064825
+    },
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 205.89020500985583,
+      "min": 200.57229962827267,
+      "max": 211.20811039143902,
+      "stdev": 7.520653914051794
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2585.931343499851,
+      "min": 2560.120934999759,
+      "max": 2611.7417519999435,
+      "stdev": 36.50142975122036
+    },
+    "qps": {
+      "median": 0.3867463977953869,
+      "min": 0.38288624793559667,
+      "max": 0.39060654765517716,
+      "stdev": 0.005459076284507968
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 212.26749042155973,
+      "min": 204.93574944042933,
+      "max": 219.5992314026901,
+      "stdev": 10.368647531321207
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2585.931343499851,
+      "min": 2560.120934999759,
+      "max": 2611.7417519999435,
+      "stdev": 36.50142975122036
+    },
+    "qps": {
+      "median": 1.3388552936470097,
+      "min": 1.3357924374456365,
+      "max": 1.341918149848383,
+      "stdev": 0.004331532779580595
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 246.03731370035928,
+      "min": 241.87818409953286,
+      "max": 250.1964433011857,
+      "stdev": 5.881897489156118
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 277.10570699991877,
+      "min": 272.557377999874,
+      "max": 281.6540359999635,
+      "stdev": 6.432308557998157
+    },
+    "qps": {
+      "median": 3.6686512062116714,
+      "min": 3.61259175793425,
+      "max": 3.724710654489093,
+      "stdev": 0.07928003205308251
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 246.03731370035928,
+      "min": 241.87818409953286,
+      "max": 250.1964433011857,
+      "stdev": 5.881897489156118
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2447.8264224999293,
+      "min": 2270.000681000056,
+      "max": 2625.6521639998027,
+      "stdev": 251.4835753681731
+    },
+    "qps": {
+      "median": 0.41069313077377595,
+      "min": 0.3808577593448799,
+      "max": 0.440528502202672,
+      "stdev": 0.04219358691318351
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 212.04322019349152,
+      "min": 210.0288789708585,
+      "max": 214.05756141612454,
+      "stdev": 2.848708676294821
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2447.8264224999293,
+      "min": 2270.000681000056,
+      "max": 2625.6521639998027,
+      "stdev": 251.4835753681731
+    },
+    "qps": {
+      "median": 1.3861572284002752,
+      "min": 1.3154388493437006,
+      "max": 1.4568756074568499,
+      "stdev": 0.10001089077084929
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 244.2147587327418,
+      "min": 244.0838284704099,
+      "max": 244.34568899507371,
+      "stdev": 0.185163352714842
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 280.76234149966695,
+      "min": 280.29306899952644,
+      "max": 281.23161399980745,
+      "stdev": 0.6636515341474325
+    },
+    "qps": {
+      "median": 3.611908084324641,
+      "min": 3.605553516178605,
+      "max": 3.6182626524706767,
+      "stdev": 0.008986716455147804
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 244.2147587327418,
+      "min": 244.0838284704099,
+      "max": 244.34568899507371,
+      "stdev": 0.185163352714842
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 2,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2598.4087705001,
+      "min": 2577.4795249999443,
+      "max": 2619.338016000256,
+      "stdev": 29.598422836556626
+    },
+    "qps": {
+      "median": 0.3848758874192537,
+      "min": 0.3817758509560387,
+      "max": 0.3879759238824687,
+      "stdev": 0.004384113610129768
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 210.5872116928669,
+      "min": 200.27224508315993,
+      "max": 220.90217830257384,
+      "stdev": 14.587565674873202
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 2,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2598.4087705001,
+      "min": 2577.4795249999443,
+      "max": 2619.338016000256,
+      "stdev": 29.598422836556626
+    },
+    "qps": {
+      "median": 1.3367664908114998,
+      "min": 1.3249612491034026,
+      "max": 1.348571732519597,
+      "stdev": 0.016695132930683525
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 242.04111173725164,
+      "min": 240.15189607426697,
+      "max": 243.9303274002363,
+      "stdev": 2.671754412840596
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 2,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 553.3624559998316,
+      "min": 547.5705440003367,
+      "max": 559.1543679993265,
+      "stdev": 8.191000501757179
+    },
+    "qps": {
+      "median": 3.6679284532195875,
+      "min": 3.6409704437273227,
+      "max": 3.6948864627118523,
+      "stdev": 0.0381243826385435
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 242.04111173725164,
+      "min": 240.15189607426697,
+      "max": 243.9303274002363,
+      "stdev": 2.671754412840596
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 2,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2564.3840009997803,
+      "min": 2561.4730919996873,
+      "max": 2567.294909999873,
+      "stdev": 4.116646986765344
+    },
+    "qps": {
+      "median": 0.38995770061415075,
+      "min": 0.3895150479615329,
+      "max": 0.3904003532667686,
+      "stdev": 0.0006260053847525706
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 216.86156963285094,
+      "min": 216.24836124288746,
+      "max": 217.47477802281446,
+      "stdev": 0.8672076216473563
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 2,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2564.3840009997803,
+      "min": 2561.4730919996873,
+      "max": 2567.294909999873,
+      "stdev": 4.116646986765344
+    },
+    "qps": {
+      "median": 1.3439709407281664,
+      "min": 1.3335124699310232,
+      "max": 1.3544294115253095,
+      "stdev": 0.014790511243002765
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 240.02303064194086,
+      "min": 234.02847102617827,
+      "max": 246.01759025770343,
+      "stdev": 8.477587509065494
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 2,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 559.2678540001543,
+      "min": 544.6764429998439,
+      "max": 573.8592650004648,
+      "stdev": 20.63537133079904
+    },
+    "qps": {
+      "median": 3.6335703012559746,
+      "min": 3.5507075961500627,
+      "max": 3.7164330063618864,
+      "stdev": 0.11718556137570288
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 240.02303064194086,
+      "min": 234.02847102617827,
+      "max": 246.01759025770343,
+      "stdev": 8.477587509065494
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3199.961686000279,
+      "min": 3005.9610970001813,
+      "max": 3393.9622750003764,
+      "stdev": 274.3582640723066
+    },
+    "qps": {
+      "median": 0.31365658673089303,
+      "min": 0.2946408707503648,
+      "max": 0.3326723027114212,
+      "stdev": 0.026892283437897742
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 118.51993284649194,
+      "min": 113.66946340908929,
+      "max": 123.37040228389458,
+      "stdev": 6.859599662251016
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3199.961686000279,
+      "min": 3005.9610970001813,
+      "max": 3393.9622750003764,
+      "stdev": 274.3582640723066
+    },
+    "qps": {
+      "median": 0.9263388907367308,
+      "min": 0.8779657518918234,
+      "max": 0.9747120295816383,
+      "stdev": 0.06840994900902492
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 122.57289919098659,
+      "min": 117.25348371092619,
+      "max": 127.89231467104698,
+      "stdev": 7.522789515798795
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 549.5852239996566,
+      "min": 525.6503959999463,
+      "max": 573.5200519993668,
+      "stdev": 33.848958370257535
+    },
+    "qps": {
+      "median": 1.8654715353355005,
+      "min": 1.7859513763406099,
+      "max": 1.944991694330391,
+      "stdev": 0.11245848733263919
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 122.57289919098659,
+      "min": 117.25348371092619,
+      "max": 127.89231467104698,
+      "stdev": 7.522789515798795
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3076.96882800019,
+      "min": 3047.199577000356,
+      "max": 3106.7380790000243,
+      "stdev": 42.100078505654324
+    },
+    "qps": {
+      "median": 0.3250255909745261,
+      "min": 0.32188101300186633,
+      "max": 0.3281701689471858,
+      "stdev": 0.004447104816875096
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 114.65911133575659,
+      "min": 110.2484552296527,
+      "max": 119.06976744186046,
+      "stdev": 6.23760968421581
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3076.96882800019,
+      "min": 3047.199577000356,
+      "max": 3106.7380790000243,
+      "stdev": 42.100078505654324
+    },
+    "qps": {
+      "median": 0.9249964367597405,
+      "min": 0.8771432090417077,
+      "max": 0.9728496644777733,
+      "stdev": 0.0676746836421701
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 118.75449741614366,
+      "min": 106.00466751801665,
+      "max": 131.50432731427068,
+      "stdev": 18.030982359881207
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 580.2270959998168,
+      "min": 514.7127019999971,
+      "max": 645.7414899996365,
+      "stdev": 92.65134452519959
+    },
+    "qps": {
+      "median": 1.773412494765294,
+      "min": 1.5793590389528067,
+      "max": 1.9674659505777816,
+      "stdev": 0.27443302903538785
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 118.04495754672237,
+      "min": 104.58558777917406,
+      "max": 131.50432731427068,
+      "stdev": 19.034423266261232
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 2,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2921.7016600000534,
+      "min": 2814.4212480001443,
+      "max": 3028.9820719999625,
+      "stdev": 151.7174136272448
+    },
+    "qps": {
+      "median": 0.34272837637750425,
+      "min": 0.3301439150941308,
+      "max": 0.3553128376608777,
+      "stdev": 0.017797115822105827
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 120.5930671923744,
+      "min": 118.03152917223014,
+      "max": 123.15460521251866,
+      "stdev": 3.6225618086223417
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 2,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2921.7016600000534,
+      "min": 2814.4212480001443,
+      "max": 3028.9820719999625,
+      "stdev": 151.7174136272448
+    },
+    "qps": {
+      "median": 0.9800536869123757,
+      "min": 0.9735138080322204,
+      "max": 0.986593565792531,
+      "stdev": 0.009248785408592967
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 125.53029302724264,
+      "min": 121.76791795886527,
+      "max": 129.29266809562,
+      "stdev": 5.320801848433672
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "direct",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 2,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 1079.8049069999252,
+      "min": 1043.9370379999673,
+      "max": 1115.672775999883,
+      "stdev": 50.72482679316191
+    },
+    "qps": {
+      "median": 1.8866192419553496,
+      "min": 1.8228369767679313,
+      "max": 1.9504015071427676,
+      "stdev": 0.09020174446692406
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 124.03096085254592,
+      "min": 118.76925360947185,
+      "max": 129.29266809562,
+      "stdev": 7.4411777443921086
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 2,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3133.039042999826,
+      "min": 3087.362868999662,
+      "max": 3178.71521699999,
+      "stdev": 64.59586474834511
+    },
+    "qps": {
+      "median": 0.31924676805957697,
+      "min": 0.3145925104117319,
+      "max": 0.3239010257074221,
+      "stdev": 0.00658211428836121
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 111.42942663254104,
+      "min": 105.7737598439837,
+      "max": 117.08509342109836,
+      "stdev": 7.998320676640868
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 2,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3133.039042999826,
+      "min": 3087.362868999662,
+      "max": 3178.71521699999,
+      "stdev": 64.59586474834511
+    },
+    "qps": {
+      "median": 0.9479272787682442,
+      "min": 0.9315607882569216,
+      "max": 0.9642937692795669,
+      "stdev": 0.02314571284956308
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 126.60595519730342,
+      "min": 125.00292975616615,
+      "max": 128.20898063844066,
+      "stdev": 2.26702031968542
+    }
+  },
+  {
+    "experiment": "E",
+    "mode": "real",
+    "scenario": "ollama_sse",
+    "strategy": "gateway",
+    "model": "qwen2.5:1.5b",
+    "concurrency": 2,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 1061.3740110002254,
+      "min": 1037.8463830002147,
+      "max": 1084.9016390002362,
+      "stdev": 33.27309060808416
+    },
+    "qps": {
+      "median": 1.9165109813305365,
+      "min": 1.8845315536574763,
+      "max": 1.948490409003597,
+      "stdev": 0.04522574033217147
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 126.60595519730342,
+      "min": 125.00292975616615,
+      "max": 128.20898063844066,
+      "stdev": 2.26702031968542
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_0%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2833.1236814997283,
+      "min": 2732.238380999661,
+      "max": 2934.0089819997957,
+      "stdev": 142.67336021128048
+    },
+    "qps": {
+      "median": 0.35341543060430936,
+      "min": 0.340830585773602,
+      "max": 0.36600027543501673,
+      "stdev": 0.01779765823994731
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 147.7263690132099,
+      "min": 144.45996051427747,
+      "max": 150.99277751214234,
+      "stdev": 4.619399199440993
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_0%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2833.1236814997283,
+      "min": 2732.238380999661,
+      "max": 2934.0089819997957,
+      "stdev": 142.67336021128048
+    },
+    "qps": {
+      "median": 3.037819369732256,
+      "min": 2.9337697641310676,
+      "max": 3.141868975333445,
+      "stdev": 0.14714836340077245
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 216.3479231187469,
+      "min": 203.16256391155656,
+      "max": 229.53328232593725,
+      "stdev": 18.646913815569548
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_0%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 61.803585500001645,
+      "min": 57.23311600013403,
+      "max": 66.37405499986926,
+      "stdev": 6.463619953125355
+    },
+    "qps": {
+      "median": 19.47081918002641,
+      "min": 18.96563624166811,
+      "max": 19.97600211838471,
+      "stdev": 0.7144365629057978
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 221.7071694646287,
+      "min": 209.68756552736423,
+      "max": 233.72677340189318,
+      "stdev": 16.998286902432476
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_0%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2953.1682699998782,
+      "min": 2924.7908409997763,
+      "max": 2981.5456989999802,
+      "stdev": 40.1317449572238
+    },
+    "qps": {
+      "median": 0.3386506466287964,
+      "min": 0.3353965026715516,
+      "max": 0.3419047905860413,
+      "stdev": 0.0046020545182501255
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 146.39352319793304,
+      "min": 142.14304328255668,
+      "max": 150.6440031133094,
+      "stdev": 6.011086342919693
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_0%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2953.1682699998782,
+      "min": 2924.7908409997763,
+      "max": 2981.5456989999802,
+      "stdev": 40.1317449572238
+    },
+    "qps": {
+      "median": 2.9303653304175663,
+      "min": 2.9071674822610896,
+      "max": 2.9535631785740426,
+      "stdev": 0.032806711480760795
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 224.57446935361958,
+      "min": 209.6948939293328,
+      "max": 239.45404477790638,
+      "stdev": 21.04289736737977
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_0%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 63.085486499858234,
+      "min": 56.87793900051474,
+      "max": 69.29303399920173,
+      "stdev": 8.778797862646757
+    },
+    "qps": {
+      "median": 19.584375688934614,
+      "min": 19.526493807123142,
+      "max": 19.64225757074609,
+      "stdev": 0.08185734227346267
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 227.89505297312883,
+      "min": 215.50175993103943,
+      "max": 240.28834601521825,
+      "stdev": 17.52676310258696
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_50%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2889.450491500156,
+      "min": 2868.138161999923,
+      "max": 2910.7628210003895,
+      "stdev": 30.140185424994165
+    },
+    "qps": {
+      "median": 0.34610539615198377,
+      "min": 0.3435525535729887,
+      "max": 0.34865823873097884,
+      "stdev": 0.0036102645978183423
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 126.37933810350552,
+      "min": 125.4836348426226,
+      "max": 127.27504136438844,
+      "stdev": 1.2667156994024293
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_50%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2889.450491500156,
+      "min": 2868.138161999923,
+      "max": 2910.7628210003895,
+      "stdev": 30.140185424994165
+    },
+    "qps": {
+      "median": 2.9900912611076267,
+      "min": 2.967384150816523,
+      "max": 3.01279837139873,
+      "stdev": 0.03211270333598041
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 220.66551460553165,
+      "min": 214.8304629596477,
+      "max": 226.50056625141562,
+      "stdev": 8.252009174756553
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_50%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 71.36688100035826,
+      "min": 70.41880900032993,
+      "max": 72.3149530003866,
+      "stdev": 1.3407762805462535
+    },
+    "qps": {
+      "median": 19.778305575549368,
+      "min": 19.6007040825384,
+      "max": 19.955907068560336,
+      "stdev": 0.25116644011382167
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 222.78211884265522,
+      "min": 215.18487967578812,
+      "max": 230.37935800952235,
+      "stdev": 10.744118666375543
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_50%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3140.339478500209,
+      "min": 3042.276631000277,
+      "max": 3238.4023260001413,
+      "stdev": 138.68180889932853
+    },
+    "qps": {
+      "median": 0.31874772570012194,
+      "min": 0.3087942446098516,
+      "max": 0.3287012067903923,
+      "stdev": 0.014076347950684446
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 147.27464544217014,
+      "min": 133.0288450879099,
+      "max": 161.5204457964304,
+      "stdev": 20.146604067854295
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_50%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3140.339478500209,
+      "min": 3042.276631000277,
+      "max": 3238.4023260001413,
+      "stdev": 138.68180889932853
+    },
+    "qps": {
+      "median": 2.958923620219303,
+      "min": 2.865979581937824,
+      "max": 3.0518676585007816,
+      "stdev": 0.13144271947939143
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.5,
+      "min": 0.5,
+      "max": 0.5,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 211.04580430031606,
+      "min": 207.58372543592583,
+      "max": 214.5078831647063,
+      "stdev": 4.896118884025915
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_50%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 77.33997449986418,
+      "min": 67.05296600011934,
+      "max": 87.62698299960903,
+      "stdev": 14.548026936586462
+    },
+    "qps": {
+      "median": 37.14877710931834,
+      "min": 35.89664308280237,
+      "max": 38.400911135834306,
+      "stdev": 1.7707849222077146
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.5555555555555556,
+      "min": 0.5555555555555556,
+      "max": 0.5555555555555556,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 211.04580430031606,
+      "min": 207.58372543592583,
+      "max": 214.5078831647063,
+      "stdev": 4.896118884025915
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_90%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2902.551090000088,
+      "min": 2849.769304999427,
+      "max": 2955.3328750007495,
+      "stdev": 74.64471619419605
+    },
+    "qps": {
+      "median": 0.344638477920834,
+      "min": 0.3383713585901035,
+      "max": 0.3509055972515646,
+      "stdev": 0.008863045154529766
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 146.16452324202692,
+      "min": 134.33036313974836,
+      "max": 157.99868334430548,
+      "stdev": 16.736029715936912
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_90%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2902.551090000088,
+      "min": 2849.769304999427,
+      "max": 2955.3328750007495,
+      "stdev": 74.64471619419605
+    },
+    "qps": {
+      "median": 3.075727403992607,
+      "min": 3.010945884575694,
+      "max": 3.1405089234095205,
+      "stdev": 0.0916149033505347
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 258.7677073555824,
+      "min": 241.964753800863,
+      "max": 275.57066091030174,
+      "stdev": 23.762964805009336
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_90%",
+    "strategy": "cache_off",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 44.609416499952204,
+      "min": 42.72817800028861,
+      "max": 46.4906549996158,
+      "stdev": 2.66047300028267
+    },
+    "qps": {
+      "median": 25.757350758153365,
+      "min": 24.600470254424145,
+      "max": 26.91423126188258,
+      "stdev": 1.6360760984188774
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 270.55336929953353,
+      "min": 259.40337224383916,
+      "max": 281.70336635522796,
+      "stdev": 15.768477056583098
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_90%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "cold",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2999.555320500349,
+      "min": 2999.3854459999056,
+      "max": 2999.725195000792,
+      "stdev": 0.24023882242820796
+    },
+    "qps": {
+      "median": 0.33338275056067807,
+      "min": 0.33336387001934553,
+      "max": 0.3334016311020106,
+      "stdev": 2.6701117617414313e-05
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 136.6381734862417,
+      "min": 121.11180638259219,
+      "max": 152.1645405898912,
+      "stdev": 21.9575989323646
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_90%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "all",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 2999.555320500349,
+      "min": 2999.3854459999056,
+      "max": 2999.725195000792,
+      "stdev": 0.24023882242820796
+    },
+    "qps": {
+      "median": 3.312133840694876,
+      "min": 3.3100056875990895,
+      "max": 3.3142619937906628,
+      "stdev": 0.0030096629708677297
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 0.9,
+      "min": 0.9,
+      "max": 0.9,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": {
+      "median": 136.6381734862417,
+      "min": 121.11180638259219,
+      "max": 152.1645405898912,
+      "stdev": 21.9575989323646
+    }
+  },
+  {
+    "experiment": "C",
+    "mode": "real",
+    "scenario": "repeat_90%",
+    "strategy": "cache_on",
+    "model": "qwen2.5:0.5b",
+    "concurrency": 1,
+    "phase": "warm",
+    "repeats": 2,
+    "success_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "p95_ms": {
+      "median": 3.1999550001273747,
+      "min": 2.2426790001190966,
+      "max": 4.157231000135653,
+      "stdev": 1.353792702145974
+    },
+    "qps": {
+      "median": 462.623152622429,
+      "min": 420.95416276627265,
+      "max": 504.2921424785854,
+      "stdev": 58.928850584963264
+    },
+    "accuracy": null,
+    "cache_hit_rate": {
+      "median": 1.0,
+      "min": 1.0,
+      "max": 1.0,
+      "stdev": 0.0
+    },
+    "decode_tps_p50": null
+  }
+]

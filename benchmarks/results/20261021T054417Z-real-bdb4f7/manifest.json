@@ -1,0 +1,582 @@
+{
+  "run_id": "20261021T054417Z-real-bdb4f7",
+  "method_version": 2,
+  "started_at": "2026-10-21T05:44:17.356692+00:00",
+  "mode": "real",
+  "config": {
+    "seed": 42,
+    "repeats": 2,
+    "requests": 4,
+    "concurrency": [
+      1,
+      2
+    ],
+    "models": [
+      "qwen2.5:0.5b",
+      "qwen2.5:1.5b"
+    ],
+    "context_length": 1024,
+    "max_tokens": 64,
+    "gpu_stop_ratio": 0.9,
+    "min_available_memory_mib": 1024
+  },
+  "hardware": {
+    "os": "Linux",
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "python": "3.12.3",
+    "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "logical_cpus": 16,
+    "available_memory_mib": 4892.4609375,
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU, 4096 MiB, 617.14",
+    "gpu_baseline": {
+      "used_mib": 1320.0,
+      "total_mib": 4096.0,
+      "utilization_pct": 1.0
+    },
+    "ollama_cli": "ollama version is 0.34.4"
+  },
+  "git_commit": "3ec4f650b76adf3c35c021af63500fb0b6b5b744",
+  "git_dirty": true,
+  "tasks_sha256": "23a47ad358b1cba636050817036f08bb5cf9ec67772e9e76d54c974526cf4f6e",
+  "source_sha256": "48cf7ae5eab062a271245579a491ec94395d418fd62455de39121e20bef19777",
+  "status": "complete",
+  "cold_definition": "Mock: first chat on fresh process/client; real: target absent from /api/ps; OS cache retained.",
+  "ollama_version": {
+    "version": "0.34.4"
+  },
+  "models": {
+    "qwen2.5:0.5b": {
+      "name": "qwen2.5:0.5b",
+      "model": "qwen2.5:0.5b",
+      "modified_at": "2026-10-21T13:21:07.52368616+08:00",
+      "size": 397821319,
+      "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "494.03M",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 896
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    "qwen2.5:1.5b": {
+      "name": "qwen2.5:1.5b",
+      "model": "qwen2.5:1.5b",
+      "modified_at": "2026-10-21T13:23:37.1862816+08:00",
+      "size": 986061892,
+      "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "1.5B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 32768,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    }
+  },
+  "ollama_process_policy": {
+    "required": "OLLAMA_MAX_LOADED_MODELS=1, OLLAMA_NUM_PARALLEL=1",
+    "context": 1024,
+    "sampling": "temperature=0, seed=42, max_tokens=64",
+    "note": "Client concurrency=2 measures queueing with OLLAMA_NUM_PARALLEL=1."
+  },
+  "residency_samples": [
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "direct",
+      "model": "qwen2.5:0.5b",
+      "concurrency": 1,
+      "repeat": 0,
+      "models": [
+        {
+          "name": "qwen2.5:0.5b",
+          "model": "qwen2.5:0.5b",
+          "size": 440915721,
+          "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "494.03M",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:47:10.061208757+08:00",
+          "size_vram": 440915721,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "gateway",
+      "model": "qwen2.5:0.5b",
+      "concurrency": 1,
+      "repeat": 0,
+      "models": [
+        {
+          "name": "qwen2.5:0.5b",
+          "model": "qwen2.5:0.5b",
+          "size": 440915721,
+          "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "494.03M",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:47:13.656566128+08:00",
+          "size_vram": 440915721,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "direct",
+      "model": "qwen2.5:0.5b",
+      "concurrency": 2,
+      "repeat": 0,
+      "models": [
+        {
+          "name": "qwen2.5:0.5b",
+          "model": "qwen2.5:0.5b",
+          "size": 440915721,
+          "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "494.03M",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:47:17.594525548+08:00",
+          "size_vram": 440915721,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "gateway",
+      "model": "qwen2.5:0.5b",
+      "concurrency": 2,
+      "repeat": 0,
+      "models": [
+        {
+          "name": "qwen2.5:0.5b",
+          "model": "qwen2.5:0.5b",
+          "size": 440915721,
+          "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "494.03M",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:47:21.477869363+08:00",
+          "size_vram": 440915721,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "direct",
+      "model": "qwen2.5:1.5b",
+      "concurrency": 1,
+      "repeat": 0,
+      "models": [
+        {
+          "name": "qwen2.5:1.5b",
+          "model": "qwen2.5:1.5b",
+          "size": 1075010600,
+          "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "1.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:47:25.80767285+08:00",
+          "size_vram": 1075010600,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "gateway",
+      "model": "qwen2.5:1.5b",
+      "concurrency": 1,
+      "repeat": 0,
+      "models": [
+        {
+          "name": "qwen2.5:1.5b",
+          "model": "qwen2.5:1.5b",
+          "size": 1075010600,
+          "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "1.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:47:31.189712038+08:00",
+          "size_vram": 1075010600,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "direct",
+      "model": "qwen2.5:1.5b",
+      "concurrency": 2,
+      "repeat": 0,
+      "models": [
+        {
+          "name": "qwen2.5:1.5b",
+          "model": "qwen2.5:1.5b",
+          "size": 1075010600,
+          "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "1.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:47:36.313695895+08:00",
+          "size_vram": 1075010600,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "gateway",
+      "model": "qwen2.5:1.5b",
+      "concurrency": 2,
+      "repeat": 0,
+      "models": [
+        {
+          "name": "qwen2.5:1.5b",
+          "model": "qwen2.5:1.5b",
+          "size": 1075010600,
+          "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "1.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:47:44.883042151+08:00",
+          "size_vram": 1075010600,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "gateway",
+      "model": "qwen2.5:0.5b",
+      "concurrency": 1,
+      "repeat": 1,
+      "models": [
+        {
+          "name": "qwen2.5:0.5b",
+          "model": "qwen2.5:0.5b",
+          "size": 440915721,
+          "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "494.03M",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:48:33.902791699+08:00",
+          "size_vram": 440915721,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "direct",
+      "model": "qwen2.5:0.5b",
+      "concurrency": 1,
+      "repeat": 1,
+      "models": [
+        {
+          "name": "qwen2.5:0.5b",
+          "model": "qwen2.5:0.5b",
+          "size": 440915721,
+          "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "494.03M",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:48:37.838540844+08:00",
+          "size_vram": 440915721,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "gateway",
+      "model": "qwen2.5:0.5b",
+      "concurrency": 2,
+      "repeat": 1,
+      "models": [
+        {
+          "name": "qwen2.5:0.5b",
+          "model": "qwen2.5:0.5b",
+          "size": 440915721,
+          "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "494.03M",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:48:41.73126711+08:00",
+          "size_vram": 440915721,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "direct",
+      "model": "qwen2.5:0.5b",
+      "concurrency": 2,
+      "repeat": 1,
+      "models": [
+        {
+          "name": "qwen2.5:0.5b",
+          "model": "qwen2.5:0.5b",
+          "size": 440915721,
+          "digest": "a8b0c51577010a279d933d14c2a8ab4b268079d44c5c8830c0a93900f1827c67",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "494.03M",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:48:45.722653746+08:00",
+          "size_vram": 440915721,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "gateway",
+      "model": "qwen2.5:1.5b",
+      "concurrency": 1,
+      "repeat": 1,
+      "models": [
+        {
+          "name": "qwen2.5:1.5b",
+          "model": "qwen2.5:1.5b",
+          "size": 1075010600,
+          "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "1.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:48:50.163050102+08:00",
+          "size_vram": 1075010600,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "direct",
+      "model": "qwen2.5:1.5b",
+      "concurrency": 1,
+      "repeat": 1,
+      "models": [
+        {
+          "name": "qwen2.5:1.5b",
+          "model": "qwen2.5:1.5b",
+          "size": 1075010600,
+          "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "1.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:48:59.078702872+08:00",
+          "size_vram": 1075010600,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "gateway",
+      "model": "qwen2.5:1.5b",
+      "concurrency": 2,
+      "repeat": 1,
+      "models": [
+        {
+          "name": "qwen2.5:1.5b",
+          "model": "qwen2.5:1.5b",
+          "size": 1075010600,
+          "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "1.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:49:04.786188112+08:00",
+          "size_vram": 1075010600,
+          "context_length": 1024
+        }
+      ]
+    },
+    {
+      "experiment": "E",
+      "scenario": "ollama_sse",
+      "strategy": "direct",
+      "model": "qwen2.5:1.5b",
+      "concurrency": 2,
+      "repeat": 1,
+      "models": [
+        {
+          "name": "qwen2.5:1.5b",
+          "model": "qwen2.5:1.5b",
+          "size": 1075010600,
+          "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "qwen2",
+            "families": [
+              "qwen2"
+            ],
+            "parameter_size": "1.5B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-21T13:49:10.218395139+08:00",
+          "size_vram": 1075010600,
+          "context_length": 1024
+        }
+      ]
+    }
+  ],
+  "cache_real_protocol": {
+    "requests": 10,
+    "repeat_rates": [
+      0,
+      0.5,
+      0.9
+    ],
+    "max_tokens": 16,
+    "context": 1024,
+    "concurrency": 1,
+    "model": "qwen2.5:0.5b"
+  },
+  "finished_at": "2026-10-21T05:48:06.943719+00:00",
+  "skipped": [],
+  "requests": 308
+}

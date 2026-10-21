@@ -37,6 +37,9 @@ def main():
         for experiment in ("B", "C", "D", "E"):
             page.select_option("#experiment", experiment)
             page.screenshot(path=str(output / f"benchmark-{experiment.lower()}.png"))
+        page.locator("#gpu").locator("xpath=..").screenshot(
+            path=str(output / "benchmark-gpu.png")
+        )
         assert not errors, errors
         print("Browser render and screenshots passed; zero JavaScript errors")
         browser.close()

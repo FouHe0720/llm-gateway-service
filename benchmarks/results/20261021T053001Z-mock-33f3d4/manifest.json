@@ -1,0 +1,62 @@
+{
+  "run_id": "20261021T053001Z-mock-33f3d4",
+  "method_version": 2,
+  "started_at": "2026-10-21T05:30:01.068032+00:00",
+  "mode": "mock",
+  "config": {
+    "seed": 42,
+    "repeats": 3,
+    "requests": 100,
+    "concurrency": [
+      1,
+      5,
+      20,
+      50
+    ],
+    "delay_ms": 20,
+    "cache_repeat_rates": [
+      0,
+      0.5,
+      0.9
+    ]
+  },
+  "hardware": {
+    "os": "Linux",
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "python": "3.12.3",
+    "cpu": "AMD Ryzen 7 6800H with Radeon Graphics",
+    "logical_cpus": 16,
+    "available_memory_mib": 4895.6484375,
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU, 4096 MiB, 617.14",
+    "gpu_baseline": {
+      "used_mib": 1325.0,
+      "total_mib": 4096.0,
+      "utilization_pct": 8.0
+    },
+    "ollama_cli": "ollama version is 0.34.4"
+  },
+  "git_commit": "d39b238a28838951b8b9687a9a73f0054143b8cd",
+  "git_dirty": true,
+  "tasks_sha256": "23a47ad358b1cba636050817036f08bb5cf9ec67772e9e76d54c974526cf4f6e",
+  "source_sha256": "52072d2c6c5fabaede4a51557dfecbec896c5ac7f6d7653a44c27b5789e82afe",
+  "status": "complete",
+  "cold_definition": "Mock: first chat on fresh process/client; real: target absent from /api/ps; OS cache retained.",
+  "behavioral_checks": {
+    "status": "passed",
+    "records_checked": 8031
+  },
+  "finished_at": "2026-10-21T05:32:58.721920+00:00",
+  "skipped": [
+    {
+      "experiment": "D",
+      "mode": "real",
+      "reason": "Run the separate real benchmark for model accuracy"
+    },
+    {
+      "experiment": "E",
+      "mode": "real",
+      "reason": "Mock has no actual inference token/GPU measurements"
+    }
+  ],
+  "requests": 8031
+}

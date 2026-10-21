@@ -1,0 +1,501 @@
+answer,cache_status,concurrency,correct,decode_tps,end_s,error,expected,experiment,fallback_count,first_delta_ms,latency_ms,load_ms,mode,model,output_tokens,phase,queue_ms,repeat,request_id,resident_before,retries,scenario,served_model,start_s,status,strategy,success,task_id,task_type,upstream_attempts
+NO.,disabled,1,False,101.33765707336846,5921.52122969,,NO,D,0,,2454.019048000191,2314.643261,real,qwen-0.5b,3,cold,0.005,0,d-1e166087-0,False,0,labeled_tasks,qwen-0.5b,5919.067210642,200,all_0.5b,True,reasoning-02,reasoning,1
+"To determine the total number of balls remaining after the described operations, we can follow these steps:
+
+1. Start with the initial number of balls:
+   - Red balls: 3
+   - Blue balls: 4
+
+2. Add 2 red balls:
+   - New total: \(3 + 2 =",disabled,1,False,213.37458575324564,5921.918714752,,8,D,0,,330.3793079994648,1.760183,real,qwen-0.5b,64,warm,0.007,0,d-9d83e019-1,True,0,labeled_tasks,qwen-0.5b,5921.588335444,200,all_0.5b,True,reasoning-01,reasoning,1
+The temperature is 12 degrees Celsius.,disabled,1,False,226.9529299623258,5922.058878019,,12,D,0,,79.8387510003522,2.955096,real,qwen-0.5b,10,warm,0.007,0,d-4246e3a1-2,True,0,labeled_tasks,qwen-0.5b,5921.979039268,200,all_0.5b,True,extract-05,extract,1
+The integer answer to 100 - 37 is 63.,disabled,1,False,231.41303369630896,5922.233838016,,63,D,0,,108.22100499990484,2.207446,real,qwen-0.5b,18,warm,0.003,0,d-b6a1e312-3,True,0,labeled_tasks,qwen-0.5b,5922.125617011,200,all_0.5b,True,arithmetic-04,arithmetic,1
+pear,disabled,1,True,256.7064561673726,5922.335627895,,pear,D,0,,35.02828299951943,1.92175,real,qwen-0.5b,2,warm,0.004,0,d-629398eb-4,True,0,labeled_tasks,qwen-0.5b,5922.300599612,200,all_0.5b,True,extract-06,extract,1
+The integer answer to 9 * 7 is 63.,disabled,1,False,213.2226470880894,5922.495667386,,63,D,0,,92.98463399954926,1.992738,real,qwen-0.5b,15,warm,0.003,0,d-b26ba529-5,True,0,labeled_tasks,qwen-0.5b,5922.402682752,200,all_0.5b,True,arithmetic-02,arithmetic,1
+"There are 5 boxes with 4 pencils each, so initially, there are \(5 \times 4 = 20\) pencils. After giving away 6 pencils, the number of pencils left is \(20 - 6 = 14\). Then, we buy 3 more pencils, so",disabled,1,False,234.36355646696938,5922.853195293,,17,D,0,,299.7862129996065,1.777478,real,qwen-0.5b,64,warm,0.003,0,d-2422f4fd-6,True,0,labeled_tasks,qwen-0.5b,5922.55340908,200,all_0.5b,True,reasoning-05,reasoning,1
+The integer answer to 17 + 28 is 45.,disabled,1,False,209.14067786184413,5923.036866988,,45,D,0,,126.77984000038123,2.458246,real,qwen-0.5b,17,warm,0.003,0,d-56131bd8-7,True,0,labeled_tasks,qwen-0.5b,5922.910087148,200,all_0.5b,True,arithmetic-01,arithmetic,1
+"The expression (12 + 8) * 3 simplifies as follows:
+
+12 + 8 = 20
+20 * 3 = 60
+
+The integer answer is 60.",disabled,1,False,239.09269519839495,5923.305574011,,60,D,0,,220.45091000018147,2.228906,real,qwen-0.5b,46,warm,0.004,0,d-3a6d7fc8-8,True,0,labeled_tasks,qwen-0.5b,5923.085123101,200,all_0.5b,True,arithmetic-05,arithmetic,1
+"To solve this problem, we need to reverse the operations applied to the input to find the original input. Let's denote the input by \( x \).
+
+1. The machine doubles the input and then adds 3. This can be written as:
+   \[
+   2x + 3
+   \]
+
+",disabled,1,False,245.26241161930676,5923.647492802,,7,D,0,,287.0685569996567,2.029574,real,qwen-0.5b,64,warm,0.003,0,d-09fd3279-9,True,0,labeled_tasks,qwen-0.5b,5923.360424245,200,all_0.5b,True,reasoning-04,reasoning,1
+blue,disabled,1,True,276.62517289073304,5923.740396819,,blue,D,0,,31.490096999732486,1.856217,real,qwen-0.5b,2,warm,0.003,0,d-553ea4f0-10,True,0,labeled_tasks,qwen-0.5b,5923.708906722,200,all_0.5b,True,extract-02,extract,1
+"The expression 144 / 12 + 5 can be computed as follows:
+
+144 / 12 = 12
+12 + 5 = 17
+
+The integer answer is 17.",disabled,1,False,236.4591658666465,5924.032641219,,17,D,0,,234.6921279995513,1.726522,real,qwen-0.5b,50,warm,0.004,0,d-0085ba7b-11,True,0,labeled_tasks,qwen-0.5b,5923.797949091,200,all_0.5b,True,arithmetic-06,arithmetic,1
+code=ZX42,disabled,1,False,200.19352040305628,5924.147857444,,ZX42,D,0,,59.385533999375184,2.140032,real,qwen-0.5b,6,warm,0.003,0,d-48c28775-12,True,0,labeled_tasks,qwen-0.5b,5924.08847191,200,all_0.5b,True,extract-03,extract,1
+Bo is the shortest.,disabled,1,False,229.41041523285156,5924.248661682,,Cy,D,0,,54.96820600001229,2.283285,real,qwen-0.5b,6,warm,0.003,0,d-1adc13aa-13,True,0,labeled_tasks,qwen-0.5b,5924.193693476,200,all_0.5b,True,reasoning-03,reasoning,1
+Tuesday,disabled,1,False,244.46892121610088,5924.338513975,,Thursday,D,0,,32.4208539996107,2.097812,real,qwen-0.5b,2,warm,0.005,0,d-c87c362a-14,True,0,labeled_tasks,qwen-0.5b,5924.306093121,200,all_0.5b,True,reasoning-06,reasoning,1
+The integer answer to 81 / 9 is 9.,disabled,1,False,241.38652419497595,5924.487271215,,9,D,0,,89.80684600010136,2.087912,real,qwen-0.5b,15,warm,0.004,0,d-54d816b5-15,True,0,labeled_tasks,qwen-0.5b,5924.397464369,200,all_0.5b,True,arithmetic-03,arithmetic,1
+7,disabled,1,True,120.43839576056847,5924.585227085,,7,D,0,,41.52536699984921,1.917286,real,qwen-0.5b,2,warm,0.003,0,d-89f31f67-16,True,0,labeled_tasks,qwen-0.5b,5924.543701718,200,all_0.5b,True,extract-01,extract,1
+Oslo,disabled,1,True,230.96466240665177,5924.676291002,,Oslo,D,0,,34.40413299995271,1.88714,real,qwen-0.5b,3,warm,0.004,0,d-46982a29-17,True,0,labeled_tasks,qwen-0.5b,5924.641886869,200,all_0.5b,True,extract-04,extract,1
+NO,disabled,1,True,100.02000400080016,5927.370449811,,NO,D,0,,2500.074401999882,2403.61451,real,qwen-1.5b,2,cold,0.003,0,d-b59cae07-0,False,0,labeled_tasks,qwen-1.5b,5924.870375409,200,all_1.5b,True,reasoning-02,reasoning,1
+"Let's start by determining the initial number of balls in the box. The box initially contains 3 red balls and 4 blue balls, so the total number of balls is:
+
+\[ 3 + 4 = 7 \]
+
+Next, we add 2 red balls to the box. The number of red balls",disabled,1,False,118.41611051183513,5928.008226946,,8,D,0,,580.7644139995318,1.896631,real,qwen-1.5b,64,warm,0.003,0,d-f1f77716-1,True,0,labeled_tasks,qwen-1.5b,5927.427462532,200,all_1.5b,True,reasoning-01,reasoning,1
+12,disabled,1,True,139.32751253947612,5928.119900049,,12,D,0,,54.919565999625775,2.257469,real,qwen-1.5b,3,warm,0.004,0,d-0df0b88c-2,True,0,labeled_tasks,qwen-1.5b,5928.064980483,200,all_1.5b,True,extract-05,extract,1
+63,disabled,1,True,145.3347543842651,5928.212186406,,63,D,0,,48.83884500031854,2.063092,real,qwen-1.5b,3,warm,0.006,0,d-f7c12e3e-3,True,0,labeled_tasks,qwen-1.5b,5928.163347561,200,all_1.5b,True,arithmetic-04,arithmetic,1
+pear,disabled,1,True,170.95478246003933,5928.31033734,,pear,D,0,,41.58774799998355,3.056835,real,qwen-1.5b,2,warm,0.003,0,d-97dce083-4,True,0,labeled_tasks,qwen-1.5b,5928.268749592,200,all_1.5b,True,extract-06,extract,1
+63,disabled,1,True,141.48941187567797,5928.421361656,,63,D,0,,48.2147860002442,1.635488,real,qwen-1.5b,3,warm,0.003,0,d-b9be1c1c-5,True,0,labeled_tasks,qwen-1.5b,5928.37314687,200,all_1.5b,True,arithmetic-02,arithmetic,1
+11,disabled,1,False,143.0342328597311,5928.530653455,,17,D,0,,53.63398200006486,2.077701,real,qwen-1.5b,3,warm,0.004,0,d-9b1b4e4a-6,True,0,labeled_tasks,qwen-1.5b,5928.477019473,200,all_1.5b,True,reasoning-05,reasoning,1
+45,disabled,1,True,136.07910732105597,5928.672401238,,45,D,0,,85.33775599971705,1.819139,real,qwen-1.5b,3,warm,0.004,0,d-e23d8daa-7,True,0,labeled_tasks,qwen-1.5b,5928.587063482,200,all_1.5b,True,arithmetic-01,arithmetic,1
+"To compute the expression \((12 + 8) * 3\) and return only the integer answer, follow these steps:
+
+1. First, add the numbers inside the parentheses:
+   \[
+   12 + 8 = 20
+   \]
+
+2. Then, multiply the result by",disabled,1,False,120.0662615681029,5929.287487987,,60,D,0,,561.4843319999636,2.094769,real,qwen-1.5b,64,warm,0.004,0,d-1c76dbb1-8,True,0,labeled_tasks,qwen-1.5b,5928.726003655,200,all_1.5b,True,arithmetic-05,arithmetic,1
+"Let's denote the input number as \( x \).
+
+According to the problem, the machine doubles the input number and then adds 3, resulting in an output of 17. This can be expressed with the following equation:
+
+\[ 2x + 3 = 17 \]
+
+To find the input \(",disabled,1,False,122.91217349053288,5929.899648815,,7,D,0,,555.9750949996669,1.830327,real,qwen-1.5b,64,warm,0.003,0,d-d7414920-9,True,0,labeled_tasks,qwen-1.5b,5929.34367372,200,all_1.5b,True,reasoning-04,reasoning,1
+blue,disabled,1,True,169.7792869269949,5930.002317612,,blue,D,0,,45.709112000622554,2.730265,real,qwen-1.5b,2,warm,0.004,0,d-06d4743a-10,True,0,labeled_tasks,qwen-1.5b,5929.9566085,200,all_1.5b,True,extract-02,extract,1
+"To solve the expression \(144 / 12 + 5\) and return only the integer answer, follow these steps:
+
+1. First, perform the division: \(144 / 12 = 12\).
+2. Then, add 5 to the result: \(12 +",disabled,1,False,118.78181821556302,5930.627854881,,17,D,0,,568.4116200000062,1.845138,real,qwen-1.5b,64,warm,0.003,0,d-5136d981-11,True,0,labeled_tasks,qwen-1.5b,5930.059443261,200,all_1.5b,True,arithmetic-06,arithmetic,1
+The code is `ZX42`.,disabled,1,False,127.90995139421847,5930.792943423,,ZX42,D,0,,108.3370449996437,1.998251,real,qwen-1.5b,9,warm,0.003,0,d-2ac94e38-12,True,0,labeled_tasks,qwen-1.5b,5930.684606378,200,all_1.5b,True,extract-03,extract,1
+Cy,disabled,1,True,182.63172313030773,5930.896383917,,Cy,D,0,,43.937717000517296,2.270495,real,qwen-1.5b,2,warm,0.004,0,d-85bad1eb-13,True,0,labeled_tasks,qwen-1.5b,5930.8524462,200,all_1.5b,True,reasoning-03,reasoning,1
+Tuesday,disabled,1,False,155.90894917368257,5931.00397564,,Thursday,D,0,,57.77772900000855,2.105202,real,qwen-1.5b,2,warm,0.003,0,d-ed69b11e-14,True,0,labeled_tasks,qwen-1.5b,5930.946197911,200,all_1.5b,True,reasoning-06,reasoning,1
+9,disabled,1,True,173.55085039916696,5931.113635052,,9,D,0,,51.208402999691316,1.978207,real,qwen-1.5b,2,warm,0.003,0,d-20e80d67-15,True,0,labeled_tasks,qwen-1.5b,5931.062426649,200,all_1.5b,True,arithmetic-03,arithmetic,1
+The quantity is 7.,disabled,1,False,124.21698933508421,5931.262920948,,7,D,0,,91.56195200012007,2.764964,real,qwen-1.5b,7,warm,0.003,0,d-effcdfa3-16,True,0,labeled_tasks,qwen-1.5b,5931.171358996,200,all_1.5b,True,extract-01,extract,1
+Oslo,disabled,1,True,140.7525570047856,5931.375607046,,Oslo,D,0,,50.99668799994106,2.320558,real,qwen-1.5b,3,warm,0.004,0,d-78bce37b-17,True,0,labeled_tasks,qwen-1.5b,5931.324610358,200,all_1.5b,True,extract-04,extract,1
+NO,disabled,1,True,95.28800800419268,5934.2447387,,NO,D,0,,2626.5676310003983,2534.002247,real,auto,2,cold,0.004,0,d-8bbfa7aa-0,False,0,labeled_tasks,qwen-1.5b,5931.618171069,200,task_route,True,reasoning-02,reasoning,1
+"Let's start by determining the initial number of balls in the box. The box initially contains 3 red balls and 4 blue balls, so the total number of balls is:
+
+\[ 3 + 4 = 7 \]
+
+Next, we add 2 red balls to the box. The number of red balls",disabled,1,False,122.29891383277152,5934.868181781,,8,D,0,,563.0350199999157,2.009985,real,auto,64,warm,0.003,0,d-17820d24-1,True,0,labeled_tasks,qwen-1.5b,5934.305146761,200,task_route,True,reasoning-01,reasoning,1
+The temperature is 12 degrees Celsius.,disabled,1,False,180.96927141771326,5938.292927418,,12,D,0,,3370.9606709999207,3231.349553,real,auto,10,cold,0.004,0,d-01f94851-2,False,0,labeled_tasks,qwen-0.5b,5934.921966747,200,task_route,True,extract-05,extract,1
+The integer answer to 100 - 37 is 63.,disabled,1,False,211.20811039143902,5938.464438217,,63,D,0,,116.68962099975033,2.081905,real,auto,18,warm,0.004,0,d-d877576b-3,True,0,labeled_tasks,qwen-0.5b,5938.347748596,200,task_route,True,arithmetic-04,arithmetic,1
+pear,disabled,1,True,256.7723712928489,5938.558997355,,pear,D,0,,38.00182400027552,2.588626,real,auto,2,warm,0.004,0,d-7a1dd2b9-4,True,0,labeled_tasks,qwen-0.5b,5938.520995531,200,task_route,True,extract-06,extract,1
+The integer answer to 9 * 7 is 63.,disabled,1,False,217.2087231023198,5938.715529782,,63,D,0,,93.99210599985963,2.163745,real,auto,15,warm,0.005,0,d-90097581-5,True,0,labeled_tasks,qwen-0.5b,5938.621537676,200,task_route,True,arithmetic-02,arithmetic,1
+11,disabled,1,False,98.75892945320473,5942.217301022,,17,D,0,,3444.243909000761,3304.778064,real,auto,3,cold,0.003,0,d-e87375e0-6,False,0,labeled_tasks,qwen-1.5b,5938.773057113,200,task_route,True,reasoning-05,reasoning,1
+The integer answer to 17 + 28 is 45.,disabled,1,False,168.37851490149856,5945.78695648,,45,D,0,,3505.9914500006926,3307.737801,real,auto,17,cold,0.003,0,d-d7e36ce1-7,False,0,labeled_tasks,qwen-0.5b,5942.28096503,200,task_route,True,arithmetic-01,arithmetic,1
+"The expression (12 + 8) * 3 simplifies as follows:
+
+12 + 8 = 20
+20 * 3 = 60
+
+The integer answer is 60.",disabled,1,False,219.65952773201536,5946.081425971,,60,D,0,,236.78987299990695,2.020286,real,auto,46,warm,0.004,0,d-e8e16cb1-8,True,0,labeled_tasks,qwen-0.5b,5945.844636098,200,task_route,True,arithmetic-05,arithmetic,1
+"Let's denote the input number as \( x \).
+
+According to the problem, the machine doubles the input number and then adds 3, resulting in an output of 17. This can be expressed with the following equation:
+
+\[ 2x + 3 = 17 \]
+
+To find the input \(",disabled,1,False,127.4451040171095,5950.32592922,,7,D,0,,4193.578966999667,3590.849202,real,auto,64,cold,0.003,0,d-82f50377-9,False,0,labeled_tasks,qwen-1.5b,5946.132350253,200,task_route,True,reasoning-04,reasoning,1
+blue,disabled,1,True,77.61865952574999,5953.808270376,,blue,D,0,,3428.4041600003548,3301.547068,real,auto,2,cold,0.003,0,d-e3b2c330-10,False,0,labeled_tasks,qwen-0.5b,5950.379866216,200,task_route,True,extract-02,extract,1
+"The expression 144 / 12 + 5 can be computed as follows:
+
+144 / 12 = 12
+12 + 5 = 17
+
+The integer answer is 17.",disabled,1,False,205.664832136364,5954.158859724,,17,D,0,,273.59082299972215,3.294991,real,auto,50,warm,0.005,0,d-94bfdbaf-11,True,0,labeled_tasks,qwen-0.5b,5953.885268901,200,task_route,True,arithmetic-06,arithmetic,1
+code=ZX42,disabled,1,False,230.03488862477477,5954.292539561,,ZX42,D,0,,59.19908600026247,4.826498,real,auto,6,warm,0.004,0,d-0172072f-12,True,0,labeled_tasks,qwen-0.5b,5954.233340475,200,task_route,True,extract-03,extract,1
+Cy,disabled,1,True,84.5594452900389,5958.224209348,,Cy,D,0,,3861.2550779998855,3753.045995,real,auto,2,cold,0.005,0,d-5d565785-13,False,0,labeled_tasks,qwen-1.5b,5954.36295427,200,task_route,True,reasoning-03,reasoning,1
+Tuesday,disabled,1,False,163.61256544502618,5958.339161362,,Thursday,D,0,,50.93419500008167,1.85928,real,auto,2,warm,0.003,0,d-224a8cd5-14,True,0,labeled_tasks,qwen-1.5b,5958.288227167,200,task_route,True,reasoning-06,reasoning,1
+The integer answer to 81 / 9 is 9.,disabled,1,False,162.99210031620467,5962.000508871,,9,D,0,,3604.4322840007226,3414.148499,real,auto,15,cold,0.004,0,d-3504b6bd-15,False,0,labeled_tasks,qwen-0.5b,5958.396076587,200,task_route,True,arithmetic-03,arithmetic,1
+7,disabled,1,True,254.93945188017847,5962.102046517,,7,D,0,,38.511933000336285,2.582624,real,auto,2,warm,0.004,0,d-8124f8b7-16,True,0,labeled_tasks,qwen-0.5b,5962.063534584,200,task_route,True,extract-01,extract,1
+Oslo,disabled,1,True,126.08220559804992,5962.249544946,,Oslo,D,0,,84.38510700034385,2.423144,real,auto,3,warm,0.004,0,d-a292c461-17,True,0,labeled_tasks,qwen-0.5b,5962.165159839,200,task_route,True,extract-04,extract,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,204.93574944042933,5965.070329377,,,E,0,2299.514301999807,2611.7417519999435,2225.043852,real,qwen2.5:0.5b,64,cold,,0,cold-49f60c33-0,,0,ollama_sse,,5962.458587625,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,251.1251584246605,5965.398418547,,,E,0,15.68607300032454,270.64334100032283,1.912887,real,qwen2.5:0.5b,64,warm,,0,cf5ea14df9-0,,0,ollama_sse,,5965.127775206,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,254.9201582098232,5965.661304304,,,E,0,11.499274000016158,262.85176599958504,1.859212,real,qwen2.5:0.5b,64,warm,,0,cf5ea14df9-1,,0,ollama_sse,,5965.398452538,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,245.31035592999456,5965.933892939,,,E,0,11.27505100066628,272.557377999874,1.862981,real,qwen2.5:0.5b,64,warm,,0,cf5ea14df9-2,,0,ollama_sse,,5965.661335561,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,250.1964433011857,5966.201684127,,,E,0,11.653012999886414,267.7647539994723,2.168387,real,qwen2.5:0.5b,64,warm,,0,cf5ea14df9-3,,0,ollama_sse,,5965.933919373,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,214.05756141612454,5968.666486719,,,E,0,1970.5891940002402,2270.000681000056,1890.063605,real,qwen2.5:0.5b,64,cold,0.004,0,cold-a692c9a4-0,,0,ollama_sse,qwen-0.5b,5966.396486038,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,250.03125390673833,5968.997663662,,,E,0,17.91085600052611,274.6785630006343,2.415522,real,qwen2.5:0.5b,64,warm,0.005,0,c86b6ee723-0,,0,ollama_sse,qwen-0.5b,5968.722985099,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,244.34568899507371,5969.275643674,,,E,0,14.722581000569335,277.953114000411,2.063509,real,qwen2.5:0.5b,64,warm,0.004,0,c86b6ee723-1,,0,ollama_sse,qwen-0.5b,5968.99769056,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,244.0763806523704,5969.555989343,,,E,0,17.375157999595103,280.29306899952644,3.020137,real,qwen2.5:0.5b,64,warm,0.004,0,c86b6ee723-2,,0,ollama_sse,qwen-0.5b,5969.275696274,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,248.34983178179363,5969.828488039,,,E,0,13.361166000322555,272.45110500007286,1.690758,real,qwen2.5:0.5b,64,warm,0.004,0,c86b6ee723-3,,0,ollama_sse,qwen-0.5b,5969.556036934,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,220.90217830257384,5972.603762584,,,E,0,2287.4150979996557,2577.4795249999443,2215.33297,real,qwen2.5:0.5b,64,cold,,0,cold-49b44c12-0,,0,ollama_sse,,5970.026283059,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,243.87734493783034,5972.931895804,,,E,0,17.509213999801432,280.5637050005316,3.320021,real,qwen2.5:0.5b,64,warm,,0,3a4d286c94-0,,0,ollama_sse,,5972.651332099,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,246.307314557532,5973.199453244,,,E,0,287.061304999952,547.5705440003367,3.388896,real,qwen2.5:0.5b,64,warm,,0,3a4d286c94-1,,0,ollama_sse,,5972.6518827,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,243.9303274002363,5973.469986301,,,E,0,275.2954210000098,538.055844000155,1.869882,real,qwen2.5:0.5b,64,warm,,0,3a4d286c94-2,,0,ollama_sse,,5972.931930457,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,249.1610281006922,5973.733909342,,,E,0,277.2829890000139,534.4286839999768,2.008101,real,qwen2.5:0.5b,64,warm,,0,3a4d286c94-3,,0,ollama_sse,,5973.199480658,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,216.24836124288746,5976.488362522,,,E,0,2264.406635999876,2561.4730919996873,2195.205843,real,qwen2.5:0.5b,64,cold,0.004,0,cold-0dc4f5ca-0,,0,ollama_sse,qwen-0.5b,5973.92688943,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,248.282390183535,5976.819718897,,,E,0,19.077031000051647,277.53889199993864,2.424038,real,qwen2.5:0.5b,64,warm,0.003,0,c7b2cc3843-0,,0,ollama_sse,qwen-0.5b,5976.542180005,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,246.01759025770343,5977.087292329,,,E,0,283.92782599985367,544.6764429998439,3.025834,real,qwen2.5:0.5b,64,warm,0.003,0,c7b2cc3843-1,,0,ollama_sse,qwen-0.5b,5976.542615886,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,249.57980996673496,5977.351324196,,,E,0,274.24868300022354,531.5476340001624,1.865457,real,qwen2.5:0.5b,64,warm,0.005,0,c7b2cc3843-2,,0,ollama_sse,qwen-0.5b,5976.819776562,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,245.7615728740664,5977.618480854,,,E,0,270.5564449997837,531.1610950002432,1.961575,real,qwen2.5:0.5b,64,warm,0.004,0,c7b2cc3843-3,,0,ollama_sse,qwen-0.5b,5977.087319759,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, ensuring that each request is uniquely identified and can be traced back to its origin. Here are some key points",disabled,1,,123.37040228389458,5980.816970098,,,E,0,2487.047701000847,3005.9610970001813,2418.28983,real,qwen2.5:1.5b,64,cold,,0,cold-1b67c09d-0,,0,ollama_sse,,5977.811009001,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,127.89231467104698,5981.405647501,,,E,0,20.690737000222725,521.4823390006131,2.671109,real,qwen2.5:1.5b,64,warm,,0,b3fa0f8a08-0,,0,ollama_sse,,5980.884165162,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,126.23249263808158,5981.931334092,,,E,0,18.18782100053795,525.6503959999463,1.968626,real,qwen2.5:1.5b,64,warm,,0,b3fa0f8a08-1,,0,ollama_sse,,5981.405683696,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,131.62224415926292,5982.4337619,,,E,0,15.36398900043423,502.4019920001592,2.079272,real,qwen2.5:1.5b,64,warm,,0,b3fa0f8a08-2,,0,ollama_sse,,5981.931359908,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,130.62717371781264,5982.940729214,,,E,0,16.624056000182463,506.9335530006356,1.963045,real,qwen2.5:1.5b,64,warm,,0,b3fa0f8a08-3,,0,ollama_sse,,5982.433795661,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, ensuring that each request is uniquely identified and can be traced back to its origin. Here are some key points",disabled,1,,119.06976744186046,5986.199871095,,,E,0,2508.957754000221,3047.199577000356,2437.428,real,qwen2.5:1.5b,64,cold,0.003,0,cold-70f835a8-0,,0,ollama_sse,qwen-1.5b,5983.152671518,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,131.40766353067752,5986.773852429,,,E,0,27.167698000084783,514.7127019999971,2.702536,real,qwen2.5:1.5b,64,warm,0.003,0,46d31c99ac-0,,0,ollama_sse,qwen-1.5b,5986.259139727,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,131.50432731427068,5987.285228276,,,E,0,23.70021299975633,511.34988100056944,2.193193,real,qwen2.5:1.5b,64,warm,0.005,0,46d31c99ac-1,,0,ollama_sse,qwen-1.5b,5986.773878395,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,131.6544646291767,5987.790472383,,,E,0,17.99568300066312,505.2186590000929,1.975431,real,qwen2.5:1.5b,64,warm,0.003,0,46d31c99ac-2,,0,ollama_sse,qwen-1.5b,5987.285253724,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,132.79578705365572,5988.29221176,,,E,0,18.840147999981127,501.71263799984445,2.810217,real,qwen2.5:1.5b,64,warm,0.006,0,46d31c99ac-3,,0,ollama_sse,qwen-1.5b,5987.790499122,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, ensuring that each request is uniquely identified and can be traced back to its origin. Here are some key points",disabled,2,,123.15460521251866,5991.322915373,,,E,0,2294.4445690000066,2814.4212480001443,2232.680725,real,qwen2.5:1.5b,64,cold,,0,cold-a7c23e68-0,,0,ollama_sse,,5988.508494125,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,122.55160092603053,5991.923815241,,,E,0,18.83921599983296,541.7597139994541,1.84088,real,qwen2.5:1.5b,64,warm,,0,facd5b3ae5-0,,0,ollama_sse,,5991.382055527,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,117.37325980387662,5992.487369693,,,E,0,559.1647600003853,1104.7506100003375,1.551622,real,qwen2.5:1.5b,64,warm,,0,facd5b3ae5-1,,0,ollama_sse,,5991.382619083,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,118.76925360947185,5993.039527605,,,E,0,576.7270669994105,1115.672775999883,2.316076,real,qwen2.5:1.5b,64,warm,,0,facd5b3ae5-2,,0,ollama_sse,,5991.923854829,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,121.76791795886527,5993.57643717,,,E,0,563.0245709999144,1089.0315910000936,2.171429,real,qwen2.5:1.5b,64,warm,,0,facd5b3ae5-3,,0,ollama_sse,,5992.487405579,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, ensuring that each request is uniquely identified and can be traced back to its origin. Here are some key points",disabled,2,,117.08509342109836,5996.886809642,,,E,0,2539.9703919993044,3087.362868999662,2460.002444,real,qwen2.5:1.5b,64,cold,0.003,0,cold-6a818cbb-0,,0,ollama_sse,qwen-1.5b,5993.799446773,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,128.20898063844066,5997.459070232,,,E,0,27.512034000210406,527.3528670004453,1.699631,real,qwen2.5:1.5b,64,warm,0.003,0,7a08195b2f-0,,0,ollama_sse,qwen-1.5b,5996.931717365,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,128.72239005297732,5997.970166291,,,E,0,539.3575460002467,1037.8463830002147,2.326606,real,qwen2.5:1.5b,64,warm,0.002,0,7a08195b2f-1,,0,ollama_sse,qwen-1.5b,5996.932319908,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,129.79190706899453,5998.474206284,,,E,0,521.0077529991395,1015.109331999156,3.072044,real,qwen2.5:1.5b,64,warm,0.004,0,7a08195b2f-2,,0,ollama_sse,qwen-1.5b,5997.459096952,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,128.02253196562594,5998.984588645,,,E,0,513.9719759999934,1014.3945710005937,2.235677,real,qwen2.5:1.5b,64,warm,0.003,0,7a08195b2f-3,,0,ollama_sse,qwen-1.5b,5997.970194074,200,gateway,True,,,1
+The integer answer to 81 / 9 is 9.,disabled,1,False,187.3314017384354,6001.550419748,,9,D,0,,2384.4773050004733,2221.733131,real,qwen-0.5b,15,cold,0.003,1,d-e1fd08f7-0,False,0,labeled_tasks,qwen-0.5b,5999.165942443,200,all_0.5b,True,arithmetic-03,arithmetic,1
+"To determine the total number of balls remaining after the described operations, we can follow these steps:
+
+1. Start with the initial number of balls:
+   - Red balls: 3
+   - Blue balls: 4
+
+2. Add 2 red balls:
+   - New total: \(3 + 2 =",disabled,1,False,224.88334176645864,6001.938543985,,8,D,0,,330.8468750001339,1.935154,real,qwen-0.5b,64,warm,0.004,1,d-b4bc22c5-1,True,0,labeled_tasks,qwen-0.5b,6001.60769711,200,all_0.5b,True,reasoning-01,reasoning,1
+NO.,disabled,1,False,226.43218356102346,6002.032780917,,NO,D,0,,40.35198500059778,2.305598,real,qwen-0.5b,3,warm,0.004,1,d-28a1a998-2,True,0,labeled_tasks,qwen-0.5b,6001.992428932,200,all_0.5b,True,reasoning-02,reasoning,1
+code=ZX42,disabled,1,False,233.22708543885562,6002.141392376,,ZX42,D,0,,52.71979500048474,2.108176,real,qwen-0.5b,6,warm,0.004,1,d-a8aa4cfc-3,True,0,labeled_tasks,qwen-0.5b,6002.088672581,200,all_0.5b,True,extract-03,extract,1
+The integer answer to 17 + 28 is 45.,disabled,1,False,239.32538397646164,6002.289980463,,45,D,0,,95.27325199996994,1.859902,real,qwen-0.5b,17,warm,0.004,1,d-9c14aa00-4,True,0,labeled_tasks,qwen-0.5b,6002.194707211,200,all_0.5b,True,arithmetic-01,arithmetic,1
+Oslo,disabled,1,True,123.35526315789474,6002.403479303,,Oslo,D,0,,52.69535699972039,1.862947,real,qwen-0.5b,3,warm,0.003,1,d-787a1f13-5,True,0,labeled_tasks,qwen-0.5b,6002.350783946,200,all_0.5b,True,extract-04,extract,1
+"To solve this problem, we need to reverse the operations applied to the input to find the original input. Let's denote the input by \( x \).
+
+1. The machine doubles the input and then adds 3. This can be written as:
+   \[
+   2x + 3
+   \]
+
+",disabled,1,False,243.25074210480307,6002.746755138,,7,D,0,,287.582478999866,1.894486,real,qwen-0.5b,64,warm,0.004,1,d-b170a0dd-6,True,0,labeled_tasks,qwen-0.5b,6002.459172659,200,all_0.5b,True,reasoning-04,reasoning,1
+7,disabled,1,True,287.68699654775605,6002.82943186,,7,D,0,,31.17184599977918,2.285047,real,qwen-0.5b,2,warm,0.003,1,d-9a4afd15-7,True,0,labeled_tasks,qwen-0.5b,6002.798260014,200,all_0.5b,True,extract-01,extract,1
+"There are 5 boxes with 4 pencils each, so initially, there are \(5 \times 4 = 20\) pencils. After giving away 6 pencils, the number of pencils left is \(20 - 6 = 14\). Then, we buy 3 more pencils, so",disabled,1,False,249.35421155367155,6003.164776983,,17,D,0,,278.8577940000323,1.904329,real,qwen-0.5b,64,warm,0.003,1,d-88072988-8,True,0,labeled_tasks,qwen-0.5b,6002.885919189,200,all_0.5b,True,reasoning-05,reasoning,1
+Bo is the shortest.,disabled,1,False,231.65128759507354,6003.271680776,,Cy,D,0,,50.748376000228745,2.591787,real,qwen-0.5b,6,warm,0.003,1,d-8f142774-9,True,0,labeled_tasks,qwen-0.5b,6003.2209324,200,all_0.5b,True,reasoning-03,reasoning,1
+Tuesday,disabled,1,False,199.16351324437363,6003.375666586,,Thursday,D,0,,37.982415000442415,1.599301,real,qwen-0.5b,2,warm,0.003,1,d-8b36df70-10,True,0,labeled_tasks,qwen-0.5b,6003.337684171,200,all_0.5b,True,reasoning-06,reasoning,1
+"The expression 144 / 12 + 5 can be computed as follows:
+
+144 / 12 = 12
+12 + 5 = 17
+
+The integer answer is 17.",disabled,1,False,241.49222878007785,6003.673417904,,17,D,0,,232.96539900002244,2.02374,real,qwen-0.5b,50,warm,0.004,1,d-e0689b14-11,True,0,labeled_tasks,qwen-0.5b,6003.440452505,200,all_0.5b,True,arithmetic-06,arithmetic,1
+"The expression (12 + 8) * 3 simplifies as follows:
+
+12 + 8 = 20
+20 * 3 = 60
+
+The integer answer is 60.",disabled,1,False,240.17752251664274,6003.95584125,,60,D,0,,217.25303800030815,1.704619,real,qwen-0.5b,46,warm,0.004,1,d-7e861187-12,True,0,labeled_tasks,qwen-0.5b,6003.738588212,200,all_0.5b,True,arithmetic-05,arithmetic,1
+pear,disabled,1,True,84.95094083166971,6004.06081005,,pear,D,0,,49.695504000737856,2.974321,real,qwen-0.5b,2,warm,0.003,1,d-f2584875-13,True,0,labeled_tasks,qwen-0.5b,6004.011114546,200,all_0.5b,True,extract-06,extract,1
+The integer answer to 9 * 7 is 63.,disabled,1,False,216.29727898023043,6004.20656469,,63,D,0,,91.70087999973475,1.840271,real,qwen-0.5b,15,warm,0.003,1,d-20a9dd3a-14,True,0,labeled_tasks,qwen-0.5b,6004.11486381,200,all_0.5b,True,arithmetic-02,arithmetic,1
+The temperature is 12 degrees Celsius.,disabled,1,False,254.841997961264,6004.326967751,,12,D,0,,63.91245099985099,1.936564,real,qwen-0.5b,10,warm,0.003,1,d-376c7ea9-15,True,0,labeled_tasks,qwen-0.5b,6004.2630553,200,all_0.5b,True,extract-05,extract,1
+The integer answer to 100 - 37 is 63.,disabled,1,False,253.2714225411566,6004.478368275,,63,D,0,,96.54468200005795,1.822451,real,qwen-0.5b,18,warm,0.003,1,d-712b7c57-16,True,0,labeled_tasks,qwen-0.5b,6004.381823593,200,all_0.5b,True,arithmetic-04,arithmetic,1
+blue,disabled,1,True,295.4209748892171,6004.566208307,,blue,D,0,,34.519902000283764,2.837138,real,qwen-0.5b,2,warm,0.004,1,d-f0267fc4-17,True,0,labeled_tasks,qwen-0.5b,6004.531688405,200,all_0.5b,True,extract-02,extract,1
+9,disabled,1,True,95.67089213106912,6007.282741938,,9,D,0,,2528.1958960003976,2424.025862,real,qwen-1.5b,2,cold,0.004,1,d-cd6bc793-0,False,0,labeled_tasks,qwen-1.5b,6004.754546042,200,all_1.5b,True,arithmetic-03,arithmetic,1
+"Let's start by determining the initial number of balls in the box. The box initially contains 3 red balls and 4 blue balls, so the total number of balls is:
+
+\[ 3 + 4 = 7 \]
+
+Next, we add 2 red balls to the box. The number of red balls",disabled,1,False,120.49236191387055,6007.908794508,,8,D,0,,569.3197489999875,2.341156,real,qwen-1.5b,64,warm,0.003,1,d-d4857095-1,True,0,labeled_tasks,qwen-1.5b,6007.339474759,200,all_1.5b,True,reasoning-01,reasoning,1
+NO,disabled,1,True,167.000668002672,6008.017808171,,NO,D,0,,50.50590300015756,3.125532,real,qwen-1.5b,2,warm,0.004,1,d-38fb7fb3-2,True,0,labeled_tasks,qwen-1.5b,6007.967302268,200,all_1.5b,True,reasoning-02,reasoning,1
+The code is `ZX42`.,disabled,1,False,133.78125278710942,6008.175185773,,ZX42,D,0,,98.51451399936195,2.121234,real,qwen-1.5b,9,warm,0.003,1,d-44320dc8-3,True,0,labeled_tasks,qwen-1.5b,6008.076671259,200,all_1.5b,True,extract-03,extract,1
+45,disabled,1,True,152.01418799087915,6008.292217131,,45,D,0,,53.856727000493265,2.114858,real,qwen-1.5b,3,warm,0.005,1,d-62c19ea0-4,True,0,labeled_tasks,qwen-1.5b,6008.238360404,200,all_1.5b,True,arithmetic-01,arithmetic,1
+Oslo,disabled,1,True,139.84058173682,6008.409138287,,Oslo,D,0,,50.17002699969453,1.973829,real,qwen-1.5b,3,warm,0.003,1,d-52b7737c-5,True,0,labeled_tasks,qwen-1.5b,6008.35896826,200,all_1.5b,True,extract-04,extract,1
+"Let's denote the input number as \( x \).
+
+According to the problem, the machine doubles the input number and then adds 3, resulting in an output of 17. This can be expressed with the following equation:
+
+\[ 2x + 3 = 17 \]
+
+To find the input \(",disabled,1,False,125.8504739056908,6009.018846181,,7,D,0,,543.5193530001925,2.217623,real,qwen-1.5b,64,warm,0.006,1,d-aac6ba91-6,True,0,labeled_tasks,qwen-1.5b,6008.475326828,200,all_1.5b,True,reasoning-04,reasoning,1
+The quantity is 7.,disabled,1,False,134.86956186659472,6009.180667071,,7,D,0,,92.6291650002895,2.430143,real,qwen-1.5b,7,warm,0.005,1,d-5e4c22a8-7,True,0,labeled_tasks,qwen-1.5b,6009.088037906,200,all_1.5b,True,extract-01,extract,1
+11,disabled,1,False,93.4695941385093,6009.319312512,,17,D,0,,74.64303899996594,3.3023,real,qwen-1.5b,3,warm,0.006,1,d-092c2df5-8,True,0,labeled_tasks,qwen-1.5b,6009.244669473,200,all_1.5b,True,reasoning-05,reasoning,1
+Cy,disabled,1,True,188.39487565938205,6009.434361834,,Cy,D,0,,51.32945399964228,1.833003,real,qwen-1.5b,2,warm,0.003,1,d-0c85fd40-9,True,0,labeled_tasks,qwen-1.5b,6009.38303238,200,all_1.5b,True,reasoning-03,reasoning,1
+Tuesday,disabled,1,False,159.22299180001593,6009.543046672,,Thursday,D,0,,47.089146999496734,2.141269,real,qwen-1.5b,2,warm,0.003,1,d-899012c5-10,True,0,labeled_tasks,qwen-1.5b,6009.495957525,200,all_1.5b,True,reasoning-06,reasoning,1
+"To solve the expression \(144 / 12 + 5\) and return only the integer answer, follow these steps:
+
+1. First, perform the division: \(144 / 12 = 12\).
+2. Then, add 5 to the result: \(12 +",disabled,1,False,130.0112744152032,6010.134733003,,17,D,0,,525.9398610005519,2.248014,real,qwen-1.5b,64,warm,0.005,1,d-73395045-11,True,0,labeled_tasks,qwen-1.5b,6009.608793142,200,all_1.5b,True,arithmetic-06,arithmetic,1
+"To compute the expression \((12 + 8) * 3\) and return only the integer answer, follow these steps:
+
+1. First, add the numbers inside the parentheses:
+   \[
+   12 + 8 = 20
+   \]
+
+2. Then, multiply the result by",disabled,1,False,123.99280066801121,6010.746677252,,60,D,0,,551.8640420004886,2.189742,real,qwen-1.5b,64,warm,0.005,1,d-e2a55889-12,True,0,labeled_tasks,qwen-1.5b,6010.19481321,200,all_1.5b,True,arithmetic-05,arithmetic,1
+pear,disabled,1,True,164.2710472279261,6010.863784037,,pear,D,0,,50.87546800041309,2.195823,real,qwen-1.5b,2,warm,0.004,1,d-90450905-13,True,0,labeled_tasks,qwen-1.5b,6010.812908569,200,all_1.5b,True,extract-06,extract,1
+63,disabled,1,True,133.23266865035308,6010.983602797,,63,D,0,,60.8729339992351,4.207579,real,qwen-1.5b,3,warm,0.004,1,d-4509b327-14,True,0,labeled_tasks,qwen-1.5b,6010.922729863,200,all_1.5b,True,arithmetic-02,arithmetic,1
+12,disabled,1,True,141.22963939365408,6011.09744394,,12,D,0,,50.40319699946849,1.796787,real,qwen-1.5b,3,warm,0.003,1,d-120bd33f-15,True,0,labeled_tasks,qwen-1.5b,6011.047040743,200,all_1.5b,True,extract-05,extract,1
+63,disabled,1,True,144.81560146746477,6011.21026916,,63,D,0,,50.81479999989824,1.948689,real,qwen-1.5b,3,warm,0.003,1,d-6b73dd6c-16,True,0,labeled_tasks,qwen-1.5b,6011.15945436,200,all_1.5b,True,arithmetic-04,arithmetic,1
+blue,disabled,1,True,167.94021328407086,6011.313811044,,blue,D,0,,43.42270699999062,2.46971,real,qwen-1.5b,2,warm,0.005,1,d-a580210c-17,True,0,labeled_tasks,qwen-1.5b,6011.270388337,200,all_1.5b,True,extract-02,extract,1
+The integer answer to 81 / 9 is 9.,disabled,1,False,180.29712966969566,6013.987220707,,9,D,0,,2466.702763000285,2309.1539,real,auto,15,cold,0.003,1,d-eaa0ab27-0,False,0,labeled_tasks,qwen-0.5b,6011.520517944,200,task_route,True,arithmetic-03,arithmetic,1
+"Let's start by determining the initial number of balls in the box. The box initially contains 3 red balls and 4 blue balls, so the total number of balls is:
+
+\[ 3 + 4 = 7 \]
+
+Next, we add 2 red balls to the box. The number of red balls",disabled,1,False,121.50760561668908,6018.366903404,,8,D,0,,4315.14155000059,3700.649555,real,auto,64,cold,0.003,1,d-b3e1575f-1,False,0,labeled_tasks,qwen-1.5b,6014.051761854,200,task_route,True,reasoning-01,reasoning,1
+NO,disabled,1,True,163.26530612244898,6018.468670813,,NO,D,0,,45.94224700031191,2.360421,real,auto,2,warm,0.004,1,d-da2ab8d6-2,True,0,labeled_tasks,qwen-1.5b,6018.422728566,200,task_route,True,reasoning-02,reasoning,1
+code=ZX42,disabled,1,False,129.5085151848734,6022.045164051,,ZX42,D,0,,3524.3211320002956,3398.928761,real,auto,6,cold,0.004,1,d-383c2d34-3,False,0,labeled_tasks,qwen-0.5b,6018.520842919,200,task_route,True,extract-03,extract,1
+The integer answer to 17 + 28 is 45.,disabled,1,False,214.57060635128994,6022.214479995,,45,D,0,,105.71307100053673,2.034811,real,auto,17,warm,0.003,1,d-5257a9b6-4,True,0,labeled_tasks,qwen-0.5b,6022.108766924,200,task_route,True,arithmetic-01,arithmetic,1
+Oslo,disabled,1,True,133.2859427759019,6022.326808413,,Oslo,D,0,,51.140379000571556,2.745399,real,auto,3,warm,0.003,1,d-25c5a1d3-5,True,0,labeled_tasks,qwen-0.5b,6022.275668034,200,task_route,True,extract-04,extract,1
+"Let's denote the input number as \( x \).
+
+According to the problem, the machine doubles the input number and then adds 3, resulting in an output of 17. This can be expressed with the following equation:
+
+\[ 2x + 3 = 17 \]
+
+To find the input \(",disabled,1,False,111.30744507673256,6026.686914254,,7,D,0,,4310.415007999836,3657.735202,real,auto,64,cold,0.005,1,d-106fdac3-6,False,0,labeled_tasks,qwen-1.5b,6022.376499246,200,task_route,True,reasoning-04,reasoning,1
+7,disabled,1,True,80.08008008008008,6030.92562353,,7,D,0,,4171.338690000084,4047.715134,real,auto,2,cold,0.004,1,d-c8169f48-7,False,0,labeled_tasks,qwen-0.5b,6026.75428484,200,task_route,True,extract-01,extract,1
+11,disabled,1,False,74.30340557275542,6034.924688937,,17,D,0,,3938.1012690000716,3815.76031,real,auto,3,cold,0.005,1,d-60195878-8,False,0,labeled_tasks,qwen-1.5b,6030.986587668,200,task_route,True,reasoning-05,reasoning,1
+Cy,disabled,1,True,145.47570555717195,6035.023557499,,Cy,D,0,,52.92045900023368,2.0523,real,auto,2,warm,0.005,1,d-1b1e3697-9,True,0,labeled_tasks,qwen-1.5b,6034.97063704,200,task_route,True,reasoning-03,reasoning,1
+Tuesday,disabled,1,False,155.62991206909967,6035.132351475,,Thursday,D,0,,49.648647000140045,1.889776,real,auto,2,warm,0.004,1,d-39355877-10,True,0,labeled_tasks,qwen-1.5b,6035.082702828,200,task_route,True,reasoning-06,reasoning,1
+"The expression 144 / 12 + 5 can be computed as follows:
+
+144 / 12 = 12
+12 + 5 = 17
+
+The integer answer is 17.",disabled,1,False,196.056903555688,6039.03134763,,17,D,0,,3841.07781900002,3496.2942,real,auto,50,cold,0.004,1,d-0d584553-11,False,0,labeled_tasks,qwen-0.5b,6035.190269811,200,task_route,True,arithmetic-06,arithmetic,1
+"The expression (12 + 8) * 3 simplifies as follows:
+
+12 + 8 = 20
+20 * 3 = 60
+
+The integer answer is 60.",disabled,1,False,220.51562305251147,6039.324027472,,60,D,0,,236.47421300029237,2.273416,real,auto,46,warm,0.004,1,d-72ca0f2f-12,True,0,labeled_tasks,qwen-0.5b,6039.087553259,200,task_route,True,arithmetic-05,arithmetic,1
+pear,disabled,1,True,160.02560409665546,6039.42205022,,pear,D,0,,39.5584889993188,2.449263,real,auto,2,warm,0.005,1,d-3a3df482-13,True,0,labeled_tasks,qwen-0.5b,6039.382491731,200,task_route,True,extract-06,extract,1
+The integer answer to 9 * 7 is 63.,disabled,1,False,200.57229962827267,6039.582301629,,63,D,0,,100.41529099999025,2.021688,real,auto,15,warm,0.004,1,d-2279519e-14,True,0,labeled_tasks,qwen-0.5b,6039.481886338,200,task_route,True,arithmetic-02,arithmetic,1
+The temperature is 12 degrees Celsius.,disabled,1,False,212.11157068618093,6039.718120322,,12,D,0,,75.91084399973624,1.753295,real,auto,10,warm,0.004,1,d-b6faf35d-15,True,0,labeled_tasks,qwen-0.5b,6039.642209478,200,task_route,True,extract-05,extract,1
+The integer answer to 100 - 37 is 63.,disabled,1,False,215.16430185160834,6039.893075739,,63,D,0,,115.91022700031317,1.952341,real,auto,18,warm,0.003,1,d-66cb2b83-16,True,0,labeled_tasks,qwen-0.5b,6039.777165512,200,task_route,True,arithmetic-04,arithmetic,1
+blue,disabled,1,True,214.5232221387965,6039.990708505,,blue,D,0,,36.39245300018956,1.667554,real,auto,2,warm,0.003,1,d-d855ea6c-17,True,0,labeled_tasks,qwen-0.5b,6039.954316052,200,task_route,True,extract-02,extract,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,210.0288789708585,6042.78697941,,,E,0,2320.2351199997793,2625.6521639998027,2241.183247,real,qwen2.5:0.5b,64,cold,0.003,1,cold-1d388413-0,,0,ollama_sse,qwen-0.5b,6040.161327246,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,247.90251233702347,6043.129231219,,,E,0,17.372416999933193,276.290802999938,2.408827,real,qwen2.5:0.5b,64,warm,0.003,1,39c9616119-0,,0,ollama_sse,qwen-0.5b,6042.852940416,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,249.11447588649722,6043.402149153,,,E,0,15.305162000004202,272.88986500025203,2.049082,real,qwen2.5:0.5b,64,warm,0.003,1,39c9616119-1,,0,ollama_sse,qwen-0.5b,6043.129259288,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,244.0838284704099,6043.681078172,,,E,0,15.82965800025704,278.8996749995931,2.244743,real,qwen2.5:0.5b,64,warm,0.004,1,39c9616119-2,,0,ollama_sse,qwen-0.5b,6043.402178497,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,241.36188534315582,6043.962340119,,,E,0,15.31249699928594,281.23161399980745,1.955382,real,qwen2.5:0.5b,64,warm,0.003,1,39c9616119-3,,0,ollama_sse,qwen-0.5b,6043.681108505,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,219.5992314026901,6046.72173467,,,E,0,2268.9075799999046,2560.120934999759,2197.14778,real,qwen2.5:0.5b,64,cold,,1,cold-3ee2cba5-0,,0,ollama_sse,,6044.161613735,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,246.9326336908712,6047.059153125,,,E,0,19.336456999553775,278.7680339997678,2.642531,real,qwen2.5:0.5b,64,warm,,1,62338d826d-0,,0,ollama_sse,,6046.780385091,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,246.9898116702686,6047.330072943,,,E,0,11.114586999610765,270.8886079999502,2.160213,real,qwen2.5:0.5b,64,warm,,1,62338d826d-1,,0,ollama_sse,,6047.059184335,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,237.14946344933895,6047.611755492,,,E,0,11.225247999391286,281.6540359999635,1.747922,real,qwen2.5:0.5b,64,warm,,1,62338d826d-2,,0,ollama_sse,,6047.330101456,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,1,,241.87818409953286,6047.887623403,,,E,0,10.790586999974039,275.8414680001806,1.85294,real,qwen2.5:0.5b,64,warm,,1,62338d826d-3,,0,ollama_sse,,6047.611781935,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,217.47477802281446,6050.6152167,,,E,0,2272.796395000114,2567.294909999873,2199.445147,real,qwen2.5:0.5b,64,cold,0.003,1,cold-e210e7ad-0,,0,ollama_sse,qwen-0.5b,6048.04792179,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,247.13668975850112,6050.949118679,,,E,0,18.176393000430835,278.23666200038133,2.065032,real,qwen2.5:0.5b,64,warm,0.003,1,81e0220f29-0,,0,ollama_sse,qwen-0.5b,6050.670882017,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,225.49741558821353,6051.240890036,,,E,0,284.18931600026553,569.488346000071,2.84342,real,qwen2.5:0.5b,64,warm,0.002,1,81e0220f29-1,,0,ollama_sse,qwen-0.5b,6050.67140169,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,234.02847102617827,6051.523007935,,,E,0,299.7516920004273,573.8592650004648,2.119706,real,qwen2.5:0.5b,64,warm,0.004,1,81e0220f29-2,,0,ollama_sse,qwen-0.5b,6050.94914867,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,240.20417354751538,6051.797418036,,,E,0,288.7632740003028,556.4974549997714,2.421281,real,qwen2.5:0.5b,64,warm,0.004,1,81e0220f29-3,,0,ollama_sse,qwen-0.5b,6051.240920581,200,gateway,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,200.27224508315993,6054.606041541,,,E,0,2299.7928329996284,2619.338016000256,2224.517676,real,qwen2.5:0.5b,64,cold,,1,cold-431d1428-0,,0,ollama_sse,,6051.986703525,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,237.690245043787,6054.947064623,,,E,0,15.455624999958673,285.2740309999717,1.925529,real,qwen2.5:0.5b,64,warm,,1,a2ec390139-0,,0,ollama_sse,,6054.661790592,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,240.15189607426697,6055.221507513,,,E,0,292.0405129998471,559.1543679993265,1.998403,real,qwen2.5:0.5b,64,warm,,1,a2ec390139-1,,0,ollama_sse,,6054.662353145,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,240.9575048850369,6055.493928124,,,E,0,281.128820000049,546.8362170004184,2.872934,real,qwen2.5:0.5b,64,warm,,1,a2ec390139-2,,0,ollama_sse,,6054.947091907,200,direct,True,,,1
+"Request IDs are used to uniquely identify a request made by a user or application. They are generated by the server when a request is made and are used to track the flow of requests and to ensure that the same request is not processed multiple times. Request IDs are important for applications that need to track the status of requests,",disabled,2,,248.000496000992,6055.760398796,,,E,0,279.8281780005709,538.8567190002505,1.912727,real,qwen2.5:0.5b,64,warm,,1,a2ec390139-3,,0,ollama_sse,,6055.221542077,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, ensuring that each request is uniquely identified and can be traced back to its origin. Here are some key points",disabled,1,,110.2484552296527,6059.047403581,,,E,0,2525.4244759998983,3106.7380790000243,2451.335114,real,qwen2.5:1.5b,64,cold,0.003,1,cold-3cfb5e8f-0,,0,ollama_sse,qwen-1.5b,6055.940665502,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,103.06207074244949,6059.754057435,,,E,0,23.61827799995808,645.7414899996365,2.171289,real,qwen2.5:1.5b,64,warm,0.003,1,5ae284ce1d-0,,0,ollama_sse,qwen-1.5b,6059.108315945,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,106.00466751801665,6060.382924692,,,E,0,24.072190999504528,628.8263540000116,1.998942,real,qwen2.5:1.5b,64,warm,0.003,1,5ae284ce1d-1,,0,ollama_sse,qwen-1.5b,6059.754098338,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,106.96635072595053,6061.005932951,,,E,0,23.136083999816037,622.978231000161,4.024764,real,qwen2.5:1.5b,64,warm,0.003,1,5ae284ce1d-2,,0,ollama_sse,qwen-1.5b,6060.38295472,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,104.58558777917406,6061.640988948,,,E,0,22.10984199973609,635.0143649997335,2.38643,real,qwen2.5:1.5b,64,warm,0.006,1,5ae284ce1d-3,,0,ollama_sse,qwen-1.5b,6061.005974583,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, ensuring that each request is uniquely identified and can be traced back to its origin. Here are some key points",disabled,1,,113.66946340908929,6065.267566562,,,E,0,2830.936061000102,3393.9622750003764,2758.591484,real,qwen2.5:1.5b,64,cold,,1,cold-1449c501-0,,0,ollama_sse,,6061.873604287,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,115.83228209504401,6065.90240467,,,E,0,20.588076999956684,573.5200519993668,2.301828,real,qwen2.5:1.5b,64,warm,,1,65971608d5-0,,0,ollama_sse,,6065.328884618,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,117.25348371092619,6066.466472573,,,E,0,18.018041000686935,564.0307980002035,1.978525,real,qwen2.5:1.5b,64,warm,,1,65971608d5-1,,0,ollama_sse,,6065.902441775,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,119.49059665015581,6067.017977151,,,E,0,15.245313999912469,551.4775070005271,1.97489,real,qwen2.5:1.5b,64,warm,,1,65971608d5-2,,0,ollama_sse,,6066.466499644,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,1,,120.23656544250814,6067.568587251,,,E,0,16.593145000115328,550.568800000292,2.245177,real,qwen2.5:1.5b,64,warm,,1,65971608d5-3,,0,ollama_sse,,6067.018018451,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, ensuring that each request is uniquely identified and can be traced back to its origin. Here are some key points",disabled,2,,105.7737598439837,6070.976245891,,,E,0,2572.4650769998334,3178.71521699999,2497.107411,real,qwen2.5:1.5b,64,cold,0.004,1,cold-156687a9-0,,0,ollama_sse,qwen-1.5b,6067.797530674,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,128.43024130838307,6071.565377264,,,E,0,24.230797000200255,523.0537209999966,2.277519,real,qwen2.5:1.5b,64,warm,0.003,1,514069dabf-0,,0,ollama_sse,qwen-1.5b,6071.042323543,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,117.01188219097436,6072.126149416,,,E,0,535.4003279999233,1083.276577000106,2.993238,real,qwen2.5:1.5b,64,warm,0.002,1,514069dabf-1,,0,ollama_sse,qwen-1.5b,6071.042872839,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,125.00292975616615,6072.650305864,,,E,0,571.2077349999163,1084.9016390002362,2.24004,real,qwen2.5:1.5b,64,warm,0.004,1,514069dabf-2,,0,ollama_sse,qwen-1.5b,6071.565404225,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,126.9717825052723,6073.164866937,,,E,0,534.22271799991,1038.6804989993834,2.074895,real,qwen2.5:1.5b,64,warm,0.005,1,514069dabf-3,,0,ollama_sse,qwen-1.5b,6072.126186438,200,gateway,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, ensuring that each request is uniquely identified and can be traced back to its origin. Here are some key points",disabled,2,,118.03152917223014,6076.407347439,,,E,0,2486.723054000322,3028.9820719999625,2414.184278,real,qwen2.5:1.5b,64,cold,,1,cold-8b0debac-0,,0,ollama_sse,,6073.378365367,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,124.31360437583888,6076.997940258,,,E,0,19.12511800037464,534.4006860004811,2.688756,real,qwen2.5:1.5b,64,warm,,1,14ce4a0df4-0,,0,ollama_sse,,6076.463539572,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,129.29266809562,6077.508149398,,,E,0,548.2334040007117,1043.9370379999673,2.450584,real,qwen2.5:1.5b,64,warm,,1,14ce4a0df4-1,,0,ollama_sse,,6076.46421236,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,130.49134067618982,6078.00965012,,,E,0,520.4059459993005,1011.6580199992313,2.144316,real,qwen2.5:1.5b,64,warm,,1,14ce4a0df4-2,,0,ollama_sse,,6076.9979921,200,direct,True,,,1
+"Request IDs, also known as request identifiers or request tokens, are unique identifiers assigned to each request made to a service or system. The primary purpose of request IDs is to provide a way to track and manage requests, especially in distributed systems where multiple components or services are involved.
+
+Here are some key reasons why request IDs are",disabled,2,,129.700371875285,6078.514399349,,,E,0,512.5530490004166,1006.2067850003586,2.402915,real,qwen2.5:1.5b,64,warm,,1,14ce4a0df4-3,,0,ollama_sse,,6077.508192564,200,direct,True,,,1
+Public synthetic item 7,disabled,1,,150.99277751214234,6082.106100375,,,C,0,,2732.238380999661,2603.850913,real,qwen2.5:0.5b,6,cold,0.007,0,cache-7f2a0e07-0,,0,repeat_0%,qwen-cache,6079.373861994,200,cache_off,True,,,1
+Public synthetic item 3,disabled,1,,223.3555448013997,6082.155334922,,,C,0,,49.19461500048783,1.926477,real,qwen2.5:0.5b,6,warm,0.006,0,cache-0c317290-1,,0,repeat_0%,qwen-cache,6082.106140307,200,cache_off,True,,,1
+Public synthetic item 2,disabled,1,,236.3693665300977,6082.202096713,,,C,0,,46.73223400004645,2.074915,real,qwen2.5:0.5b,6,warm,0.004,0,cache-d0277ba6-2,,0,repeat_0%,qwen-cache,6082.155364479,200,cache_off,True,,,1
+Public synthetic item 8,disabled,1,,239.6644697423607,6082.248263489,,,C,0,,46.12557700056641,1.700539,real,qwen2.5:0.5b,6,warm,0.004,0,cache-6ebc5955-3,,0,repeat_0%,qwen-cache,6082.202137912,200,cache_off,True,,,1
+Public synthetic item 5,disabled,1,,229.53328232593725,6082.300392432,,,C,0,,52.09664199992403,1.744614,real,qwen2.5:0.5b,6,warm,0.004,0,cache-08de84a2-4,,0,repeat_0%,qwen-cache,6082.24829579,200,cache_off,True,,,1
+Public synthetic item 6,disabled,1,,233.72677340189318,6082.352613484,,,C,0,,52.18823399991379,3.025701,real,qwen2.5:0.5b,6,warm,0.003,0,cache-feeef438-5,,0,repeat_0%,qwen-cache,6082.30042525,200,cache_off,True,,,1
+Public synthetic item 9,disabled,1,,234.47575129938645,6082.399097564,,,C,0,,46.45205700035149,1.877217,real,qwen2.5:0.5b,6,warm,0.004,0,cache-be973419-6,,0,repeat_0%,qwen-cache,6082.352645507,200,cache_off,True,,,1
+Public synthetic item 4,disabled,1,,246.53819287504624,6082.444138966,,,C,0,,45.00876899965078,1.688208,real,qwen2.5:0.5b,6,warm,0.004,0,cache-a57b5dba-7,,0,repeat_0%,qwen-cache,6082.399130197,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,179.95321216483714,6082.49941588,,,C,0,,55.198306000420416,1.971698,real,qwen2.5:0.5b,6,warm,0.004,0,cache-d3a9249f-8,,0,repeat_0%,qwen-cache,6082.444217574,200,cache_off,True,,,1
+Public synthetic item 1,disabled,1,,226.69739675822723,6082.556680908,,,C,0,,57.23311600013403,2.066586,real,qwen2.5:0.5b,6,warm,0.004,0,cache-d87c9d23-9,,0,repeat_0%,qwen-cache,6082.499447792,200,cache_off,True,,,1
+Public synthetic item 7,miss,1,,150.6440031133094,6086.195011897,,,C,0,,2924.7908409997763,2786.988634,real,qwen2.5:0.5b,6,cold,0.006,0,cache-24e945dc-0,,0,repeat_0%,qwen-cache,6083.270221056,200,cache_on,True,,,1
+Public synthetic item 3,miss,1,,225.1491613193741,6086.246891596,,,C,0,,51.84176300008403,2.095154,real,qwen2.5:0.5b,6,warm,0.006,0,cache-805ae8b1-1,,0,repeat_0%,qwen-cache,6086.195049833,200,cache_on,True,,,1
+Public synthetic item 2,miss,1,,215.50175993103943,6086.296711241,,,C,0,,49.779361999753746,1.981043,real,qwen2.5:0.5b,6,warm,0.004,0,cache-b8d1f8d5-2,,0,repeat_0%,qwen-cache,6086.246931879,200,cache_on,True,,,1
+Public synthetic item 8,miss,1,,196.41220374492602,6086.349505281,,,C,0,,52.75240700029826,1.986232,real,qwen2.5:0.5b,6,warm,0.004,0,cache-c63fea47-3,,0,repeat_0%,qwen-cache,6086.296752874,200,cache_on,True,,,1
+Public synthetic item 5,miss,1,,177.32592505024235,6086.406423901,,,C,0,,56.87793900051474,2.103101,real,qwen2.5:0.5b,6,warm,0.005,0,cache-d1af69e8-4,,0,repeat_0%,qwen-cache,6086.349545962,200,cache_on,True,,,1
+Public synthetic item 6,miss,1,,209.6948939293328,6086.461187597,,,C,0,,54.7115590006797,2.819877,real,qwen2.5:0.5b,6,warm,0.005,0,cache-c92e9ed9-5,,0,repeat_0%,qwen-cache,6086.406476038,200,cache_on,True,,,1
+Public synthetic item 9,miss,1,,241.91597451818402,6086.508341506,,,C,0,,47.11550999945757,2.045742,real,qwen2.5:0.5b,6,warm,0.004,0,cache-8b8fc50d-6,,0,repeat_0%,qwen-cache,6086.461225996,200,cache_on,True,,,1
+Public synthetic item 4,miss,1,,216.16947686986597,6086.558873475,,,C,0,,50.49094700007117,1.983996,real,qwen2.5:0.5b,6,warm,0.005,0,cache-14f7825c-7,,0,repeat_0%,qwen-cache,6086.508382528,200,cache_on,True,,,1
+Public synthetic item 0,miss,1,,245.368666421298,6086.60477934,,,C,0,,45.8733610003037,2.205739,real,qwen2.5:0.5b,6,warm,0.005,0,cache-00e5c65e-8,,0,repeat_0%,qwen-cache,6086.558905979,200,cache_on,True,,,1
+Public synthetic item 1,miss,1,,200.16680567139284,6086.655962073,,,C,0,,51.14133100050822,1.754685,real,qwen2.5:0.5b,6,warm,0.003,0,cache-fbd51314-9,,0,repeat_0%,qwen-cache,6086.604820742,200,cache_on,True,,,1
+Public synthetic item 2,disabled,1,,125.4836348426226,6090.346159933,,,C,0,,2910.7628210003895,2742.313013,real,qwen2.5:0.5b,6,cold,0.006,0,cache-a117a3f3-0,,0,repeat_50%,qwen-cache,6087.435397112,200,cache_off,True,,,1
+Public synthetic item 1,disabled,1,,198.89942319167275,6090.40429192,,,C,0,,58.090493000236165,2.408081,real,qwen2.5:0.5b,6,warm,0.008,0,cache-d10b078a-1,,0,repeat_50%,qwen-cache,6090.346201427,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,191.45473690928236,6090.460430133,,,C,0,,56.0885060003784,2.122859,real,qwen2.5:0.5b,6,warm,0.005,0,cache-406096ca-2,,0,repeat_50%,qwen-cache,6090.404341627,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,258.08671713695804,6090.501065769,,,C,0,,40.59887299990805,2.266705,real,qwen2.5:0.5b,6,warm,0.005,0,cache-fe5fbc44-3,,0,repeat_50%,qwen-cache,6090.460466896,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,269.6386841632213,6090.539710134,,,C,0,,38.60191900002974,1.974951,real,qwen2.5:0.5b,6,warm,0.003,0,cache-4bb9946d-4,,0,repeat_50%,qwen-cache,6090.501108215,200,cache_off,True,,,1
+Public synthetic item 3,disabled,1,,226.50056625141562,6090.589694635,,,C,0,,49.80405700007395,2.128613,real,qwen2.5:0.5b,6,warm,0.003,0,cache-f517003a-5,,0,repeat_50%,qwen-cache,6090.539890578,200,cache_off,True,,,1
+Public synthetic item 4,disabled,1,,230.37935800952235,6090.662048735,,,C,0,,72.3149530003866,2.109443,real,qwen2.5:0.5b,6,warm,0.004,0,cache-f97633a1-6,,0,repeat_50%,qwen-cache,6090.589733782,200,cache_off,True,,,1
+Public synthetic item 1,disabled,1,,233.172703248873,6090.709811828,,,C,0,,47.72321600012219,2.77783,real,qwen2.5:0.5b,6,warm,0.005,0,cache-c387ae59-7,,0,repeat_50%,qwen-cache,6090.662088612,200,cache_off,True,,,1
+Public synthetic item 1,disabled,1,,245.7103075474016,6090.751124451,,,C,0,,41.265206999923976,2.163147,real,qwen2.5:0.5b,6,warm,0.004,0,cache-b3678c00-8,,0,repeat_50%,qwen-cache,6090.709859244,200,cache_off,True,,,1
+Public synthetic item 2,disabled,1,,197.16736222930564,6090.805368606,,,C,0,,54.21036700045079,2.202699,real,qwen2.5:0.5b,6,warm,0.005,0,cache-0fb504f3-9,,0,repeat_50%,qwen-cache,6090.751158239,200,cache_off,True,,,1
+Public synthetic item 2,miss,1,,133.0288450879099,6094.613479317,,,C,0,,3042.276631000277,2907.741892,real,qwen2.5:0.5b,6,cold,0.005,0,cache-65d46fa0-0,,0,repeat_50%,qwen-cache,6091.571202686,200,cache_on,True,,,1
+Public synthetic item 1,miss,1,,150.42117930204572,6094.680568271,,,C,0,,67.05296600011934,3.265103,real,qwen2.5:0.5b,6,warm,0.014,0,cache-9a608176-1,,0,repeat_50%,qwen-cache,6094.613515305,200,cache_on,True,,,1
+Public synthetic item 0,miss,1,,207.58372543592583,6094.733765834,,,C,0,,53.155931000219425,2.183612,real,qwen2.5:0.5b,6,warm,0.004,0,cache-e2f6e9b2-2,,0,repeat_50%,qwen-cache,6094.680609903,200,cache_on,True,,,1
+Public synthetic item 0,hit,1,,,6094.736335502,,,C,0,,2.5381989999004873,,real,qwen2.5:0.5b,,warm,0.0,0,cache-fb87820b-3,,0,repeat_50%,qwen-cache,6094.733797303,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6094.738805458,,,C,0,,2.438773999529076,,real,qwen2.5:0.5b,,warm,0.0,0,cache-8234cbff-4,,0,repeat_50%,qwen-cache,6094.736366684,200,cache_on,True,,,0
+Public synthetic item 3,miss,1,,218.97011057990585,6094.790285164,,,C,0,,51.445650000459864,2.246014,real,qwen2.5:0.5b,6,warm,0.004,0,cache-8218536a-5,,0,repeat_50%,qwen-cache,6094.738839514,200,cache_on,True,,,1
+Public synthetic item 4,miss,1,,214.8304629596477,6094.841467548,,,C,0,,51.141676000042935,2.123495,real,qwen2.5:0.5b,6,warm,0.004,0,cache-c1643b4f-6,,0,repeat_50%,qwen-cache,6094.790325872,200,cache_on,True,,,1
+Public synthetic item 1,hit,1,,,6094.844155875,,,C,0,,2.6501510001253337,,real,qwen2.5:0.5b,,warm,0.0,0,cache-fe98295d-7,,0,repeat_50%,qwen-cache,6094.841505724,200,cache_on,True,,,0
+Public synthetic item 1,hit,1,,,6094.845978503,,,C,0,,1.7935329997271765,,real,qwen2.5:0.5b,,warm,0.0,0,cache-3885d724-8,,0,repeat_50%,qwen-cache,6094.84418497,200,cache_on,True,,,0
+Public synthetic item 2,hit,1,,,6094.847884744,,,C,0,,1.8876700005421299,,real,qwen2.5:0.5b,,warm,0.0,0,cache-d54a1192-9,,0,repeat_50%,qwen-cache,6094.845997074,200,cache_on,True,,,0
+Public synthetic item 0,disabled,1,,157.99868334430548,6098.437969023,,,C,0,,2849.769304999427,2715.852917,real,qwen2.5:0.5b,6,cold,0.006,0,cache-6909a578-0,,0,repeat_90%,qwen-cache,6095.588199718,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,265.15821106593603,6098.477020643,,,C,0,,39.01921700071398,1.92371,real,qwen2.5:0.5b,6,warm,0.007,0,cache-a5d448ad-1,,0,repeat_90%,qwen-cache,6098.438001426,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,232.4590290961218,6098.517957814,,,C,0,,40.905045999352296,1.768139,real,qwen2.5:0.5b,6,warm,0.005,0,cache-3d38edb8-2,,0,repeat_90%,qwen-cache,6098.477052768,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,229.55084551228097,6098.560723143,,,C,0,,42.72817800028861,1.834527,real,qwen2.5:0.5b,6,warm,0.004,0,cache-22689c11-3,,0,repeat_90%,qwen-cache,6098.517994965,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,275.57066091030174,6098.597755092,,,C,0,,37.00031399966974,1.9746,real,qwen2.5:0.5b,6,warm,0.005,0,cache-1a10736a-4,,0,repeat_90%,qwen-cache,6098.560754778,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,281.70336635522796,6098.634373093,,,C,0,,36.579768000592594,2.12248,real,qwen2.5:0.5b,6,warm,0.004,0,cache-d2289003-5,,0,repeat_90%,qwen-cache,6098.597793325,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,314.69631805307876,6098.669252363,,,C,0,,34.814224999536236,2.263136,real,qwen2.5:0.5b,6,warm,0.004,0,cache-5bf92934-6,,0,repeat_90%,qwen-cache,6098.634438138,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,295.6393200295639,6098.704279806,,,C,0,,34.99661099976947,1.996506,real,qwen2.5:0.5b,6,warm,0.005,0,cache-ea1d82c7-7,,0,repeat_90%,qwen-cache,6098.669283195,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,305.7948116813618,6098.738443998,,,C,0,,34.13378599998396,1.942208,real,qwen2.5:0.5b,6,warm,0.004,0,cache-6984ee76-8,,0,repeat_90%,qwen-cache,6098.704310212,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,309.59752321981426,6098.772397007,,,C,0,,33.91458300029626,1.797192,real,qwen2.5:0.5b,6,warm,0.005,0,cache-88938c88-9,,0,repeat_90%,qwen-cache,6098.738482424,200,cache_off,True,,,1
+Public synthetic item 0,miss,1,,152.1645405898912,6102.482757418,,,C,0,,2999.3854459999056,2865.055906,real,qwen2.5:0.5b,6,cold,0.005,0,cache-75b1898f-0,,0,repeat_90%,qwen-cache,6099.483371972,200,cache_on,True,,,1
+Public synthetic item 0,hit,1,,,6102.485030827,,,C,0,,2.2426790001190966,,real,qwen2.5:0.5b,,warm,0.0,0,cache-1198a3df-1,,0,repeat_90%,qwen-cache,6102.482788148,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6102.48693435,,,C,0,,1.8828180000127759,,real,qwen2.5:0.5b,,warm,0.0,0,cache-6230167e-2,,0,repeat_90%,qwen-cache,6102.485051532,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6102.488585312,,,C,0,,1.6326130007655593,,real,qwen2.5:0.5b,,warm,0.0,0,cache-a131f75f-3,,0,repeat_90%,qwen-cache,6102.486952699,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6102.490504526,,,C,0,,1.9022880005650222,,real,qwen2.5:0.5b,,warm,0.0,0,cache-e52c1e1a-4,,0,repeat_90%,qwen-cache,6102.488602238,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6102.492586512,,,C,0,,2.0653179999499116,,real,qwen2.5:0.5b,,warm,0.0,0,cache-2704c38d-5,,0,repeat_90%,qwen-cache,6102.490521194,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6102.494654987,,,C,0,,2.0523620005405974,,real,qwen2.5:0.5b,,warm,0.0,0,cache-349ac383-6,,0,repeat_90%,qwen-cache,6102.492602625,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6102.496611845,,,C,0,,1.9409470005484764,,real,qwen2.5:0.5b,,warm,0.0,0,cache-6ebc8be1-7,,0,repeat_90%,qwen-cache,6102.494670898,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6102.498525885,,,C,0,,1.8901470002674614,,real,qwen2.5:0.5b,,warm,0.0,0,cache-c4384a1e-8,,0,repeat_90%,qwen-cache,6102.496635738,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6102.500634946,,,C,0,,2.0912010004394688,,real,qwen2.5:0.5b,,warm,0.0,0,cache-a2ea02da-9,,0,repeat_90%,qwen-cache,6102.498543745,200,cache_on,True,,,0
+Public synthetic item 8,disabled,1,,144.45996051427747,6106.2336312,,,C,0,,2934.0089819997957,2792.528456,real,qwen2.5:0.5b,6,cold,0.006,1,cache-c019c289-0,,0,repeat_0%,qwen-cache,6103.299622218,200,cache_off,True,,,1
+Public synthetic item 1,disabled,1,,221.54936858429954,6106.282566742,,,C,0,,48.903232000157004,1.845767,real,qwen2.5:0.5b,6,warm,0.005,1,cache-1c34c057-1,,0,repeat_0%,qwen-cache,6106.23366351,200,cache_off,True,,,1
+Public synthetic item 5,disabled,1,,223.72198814273463,6106.332338795,,,C,0,,49.73831999996037,2.225458,real,qwen2.5:0.5b,6,warm,0.005,1,cache-f762dde8-2,,0,repeat_0%,qwen-cache,6106.282600475,200,cache_off,True,,,1
+Public synthetic item 6,disabled,1,,209.68756552736423,6106.383803746,,,C,0,,51.42489900026703,1.953603,real,qwen2.5:0.5b,6,warm,0.003,1,cache-a20fc613-3,,0,repeat_0%,qwen-cache,6106.332378847,200,cache_off,True,,,1
+Public synthetic item 9,disabled,1,,218.4280461611271,6106.440220723,,,C,0,,56.38150799950381,2.296452,real,qwen2.5:0.5b,6,warm,0.005,1,cache-e1a80927-4,,0,repeat_0%,qwen-cache,6106.383839215,200,cache_off,True,,,1
+Public synthetic item 7,disabled,1,,203.16256391155656,6106.492793922,,,C,0,,52.538080999511294,2.202544,real,qwen2.5:0.5b,6,warm,0.003,1,cache-2e2f18ed-5,,0,repeat_0%,qwen-cache,6106.440255841,200,cache_off,True,,,1
+Public synthetic item 3,disabled,1,,196.6955153422502,6106.546843388,,,C,0,,54.0172299997721,2.197841,real,qwen2.5:0.5b,6,warm,0.003,1,cache-578e0fcf-6,,0,repeat_0%,qwen-cache,6106.492826158,200,cache_off,True,,,1
+Public synthetic item 2,disabled,1,,138.93391376835086,6106.613257079,,,C,0,,66.37405499986926,1.870251,real,qwen2.5:0.5b,6,warm,0.004,1,cache-d6ca54e0-7,,0,repeat_0%,qwen-cache,6106.546883024,200,cache_off,True,,,1
+Public synthetic item 4,disabled,1,,202.63424518743668,6106.662144363,,,C,0,,48.85690599985537,1.995291,real,qwen2.5:0.5b,6,warm,0.003,1,cache-62e2463f-8,,0,repeat_0%,qwen-cache,6106.613287457,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,236.27628573678822,6106.708205987,,,C,0,,45.995008000318194,1.826217,real,qwen2.5:0.5b,6,warm,0.004,1,cache-cb820691-9,,0,repeat_0%,qwen-cache,6106.662210979,200,cache_off,True,,,1
+Public synthetic item 8,miss,1,,142.14304328255668,6110.552701752,,,C,0,,2981.5456989999802,2853.262374,real,qwen2.5:0.5b,6,cold,0.006,1,cache-e6d03c92-0,,0,repeat_0%,qwen-cache,6107.571156053,200,cache_on,True,,,1
+Public synthetic item 1,miss,1,,128.0,6110.622027586,,,C,0,,69.29303399920173,1.886217,real,qwen2.5:0.5b,6,warm,0.004,1,cache-07dcc87d-1,,0,repeat_0%,qwen-cache,6110.552734552,200,cache_on,True,,,1
+Public synthetic item 5,miss,1,,221.42672620585304,6110.671010865,,,C,0,,48.952281000310904,2.304159,real,qwen2.5:0.5b,6,warm,0.004,1,cache-70a9a1ae-2,,0,repeat_0%,qwen-cache,6110.622058584,200,cache_on,True,,,1
+Public synthetic item 6,miss,1,,218.23736951223947,6110.720247844,,,C,0,,49.204974000531365,1.855931,real,qwen2.5:0.5b,6,warm,0.003,1,cache-d721011e-3,,0,repeat_0%,qwen-cache,6110.67104287,200,cache_on,True,,,1
+Public synthetic item 9,miss,1,,239.45404477790638,6110.780298293,,,C,0,,60.009767999872565,2.088359,real,qwen2.5:0.5b,6,warm,0.004,1,cache-4b8fa778-4,,0,repeat_0%,qwen-cache,6110.720288525,200,cache_on,True,,,1
+Public synthetic item 7,miss,1,,245.68012447792972,6110.835383081,,,C,0,,55.053097999916645,1.68639,real,qwen2.5:0.5b,6,warm,0.003,1,cache-aa1747b2-5,,0,repeat_0%,qwen-cache,6110.780329983,200,cache_on,True,,,1
+Public synthetic item 3,miss,1,,245.0780165019198,6110.879139756,,,C,0,,43.725714000174776,1.595603,real,qwen2.5:0.5b,6,warm,0.003,1,cache-8b2a65f2-6,,0,repeat_0%,qwen-cache,6110.835414042,200,cache_on,True,,,1
+Public synthetic item 2,miss,1,,240.28834601521825,6110.923117329,,,C,0,,43.94782300005318,1.682242,real,qwen2.5:0.5b,6,warm,0.003,1,cache-8ce5a7d9-7,,0,repeat_0%,qwen-cache,6110.879169506,200,cache_on,True,,,1
+Public synthetic item 4,miss,1,,245.5795677799607,6110.966692129,,,C,0,,43.54447700006858,2.146498,real,qwen2.5:0.5b,6,warm,0.004,1,cache-9462492a-8,,0,repeat_0%,qwen-cache,6110.923147652,200,cache_on,True,,,1
+Public synthetic item 0,miss,1,,250.16677785190126,6111.010930356,,,C,0,,44.2060000004858,1.69086,real,qwen2.5:0.5b,6,warm,0.003,1,cache-8c1322e0-9,,0,repeat_0%,qwen-cache,6110.966724356,200,cache_on,True,,,1
+Public synthetic item 0,disabled,1,,127.27504136438844,6114.669351065,,,C,0,,2868.138161999923,2738.719481,real,qwen2.5:0.5b,6,cold,0.006,1,cache-4c6a92a3-0,,0,repeat_50%,qwen-cache,6111.801212903,200,cache_off,True,,,1
+Public synthetic item 2,disabled,1,,215.18487967578812,6114.722331304,,,C,0,,52.93935500048974,2.431708,real,qwen2.5:0.5b,6,warm,0.005,1,cache-b6e2c0ff-1,,0,repeat_50%,qwen-cache,6114.669391949,200,cache_off,True,,,1
+Public synthetic item 2,disabled,1,,259.86400450430943,6114.763674361,,,C,0,,41.31029400014086,2.650369,real,qwen2.5:0.5b,6,warm,0.003,1,cache-c2e6c438-2,,0,repeat_50%,qwen-cache,6114.722364067,200,cache_off,True,,,1
+Public synthetic item 3,disabled,1,,173.43546755311462,6114.834140762,,,C,0,,70.41880900032993,2.157822,real,qwen2.5:0.5b,6,warm,0.003,1,cache-1cbf81a3-3,,0,repeat_50%,qwen-cache,6114.763721953,200,cache_off,True,,,1
+Public synthetic item 2,disabled,1,,205.29665366454526,6114.88980285,,,C,0,,55.61735999981465,2.243788,real,qwen2.5:0.5b,6,warm,0.005,1,cache-174f848d-4,,0,repeat_50%,qwen-cache,6114.83418549,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,214.8304629596477,6114.940124335,,,C,0,,50.24139500073943,2.151266,real,qwen2.5:0.5b,6,warm,0.005,1,cache-12c10256-5,,0,repeat_50%,qwen-cache,6114.88988294,200,cache_off,True,,,1
+Public synthetic item 4,disabled,1,,249.1797832135886,6114.985318507,,,C,0,,45.1563279993934,2.047508,real,qwen2.5:0.5b,6,warm,0.004,1,cache-4ebed362-6,,0,repeat_50%,qwen-cache,6114.940162179,200,cache_off,True,,,1
+Public synthetic item 3,disabled,1,,200.16680567139284,6115.036781077,,,C,0,,51.42336700009764,2.14836,real,qwen2.5:0.5b,6,warm,0.004,1,cache-377a0e3e-7,,0,repeat_50%,qwen-cache,6114.98535771,200,cache_off,True,,,1
+Public synthetic item 1,disabled,1,,242.82650046541747,6115.083643076,,,C,0,,46.80588900009752,2.923012,real,qwen2.5:0.5b,6,warm,0.004,1,cache-7eff5881-8,,0,repeat_50%,qwen-cache,6115.036837187,200,cache_off,True,,,1
+Public synthetic item 1,disabled,1,,287.1500358937545,6115.120386232,,,C,0,,36.70321400022658,1.941149,real,qwen2.5:0.5b,6,warm,0.003,1,cache-8bfb26f6-9,,0,repeat_50%,qwen-cache,6115.083683018,200,cache_off,True,,,1
+Public synthetic item 0,miss,1,,161.5204457964304,6119.135453193,,,C,0,,3238.4023260001413,3096.425758,real,qwen2.5:0.5b,6,cold,0.006,1,cache-9e402eff-0,,0,repeat_50%,qwen-cache,6115.897050867,200,cache_on,True,,,1
+Public synthetic item 2,miss,1,,220.90497404366556,6119.185186466,,,C,0,,49.64703299992834,1.780562,real,qwen2.5:0.5b,6,warm,0.007,1,cache-8655876e-1,,0,repeat_50%,qwen-cache,6119.135539433,200,cache_on,True,,,1
+Public synthetic item 2,hit,1,,,6119.188284038,,,C,0,,3.067378000196186,,real,qwen2.5:0.5b,,warm,0.0,1,cache-2398bc62-2,,0,repeat_50%,qwen-cache,6119.18521666,200,cache_on,True,,,0
+Public synthetic item 3,miss,1,,214.5078831647063,6119.239008145,,,C,0,,50.693904000581824,1.985245,real,qwen2.5:0.5b,6,warm,0.005,1,cache-1b10698b-3,,0,repeat_50%,qwen-cache,6119.188314241,200,cache_on,True,,,1
+Public synthetic item 2,hit,1,,,6119.241609131,,,C,0,,2.5656359994172817,,real,qwen2.5:0.5b,,warm,0.0,1,cache-6b9b289c-4,,0,repeat_50%,qwen-cache,6119.239043495,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6119.244564957,,,C,0,,2.926629999819852,,real,qwen2.5:0.5b,,warm,0.0,1,cache-1ed576f6-5,,0,repeat_50%,qwen-cache,6119.241638327,200,cache_on,True,,,0
+Public synthetic item 4,miss,1,,236.41593443398085,6119.292940136,,,C,0,,48.34429199945589,1.737511,real,qwen2.5:0.5b,6,warm,0.005,1,cache-0044073c-6,,0,repeat_50%,qwen-cache,6119.244595844,200,cache_on,True,,,1
+Public synthetic item 3,hit,1,,,6119.295877411,,,C,0,,2.903163000155473,,real,qwen2.5:0.5b,,warm,0.0,1,cache-ca7e48fe-7,,0,repeat_50%,qwen-cache,6119.292974248,200,cache_on,True,,,0
+Public synthetic item 1,miss,1,,100.28246226872358,6119.383535549,,,C,0,,87.62698299960903,4.248148,real,qwen2.5:0.5b,6,warm,0.005,1,cache-5cc26541-8,,0,repeat_50%,qwen-cache,6119.295908566,200,cache_on,True,,,1
+Public synthetic item 1,hit,1,,,6119.386259256,,,C,0,,2.689215999453154,,real,qwen2.5:0.5b,,warm,0.0,1,cache-bce677c2-9,,0,repeat_50%,qwen-cache,6119.38357004,200,cache_on,True,,,0
+Public synthetic item 0,disabled,1,,134.33036313974836,6123.147575439,,,C,0,,2955.3328750007495,2788.600657,real,qwen2.5:0.5b,6,cold,0.007,1,cache-de150acd-0,,0,repeat_90%,qwen-cache,6120.192242564,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,221.54936858429954,6123.194102007,,,C,0,,46.4906549996158,2.054074,real,qwen2.5:0.5b,6,warm,0.006,1,cache-20b57e9f-1,,0,repeat_90%,qwen-cache,6123.147611352,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,235.00842113509069,6123.235997319,,,C,0,,41.86279899931833,1.985019,real,qwen2.5:0.5b,6,warm,0.004,1,cache-27cc7723-2,,0,repeat_90%,qwen-cache,6123.19413452,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,233.26335432703522,6123.278892074,,,C,0,,42.8110460006792,2.317726,real,qwen2.5:0.5b,6,warm,0.003,1,cache-cb3f2bad-3,,0,repeat_90%,qwen-cache,6123.236081028,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,241.964753800863,6123.320354003,,,C,0,,41.42640400004893,2.007268,real,qwen2.5:0.5b,6,warm,0.004,1,cache-23bb961d-4,,0,repeat_90%,qwen-cache,6123.278927599,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,273.8225629791895,6123.359036776,,,C,0,,38.64470699954836,1.869901,real,qwen2.5:0.5b,6,warm,0.004,1,cache-35186602-5,,0,repeat_90%,qwen-cache,6123.320392069,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,259.40337224383916,6123.399745463,,,C,0,,40.67573100019217,2.073268,real,qwen2.5:0.5b,6,warm,0.004,1,cache-cd41b8d9-6,,0,repeat_90%,qwen-cache,6123.359069732,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,274.22303473491775,6123.437386108,,,C,0,,37.538614999903075,1.985517,real,qwen2.5:0.5b,6,warm,0.004,1,cache-98113960-7,,0,repeat_90%,qwen-cache,6123.399847493,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,263.5046113306983,6123.475085072,,,C,0,,37.66849200019351,2.156754,real,qwen2.5:0.5b,6,warm,0.003,1,cache-1784d9c4-8,,0,repeat_90%,qwen-cache,6123.43741658,200,cache_off,True,,,1
+Public synthetic item 0,disabled,1,,261.5404733882568,6123.513458017,,,C,0,,38.33394599951134,2.146869,real,qwen2.5:0.5b,6,warm,0.004,1,cache-3fc794b8-9,,0,repeat_90%,qwen-cache,6123.475124071,200,cache_off,True,,,1
+Public synthetic item 0,miss,1,,121.11180638259219,6127.302036998,,,C,0,,2999.725195000792,2847.14725,real,qwen2.5:0.5b,6,cold,0.005,1,cache-ec181aea-0,,0,repeat_90%,qwen-cache,6124.302311803,200,cache_on,True,,,1
+Public synthetic item 0,hit,1,,,6127.306231879,,,C,0,,4.157231000135653,,real,qwen2.5:0.5b,,warm,0.0,1,cache-23f5f077-1,,0,repeat_90%,qwen-cache,6127.302074648,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6127.3087259,,,C,0,,2.459466000800603,,real,qwen2.5:0.5b,,warm,0.0,1,cache-cc4f07d6-2,,0,repeat_90%,qwen-cache,6127.306266434,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6127.311133503,,,C,0,,2.375375999690732,,real,qwen2.5:0.5b,,warm,0.0,1,cache-6337ee63-3,,0,repeat_90%,qwen-cache,6127.308758127,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6127.313291444,,,C,0,,2.1327829999790993,,real,qwen2.5:0.5b,,warm,0.0,1,cache-6ecc5690-4,,0,repeat_90%,qwen-cache,6127.311158661,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6127.315368366,,,C,0,,2.058148000287474,,real,qwen2.5:0.5b,,warm,0.0,1,cache-9d4a8628-5,,0,repeat_90%,qwen-cache,6127.313310218,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6127.317388208,,,C,0,,1.9960879999416647,,real,qwen2.5:0.5b,,warm,0.0,1,cache-69f5aa4a-6,,0,repeat_90%,qwen-cache,6127.31539212,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6127.31920247,,,C,0,,1.7933159997483017,,real,qwen2.5:0.5b,,warm,0.0,1,cache-a670dea4-7,,0,repeat_90%,qwen-cache,6127.317409154,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6127.321137743,,,C,0,,1.9176629994035466,,real,qwen2.5:0.5b,,warm,0.0,1,cache-5361b792-8,,0,repeat_90%,qwen-cache,6127.31922008,200,cache_on,True,,,0
+Public synthetic item 0,hit,1,,,6127.323454648,,,C,0,,2.291062999574933,,real,qwen2.5:0.5b,,warm,0.0,1,cache-52f28871-9,,0,repeat_90%,qwen-cache,6127.321163585,200,cache_on,True,,,0

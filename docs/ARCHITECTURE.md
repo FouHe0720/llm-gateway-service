@@ -95,3 +95,23 @@ ChatResponse.latency_ms 从路由解析后到 Provider 完成，含并发排队/
 
 健康探针只确认进程能响应，不保证真实上游可用。Docker 默认单 worker、非 root、健康检查；
 Compose 默认仅绑定 localhost、只读根文件系统、无 capabilities。未实现 TLS/分布式存储/真实计费。
+
+## 可选策略与原生 Ollama
+
+默认仍只开启 Mock，缓存/Fallback/任务路由均需运维显式配置。
+
+- `app/infra/cache.py`：有条数和答案字节预算的 TTL/LRU；只缓存显式 temperature=0 的非流式成功回答。
+  key 为完整请求与映射命名空间的 SHA-256，命中不复用旧 request ID/usage/timing。
+- `ModelMapping.fallback_model`：只允许一个启用的、无后继的备用别名；配置时拒绝循环。
+  Service 的整个调用共用 Deadline、Semaphore 与 attempt budget。流不 fallback，永久 HTTP 4xx 不 fallback。
+- `app/core/trace.py`：ContextVar 隔离并发请求的尝试计数与 request ID，安全地透传到上游；
+  metadata 公开已服务的模型别名、尝试/重试/回退/缓存状态/排队耗时，不公开凭据或上游 URL。
+- `app/providers/ollama.py`：复用 HTTP 生成/重试与错误边界，重写 native payload/NDJSON 流读取，
+  将原生 usage/纳秒 timing 转为统一结果。Ollama API 仅连接 localhost，不下载模型。
+- `gateway_task_routes`：调用方用 model=auto + task_type 选择配置别名。输入类型声明由调用方提供，
+  没有隐式分类器；不能把它当作自动判断问题难度的模型。
+
+`benchmarks/` 与服务实现分开，负载客户端/Gateway/HTTP fixture 运行于独立进程。
+实验从客户端单调时钟量端到端与首块延迟，上游台账核对调用次数；原生 timing 只作模型内部指标。
+每次运行保存源码快照、硬件/模型/参数清单、逐请求记录、分组统计与多轮波动。
+HTML 报告只展示已生成的观测数据，截图来自真实离线浏览器渲染。
