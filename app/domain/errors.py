@@ -3,11 +3,15 @@ class GatewayError(Exception):
         self.code = code
         self.message = message
         self.status = status
+        self.metadata = None
         super().__init__(code)
 
 
 class ProviderError(GatewayError):
-    def __init__(self, message: str = "Upstream provider failed") -> None:
+    def __init__(
+        self, message: str = "Upstream provider failed", *, fallback_allowed: bool = True
+    ) -> None:
+        self.fallback_allowed = fallback_allowed
         super().__init__("provider_error", message, 502)
 
 

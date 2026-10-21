@@ -8,9 +8,10 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class ModelMapping(BaseModel):
     model_config = ConfigDict(extra="forbid")
     model: str = Field(min_length=1, max_length=128, pattern=r"^[a-zA-Z0-9_.:/-]+$")
-    provider: Literal["mock", "openai", "local"]
+    provider: Literal["mock", "openai", "local", "ollama"]
     upstream_model: str = Field(default="mock-echo", min_length=1, max_length=128)
     enabled: bool = True
+    fallback_model: str | None = None
 
 
 class Settings(BaseSettings):
@@ -29,6 +30,16 @@ class Settings(BaseSettings):
     openai_api_key: SecretStr | None = None
     local_base_url: str = "http://127.0.0.1:11434/v1"
     local_api_key: SecretStr | None = None
+    ollama_base_url: str = "http://127.0.0.1:11434"
+    ollama_context_length: int = Field(default=1024, ge=256, le=4096)
+    ollama_default_max_tokens: int = Field(default=128, ge=1, le=512)
+    ollama_keep_alive: str = "2m"
+    gateway_max_provider_attempts: int = Field(default=6, ge=1, le=12)
+    gateway_cache_enabled: bool = False
+    gateway_cache_ttl_seconds: float = Field(default=60, gt=0, le=3600)
+    gateway_cache_max_entries: int = Field(default=128, ge=1, le=4096)
+    gateway_cache_max_bytes: int = Field(default=2_097_152, ge=1024, le=16_777_216)
+    gateway_task_routes: dict[str, str] = Field(default_factory=dict)
     upstream_connect_timeout_seconds: float = Field(default=3, gt=0, le=60)
     upstream_read_timeout_seconds: float = Field(default=20, gt=0, le=300)
     gateway_request_timeout_seconds: float = Field(default=60, gt=0, le=600)
@@ -57,7 +68,11 @@ class Settings(BaseSettings):
                 "Disabling gateway authentication requires development + Mock only"
             )
         for provider in {m.provider for m in enabled} - {"mock"}:
-            url = self.openai_base_url if provider == "openai" else self.local_base_url
+            url = {
+                "openai": self.openai_base_url,
+                "local": self.local_base_url,
+                "ollama": self.ollama_base_url,
+            }[provider]
             parsed = urlsplit(url or "")
             _ = parsed.port  # Validate malformed/out-of-range ports at startup.
             if (
@@ -69,10 +84,24 @@ class Settings(BaseSettings):
                 or parsed.fragment
             ):
                 raise ValueError("Provider base URL must be HTTP(S), without credentials/query")
-            if provider == "local" and parsed.hostname not in {"localhost", "127.0.0.1", "::1"}:
+            if provider in {"local", "ollama"} and parsed.hostname not in {
+                "localhost",
+                "127.0.0.1",
+                "::1",
+            }:
                 raise ValueError("LocalProvider requires a localhost endpoint")
             if provider == "openai" and (
                 not self.openai_api_key or not self.openai_api_key.get_secret_value()
             ):
                 raise ValueError("Enabled OpenAI-compatible provider requires OPENAI_API_KEY")
+        aliases = {m.model: m for m in enabled}
+        for mapping in enabled:
+            if mapping.fallback_model:
+                target = aliases.get(mapping.fallback_model)
+                if not target or target.model == mapping.model or target.fallback_model:
+                    raise ValueError(
+                        "Fallback must target an enabled, distinct, terminal model"
+                    )
+        if any(target not in aliases for target in self.gateway_task_routes.values()):
+            raise ValueError("Task routes must target enabled model aliases")
         return self

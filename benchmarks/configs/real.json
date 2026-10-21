@@ -1,0 +1,1 @@
+{"seed":42,"repeats":2,"requests":4,"concurrency":[1,2],"models":["qwen2.5:0.5b","qwen2.5:1.5b"],"context_length":1024,"max_tokens":64,"gpu_stop_ratio":0.9,"min_available_memory_mib":1024}

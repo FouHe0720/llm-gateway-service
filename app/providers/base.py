@@ -2,19 +2,21 @@ from collections.abc import AsyncGenerator
 from dataclasses import dataclass
 from typing import Protocol
 
-from app.domain.schemas import ChatRequest, Usage
+from app.domain.schemas import ChatRequest, ProviderTiming, Usage
 
 
 @dataclass(frozen=True)
 class Generation:
     answer: str
     usage: Usage | None = None
+    timing: ProviderTiming | None = None
 
 
 @dataclass(frozen=True)
 class StreamChunk:
     delta: str = ""
     usage: Usage | None = None
+    timing: ProviderTiming | None = None
 
 
 class BaseLLMProvider(Protocol):

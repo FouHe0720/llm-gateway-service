@@ -8,6 +8,7 @@ import httpx
 from pydantic import ValidationError
 
 from app.core.config import Settings
+from app.core.trace import record_attempt, trace_headers
 from app.domain.errors import ProviderError, ProviderRateLimit, ProviderTimeout
 from app.domain.schemas import ChatRequest, Usage
 from app.providers.base import Generation, StreamChunk
@@ -19,7 +20,7 @@ RETRYABLE_NETWORK = (httpx.ConnectError, httpx.ConnectTimeout, httpx.ReadError)
 def status_error(status: int) -> ProviderError:
     if status == 429:
         return ProviderRateLimit()
-    return ProviderError()  # Never expose upstream body, URL, headers, or credentials.
+    return ProviderError(fallback_allowed=status in RETRYABLE_STATUS)
 
 
 def parse_usage(value: Any) -> Usage | None:
@@ -47,7 +48,7 @@ class OpenAICompatibleProvider:
         return self.models.copy()
 
     def payload(self, request: ChatRequest, model: str, stream: bool) -> dict[str, Any]:
-        body = request.model_dump(exclude_none=True)
+        body = request.model_dump(exclude_none=True, exclude={"task_type"})
         body.update(model=model, stream=stream)
         if stream:
             body["stream_options"] = {"include_usage": True}
@@ -71,10 +72,11 @@ class OpenAICompatibleProvider:
         attempts = self.settings.upstream_max_retries + 1
         for attempt in range(attempts):
             try:
+                record_attempt(retry=attempt > 0)
                 async with self.client.stream(
                     "POST",
                     self.url,
-                    headers=self.headers,
+                    headers=self.headers | trace_headers(),
                     json=self.payload(request, model, False),
                 ) as response:
                     if response.status_code >= 300:
@@ -85,10 +87,7 @@ class OpenAICompatibleProvider:
                             raise status_error(response.status_code)
                     else:
                         data = await self._read_json(response)
-                        answer = data["choices"][0]["message"]["content"]
-                        if not isinstance(answer, str):
-                            raise ProviderError("Upstream did not return text content")
-                        return Generation(answer=answer, usage=parse_usage(data.get("usage")))
+                        return self.decode_generation(data)
             except RETRYABLE_NETWORK as exc:
                 if attempt == attempts - 1:
                     if isinstance(exc, httpx.TimeoutException):
@@ -99,12 +98,25 @@ class OpenAICompatibleProvider:
                 raise ProviderTimeout() from None
             except httpx.HTTPError:
                 raise ProviderError("Upstream transport failed") from None
-            except (ValueError, KeyError, IndexError, TypeError, ValidationError):
+            except (
+                ValueError,
+                KeyError,
+                IndexError,
+                TypeError,
+                AttributeError,
+                ValidationError,
+            ):
                 raise ProviderError(
                     "Upstream response was not valid text completion JSON"
                 ) from None
             await self._backoff(attempt)
         raise ProviderError()  # Defensive: every final attempt returns or raises.
+
+    def decode_generation(self, data: Any) -> Generation:
+        answer = data["choices"][0]["message"]["content"]
+        if not isinstance(answer, str):
+            raise ProviderError("Upstream did not return text content")
+        return Generation(answer=answer, usage=parse_usage(data.get("usage")))
 
     async def _events(self, response: httpx.Response) -> AsyncIterator[str]:
         # Incremental byte framing bounds a malicious event before aiter_lines can buffer it.
@@ -136,8 +148,12 @@ class OpenAICompatibleProvider:
     ) -> AsyncGenerator[StreamChunk, None]:
         # The gateway has sent `start`: never retry or replay any streaming request.
         try:
+            record_attempt()
             async with self.client.stream(
-                "POST", self.url, headers=self.headers, json=self.payload(request, model, True)
+                "POST",
+                self.url,
+                headers=self.headers | trace_headers(),
+                json=self.payload(request, model, True),
             ) as response:
                 if response.status_code >= 300:
                     raise status_error(response.status_code)

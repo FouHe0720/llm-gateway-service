@@ -16,6 +16,7 @@ from app.middleware.request_id import RequestContextMiddleware
 from app.providers.base import BaseLLMProvider
 from app.providers.local import LocalProvider
 from app.providers.mock import MockProvider
+from app.providers.ollama import OllamaProvider
 from app.providers.openai_compatible import OpenAICompatibleProvider
 from app.providers.router import ProviderRouter
 from app.services.chat_service import ChatService
@@ -46,6 +47,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                     settings.openai_api_key,
                 ),
                 ("local", LocalProvider, settings.local_base_url, settings.local_api_key),
+                ("ollama", OllamaProvider, settings.ollama_base_url, None),
             ]:
                 if any(m.enabled and m.provider == name for m in settings.gateway_models):
                     assert base_url is not None  # Settings validated enabled provider URLs.

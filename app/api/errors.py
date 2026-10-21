@@ -44,6 +44,7 @@ async def gateway_error(request: Request, exc: GatewayError) -> JSONResponse:
                 "code": exc.code,
                 "message": exc.message,
                 "request_id": request.state.request_id,
+                **({"metadata": exc.metadata.model_dump()} if exc.metadata else {}),
             }
         },
         headers=headers,

@@ -1,0 +1,1 @@
+{"seed":42,"repeats":3,"requests":100,"concurrency":[1,5,20,50],"delay_ms":20,"cache_repeat_rates":[0,0.5,0.9]}

@@ -1,0 +1,20 @@
+[
+ {"id":"extract-01","task_type":"extract","prompt":"Read: item=ALPHA; quantity=7. Return only the quantity.","answer":"7"},
+ {"id":"extract-02","task_type":"extract","prompt":"Read: color=blue; shape=square. Return only the color.","answer":"blue"},
+ {"id":"extract-03","task_type":"extract","prompt":"Read: code=ZX42; stock=18. Return only the code.","answer":"ZX42"},
+ {"id":"extract-04","task_type":"extract","prompt":"Read: city=Oslo; country=Norway. Return only the city.","answer":"Oslo"},
+ {"id":"extract-05","task_type":"extract","prompt":"Read: temperature=12; unit=C. Return only the temperature.","answer":"12"},
+ {"id":"extract-06","task_type":"extract","prompt":"Read: category=fruit; item=pear. Return only the item.","answer":"pear"},
+ {"id":"arithmetic-01","task_type":"arithmetic","prompt":"Compute 17 + 28. Return only the integer answer.","answer":"45"},
+ {"id":"arithmetic-02","task_type":"arithmetic","prompt":"Compute 9 * 7. Return only the integer answer.","answer":"63"},
+ {"id":"arithmetic-03","task_type":"arithmetic","prompt":"Compute 81 / 9. Return only the integer answer.","answer":"9"},
+ {"id":"arithmetic-04","task_type":"arithmetic","prompt":"Compute 100 - 37. Return only the integer answer.","answer":"63"},
+ {"id":"arithmetic-05","task_type":"arithmetic","prompt":"Compute (12 + 8) * 3. Return only the integer answer.","answer":"60"},
+ {"id":"arithmetic-06","task_type":"arithmetic","prompt":"Compute 144 / 12 + 5. Return only the integer answer.","answer":"17"},
+ {"id":"reasoning-01","task_type":"reasoning","prompt":"A box has 3 red balls and 4 blue balls. Add 2 red balls, then remove 1 blue ball. How many balls remain in total? Return only the integer answer.","answer":"8"},
+ {"id":"reasoning-02","task_type":"reasoning","prompt":"All wugs are zibs. No zibs are red. Can a wug be red? Return only YES or NO.","answer":"NO"},
+ {"id":"reasoning-03","task_type":"reasoning","prompt":"Ada is taller than Bo. Bo is taller than Cy. Who is shortest? Return only the name.","answer":"Cy"},
+ {"id":"reasoning-04","task_type":"reasoning","prompt":"A machine doubles a number, then adds 3. Its output is 17. What was the input? Return only the integer answer.","answer":"7"},
+ {"id":"reasoning-05","task_type":"reasoning","prompt":"There are 5 boxes with 4 pencils each. Give away 6 pencils and buy 3 more. How many pencils are there now? Return only the integer answer.","answer":"17"},
+ {"id":"reasoning-06","task_type":"reasoning","prompt":"If today is Monday, what day is it 10 days later? Return only the English day name.","answer":"Thursday"}
+]

@@ -49,7 +49,8 @@ async def chat(body: ChatRequest, request: Request) -> ChatResponse:
     },
 )
 async def stream(body: ChatRequest, request: Request) -> StreamingResponse:
-    request.app.state.router.resolve(body.model)  # Unknown model remains an HTTP 404.
+    alias = request.app.state.router.route(body.model, body.task_type)
+    request.app.state.router.resolve(alias)  # Unknown model remains an HTTP 404.
     return StreamingResponse(
         request.app.state.chat.stream_events(
             body, request.state.request_id, request.scope["state"]

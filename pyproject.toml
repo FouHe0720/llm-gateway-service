@@ -17,6 +17,13 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.3,<10", "pytest-asyncio>=0.25,<2", "ruff>=0.11,<1"]
+screenshots = [
+    "playwright>=1.50,<2",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+default = true
 
 [tool.setuptools.packages.find]
 include = ["app*"]

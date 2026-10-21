@@ -1,6 +1,7 @@
 import asyncio
 from collections.abc import AsyncGenerator
 
+from app.core.trace import record_attempt
 from app.domain.schemas import ChatRequest
 from app.providers.base import Generation, StreamChunk
 
@@ -20,11 +21,13 @@ class MockProvider:
         return "[mock] " + request.messages[-1].content
 
     async def generate(self, request: ChatRequest, model: str) -> Generation:
+        record_attempt()
         return Generation(answer=self.answer(request))
 
     async def stream(
         self, request: ChatRequest, model: str
     ) -> AsyncGenerator[StreamChunk, None]:
+        record_attempt()
         answer = self.answer(request)
         for offset in range(0, len(answer), 4):
             await asyncio.sleep(self.delay)

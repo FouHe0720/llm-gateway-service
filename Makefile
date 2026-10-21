@@ -28,3 +28,19 @@ smoke:
 docker-check:
 	docker compose config --quiet
 	docker build --check .
+
+.PHONY: benchmark-mock benchmark-mock-quick benchmark-real benchmark-report benchmark-screenshot
+benchmark-mock:
+	$(PYTHON) -m benchmarks.run --mode mock
+
+benchmark-mock-quick:
+	$(PYTHON) -m benchmarks.run --mode mock --config benchmarks/configs/quick.json
+
+benchmark-real:
+	$(PYTHON) -m benchmarks.run --mode real
+
+benchmark-report:
+	$(PYTHON) -m benchmarks.report
+
+benchmark-screenshot:
+	$(PYTHON) -m scripts.screenshot_benchmark
