@@ -17,6 +17,16 @@ jobs:
       - run: uv sync --frozen --extra dev
       - run: make lint test
       - run: make demo
+      - run: make benchmark-mock-quick
+        if: matrix.python-version == '3.12'
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: matrix.python-version == '3.12' && always()
+        with:
+          name: mock-benchmark-results
+          path: |
+            benchmarks/results/
+            benchmarks/reports/
+          retention-days: 7
       - run: .venv/bin/python -m scripts.privacy_check
   docker:
     runs-on: ubuntu-24.04

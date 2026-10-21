@@ -159,4 +159,42 @@ async def test_fallback_attempt_budget_covers_both_models(payload):
     with pytest.raises(ProviderError) as exc:
         await service.generate(ChatRequest(**{**payload, "model": "primary"}), "budget")
     assert exc.value.metadata.attempts == 1
-    assert exc.value.metadata.fallback_count == 1
+    assert exc.value.metadata.fallback_count == 0
+
+
+async def test_upstream_unauthorized_does_not_invoke_fallback(payload):
+    from app.providers.openai_compatible import OpenAICompatibleProvider
+
+    calls = []
+
+    def handler(request):
+        calls.append(json.loads(request.content)["model"])
+        return httpx.Response(401, json={"error": "private upstream message"})
+
+    settings = Settings(
+        _env_file=None,
+        gateway_api_key="gateway-fixture-key",
+        openai_api_key="upstream-fixture-key",
+        openai_base_url="http://upstream.test/v1",
+        gateway_models=[
+            ModelMapping(
+                model="primary",
+                provider="openai",
+                upstream_model="raw-primary",
+                fallback_model="backup",
+            ),
+            ModelMapping(model="backup", provider="openai", upstream_model="raw-backup"),
+        ],
+    )
+    async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as c:
+        provider = OpenAICompatibleProvider(
+            c, settings, settings.openai_base_url, "fixture", ["raw-primary", "raw-backup"]
+        )
+        service = ChatService(ProviderRouter(settings, {"openai": provider}), settings)
+        with pytest.raises(ProviderError) as exc:
+            await service.generate(
+                ChatRequest(**{**payload, "model": "primary"}), "unauthorized"
+            )
+        assert calls == ["raw-primary"]
+        assert exc.value.metadata.fallback_count == 0
+        assert "private upstream" not in exc.value.message

@@ -453,6 +453,10 @@ async def main(args):
             from benchmarks.real import real
 
             await real(run, args.ollama_url)
+            if not run.skipped:
+                from benchmarks.real_cache import real_cache
+
+                await real_cache(run, args.ollama_url)
     except Exception as exc:
         run.skipped.append(
             {"experiment": "run", "reason": type(exc).__name__ + ": " + str(exc)[:300]}

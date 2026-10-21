@@ -217,6 +217,10 @@ async def real(run, url):
                                         }
                                     )
                                     continue
+                                state = (await client.get(url + "/api/ps")).json()
+                                run.manifest.setdefault("residency_samples", []).append(
+                                    {**labels, "models": state.get("models", [])}
+                                )
                                 await guard(config)
                                 await run.batch(
                                     client,

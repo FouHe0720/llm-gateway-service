@@ -44,3 +44,7 @@ benchmark-report:
 
 benchmark-screenshot:
 	$(PYTHON) -m scripts.screenshot_benchmark
+
+.PHONY: benchmark-cache-real
+benchmark-cache-real:
+	$(PYTHON) -m benchmarks.real_cache

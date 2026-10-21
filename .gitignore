@@ -23,3 +23,7 @@ models/
 *.key
 *token*
 !.github/
+*.gguf
+*.pth
+benchmarks/results/*
+# Reviewed measured runs are explicitly unignored below after privacy review.

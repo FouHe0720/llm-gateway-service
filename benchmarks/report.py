@@ -34,10 +34,23 @@ def build_report():
                 "variability": json.loads((folder / "variability.json").read_text()),
             }
         )
-    # The latest run of each mode is displayed; older raw artifacts remain linked and untouched.
+    # Latest observation per mode/experiment; a separate real C run must not hide D/E.
+    latest = {}
+    for run in runs:
+        for row in run["summary"]:
+            latest[(row["mode"], row["experiment"])] = run["manifest"]["run_id"]
     selected = {}
     for run in runs:
-        selected[run["manifest"]["mode"]] = run
+        rid = run["manifest"]["run_id"]
+        summary = [r for r in run["summary"] if latest[(r["mode"], r["experiment"])] == rid]
+        if summary:
+            selected[rid] = {
+                **run,
+                "summary": summary,
+                "variability": [
+                    r for r in run["variability"] if latest[(r["mode"], r["experiment"])] == rid
+                ],
+            }
     data = json.dumps({"runs": list(selected.values())}, ensure_ascii=False).replace(
         "<", "\\u003c"
     )

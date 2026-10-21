@@ -25,3 +25,14 @@
 - Review staged files and run `.venv/bin/python -m scripts.privacy_check` before public pushes.
 - Commit no `.env`, machine-specific paths, private endpoint URLs, model weights, logs or credentials.
 - Report real provider/Docker/CI validation only after running it. Never infer performance from smoke tests.
+
+## Benchmarks
+
+- `make benchmark-mock-quick` is the GPU-free smoke protocol; `make benchmark-mock` collects three repeats.
+- Run actual Ollama experiments with one loaded model, context 1024, initial client concurrency 1.
+- Keep `benchmarks/data/tasks.json` and its grader fixed after observing model answers; introduce a new
+  dataset/protocol version for changes. Repeated trials do not increase the number of unique tasks.
+- Preserve socket family with `serve(sockets=[sock])` in the subprocess harness. The installed Uvicorn
+  `fd=` branch reconstructs AF_UNIX sockets and biased the initial TCP latency trial.
+- Raw benchmark output is local by default; publish only reviewed run directories and measured screenshots.
+- Use source snapshots/hashes when a run has a dirty worktree. Never update raw measurements to fit a narrative.

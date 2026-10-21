@@ -63,6 +63,8 @@ class ChatService:
                                 exc, "fallback_allowed", True
                             ):
                                 raise
+                            if trace.attempts >= trace.max_attempts:
+                                raise
                             fallback, target = self.router.resolve(mapping.fallback_model)
                             metadata.fallback_count = 1
                             metadata.served_model = target.model

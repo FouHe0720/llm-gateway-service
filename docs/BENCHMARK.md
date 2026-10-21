@@ -144,3 +144,22 @@ make benchmark-screenshot
 没有系统安装。缺少中文字体时同样使用项目内字体。截图脚本只打开本地报告并关闭浏览器联网。
 
 实验结论与失败案例见 `docs/FAILURE_ANALYSIS.md` 与 README 的实测结果段落。
+
+## 真实缓存补充实验
+
+`make benchmark-real` 在 D/E 完成后继续运行 0.5B 原生缓存实验；也可单独 `make benchmark-cache-real`。
+每个重复率 10 条请求、并发 1、两轮、输出上限 16，关闭/开启组使用相同内容和参数。
+每组先卸载 0.5B，记录一条 cold；其余请求 warm。比对返回的真实 usage 与 attempt 计数，
+确保成功 miss 的推理调用有 Ollama token 记录，而 hit 不产生新的 token/usage。
+这是小规模调用节省验证，不以它估计生产 QPS；组间/请求间的显存保护检查会影响整体实验跨度。
+
+## 实验台版本与旧记录
+
+正式结果使用 method_version=2。开发期 v1 使用 Uvicorn `fd=` 接口传递已监听的 TCP socket；
+本机安装版本在该分支使用 `socket.fromfd(..., AF_UNIX, ...)`。检查发现这会改变传输层的 family
+元信息及 TCP_NODELAY 设置路径，开发期出现约数十毫秒的额外延迟。
+已改为保留实际 AF_INET socket、显式 TCP_NODELAY、通过 `serve(sockets=[...])` 启动子进程，
+补充连接池预热后重新采集。旧记录保留在本地作为诊断，未用于正式 README 结论。
+
+并发 50 大于 httpx 默认 20 条 keep-alive 保留数，连接预热不等于全部连接永久驻留；
+此项配置是本次测量的一部分。后续可针对 keep-alive 上限做独立实验，不把当前高并发结果解释为纯 CPU 开销。
