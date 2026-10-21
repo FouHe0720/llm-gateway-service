@@ -49,7 +49,7 @@ async def real(run, url):
         raise ValueError(
             "This resource-bounded protocol requires exactly Qwen2.5 0.5B and 1.5B"
         )
-    if max(config["concurrency"]) > 2 or config["context_length"] != 1024:
+    if config["concurrency"] not in ([1], [1, 2]) or config["context_length"] != 1024:
         raise ValueError("4GB protocol caps client concurrency at 2 and context at 1024")
     async with httpx.AsyncClient(
         trust_env=False, timeout=90, headers={"Authorization": "Bearer " + KEY}
@@ -169,7 +169,16 @@ async def real(run, url):
                             )
                     for index, model in enumerate(config["models"]):
                         alias = "qwen-0.5b" if index == 0 else "qwen-1.5b"
+                        baseline_healthy = True
                         for concurrency in config["concurrency"]:
+                            if concurrency > 1 and not baseline_healthy:
+                                run.skipped.append(
+                                    {
+                                        "experiment": "E",
+                                        "reason": model + ": baseline failed; no escalation",
+                                    }
+                                )
+                                break
                             order = (
                                 ["direct", "gateway"]
                                 if repeat % 2 == 0
@@ -210,6 +219,7 @@ async def real(run, url):
                                 )
                                 run.add(cold, phase="cold", **labels)
                                 if not cold["success"]:
+                                    baseline_healthy = False
                                     run.skipped.append(
                                         {
                                             "experiment": "E",
@@ -231,6 +241,10 @@ async def real(run, url):
                                     native=strategy == "direct",
                                     streaming=True,
                                 )
+                                if not all(
+                                    r["success"] for r in run.rows[-config["requests"] :]
+                                ):
+                                    baseline_healthy = False
                     print(f"Real repeat {repeat + 1}/{config['repeats']} finished", flush=True)
             finally:
                 sampler.stop.set()

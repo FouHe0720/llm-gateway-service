@@ -69,6 +69,6 @@ RTX 3050 Laptop 4096MiB VRAM。初始 Ollama 已安装但未启动，指定 Qwen
 通过现有官方 CLI 下载 0.5B/1.5B，实际启动本地服务，限制一次驻留一个模型、并行 1、context 1024。
 没有运行 3B、训练、付费 API 或安装系统包。
 
-新增缓存/Fallback/任务路由、原生 Ollama、统计与数据集测试后，本地 **77 passed**，Ruff 通过。
+新增缓存/Fallback/任务路由、原生 Ollama、统计与数据集测试后，本地 **78 passed**，Ruff 通过。
 Mock/真实运行的全部数字与限制见 [BENCHMARK.md](BENCHMARK.md) 和 [FAILURE_ANALYSIS.md](FAILURE_ANALYSIS.md)。
 通过 `scripts/verify_benchmark_results.py` 从逐请求记录重新计算统计，并校验源码快照和数据集 SHA。

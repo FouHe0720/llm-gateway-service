@@ -159,7 +159,7 @@ make smoke
 docker compose down
 ```
 
-截至 **2026-10-21**：本地 **77 passed**，Ruff check/format 通过；新版 Docker 镜像、
+截至 **2026-10-21**：本地 **78 passed**，Ruff check/format 通过；新版 Docker 镜像、
 Compose healthy、非 root 和只读容器 API smoke 已实际通过。历史与当前验证见 [VALIDATION](docs/VALIDATION.md)。
 CI 覆盖 Python 3.11/3.12/3.13、Docker，以及无需 GPU 的 Mock Benchmark，并上传数据/HTML artifact。
 
