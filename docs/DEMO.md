@@ -26,7 +26,7 @@ make run
 curl -sS http://127.0.0.1:8000/health
 curl -sS http://127.0.0.1:8000/v1/models
 curl -sS -D - http://127.0.0.1:8000/v1/chat \
-  -H 'Content-Type: application/json' -H 'X-Request-ID: interview-demo' \
+  -H 'Content-Type: application/json' -H 'X-Request-ID: gateway-demo' \
   --data-binary @examples/chat.json
 curl -N http://127.0.0.1:8000/v1/chat/stream \
   -H 'Content-Type: application/json' --data-binary @examples/chat.json

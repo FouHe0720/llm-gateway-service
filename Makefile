@@ -48,3 +48,7 @@ benchmark-screenshot:
 .PHONY: benchmark-cache-real
 benchmark-cache-real:
 	$(PYTHON) -m benchmarks.real_cache
+
+.PHONY: campus-demo
+campus-demo:
+	$(PYTHON) -m scripts.demo_campus

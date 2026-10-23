@@ -1,58 +1,54 @@
-# 实际验证记录
+# 验证记录
 
-日期：2026-10-20（Asia/Shanghai）。所有开发在 Linux 项目目录内进行；未使用 Windows 路径或 PowerShell。
+## 2026-10-23：校园调用端与回归
 
-## 环境预检
-
-按用户要求实际执行 `pwd`、`realpath .`、`uname -s`、`python3 --version`、`git --version`、
-`gh --version`、`gh auth status`、`docker --version`，另检查 Node 和 Docker daemon。
-父工作目录为空且不在其他 Git 仓库内，随后仅在 `./llm-gateway-service` 创建项目和初始化 Git。
-机器绝对路径与认证配置不提交到公开仓库。
-
-| 检查 | 实际结果 |
+| 检查 | 结果 |
 | --- | --- |
-| OS | Linux |
-| Python | 3.12.3 |
-| Git | 2.43.0 |
-| GitHub CLI | 2.45.0，认证账户 FouHe0720，另由 gh api user 确认 |
-| Docker client/daemon | 29.8.2，daemon 可用 |
-| Node | 24.21.0；本项目无需 Node 依赖 |
-| 标准 venv | 缺少 ensurepip，未执行 sudo；改用环境已有 uv 0.12.24 |
-| 项目依赖 | 项目 .venv，uv.lock 固定版本；runtime/dev requirements 导出供 pip/Docker 使用 |
+| `make lint test` | Ruff lint/format 通过；89 项 pytest 通过 |
+| `make demo` | 临时 TCP 服务的 health、models、chat、SSE、404、422、metrics 检查通过 |
+| `make campus-demo` | 首次 miss、重复 hit、更换证据 miss、模型别名 404、缺少 2026 年资料时提前拒绝 |
+| 来源校验 | 文件指纹、段落一致性、资料版本、校区与证据预算检查通过 |
+| 缓存与费用 | 资料修订后旧缓存不复用；缓存响应的历史 usage 不重复计入推理费用 |
 
-## 阶段验收
+校园示例通过真实 FastAPI lifespan 与 ASGI HTTP 客户端调用，Provider 固定为 Mock。Mock 回显请求，没有测试模型答案或生产费用。报告写入忽略的 `runtime/campus-demo.json`。
 
-| 阶段 | 实际测试 | 结果 |
-| --- | --- | --- |
-| V0 | pytest + Ruff | 7 passed；Mock Chat/health/models、参数与未知模型 |
-| V1 | pytest + Ruff | 30 passed；HTTP adapter、重试、SSE/usage/断流、生成器关闭 |
-| V2 | pytest + Ruff | 61 passed；鉴权/限流/日志/指标、真实 TCP 故障/取消、并发与截止时间 |
-| V2 容器 | docker build、build --check、compose config、容器 smoke | 成功；health/models/chat/SSE/404/422/metrics；健康状态 healthy |
-| V3 | install、Quick Start/curl、OpenAPI、pytest/Ruff | 62 passed；新增启动校验隐藏凭据的回归测试；命令实跑通过 |
-| V2 运行边界 | inspect + 只读运行 | User=10001:10001、read-only、cap-drop ALL、no-new-privileges |
+TCP 流测试使用 Event 阻塞第二块，确认客户端已收到第一块，再主动断开并核对上游清理和并发名额恢复。ASGI 客户端的缓冲响应不用于证明网络流的增量性。
 
-`make demo` 已实际启动临时 localhost 服务并逐块读取 SSE，验证完成后退出。
-真实 TCP 流测试没有用完整字符串切片证明流式：上游第二块被 Event 阻塞时客户端已收到第一块；
-随后断开并检查上游清理、并发名额和取消指标。
+本轮没有重跑真实模型推理、Docker 或远端 CI。缓存保留原始 usage 的通用接口语义不变，校园调用端根据 cache_hit 标记跳过历史 token 的重复费用计算。
 
-## 解释结果
+## 2026-10-21：固定协议实验
 
-- Mock 是确定性回显，usage=null；本地故障 Server 是测试 fixture，不是真实模型推理。
-- 没有提供真实 Provider Key，没有调用 OpenAI/第三方付费 API，没有下载权重，没有运行 Ollama/vLLM。
-- 没有做性能基准、模型质量评测或多副本验证。响应中的 latency 是单次测量值，不代表性能承诺。
-- Docker 实际构建运行过；[首轮远端 CI](https://github.com/FouHe0720/llm-gateway-service/actions/runs/39436032137)
-  在提交 `49bd916` 上全部成功：Python 3.11/3.12/3.13 各 62 passed，Ruff/Mock Demo/隐私扫描通过，
-  Docker Compose 构建、健康检查和 Chat 请求通过。未将跨版本测试数相加当作不同用例数。
-- 根据首轮 Actions 的 Node 20 弃用提示，更新至 checkout v7.0.1/setup-python v7.0.0 并固定 SHA；
-  官方 release/API 已核对。Runner 固定为 Ubuntu 24.04，避免 ubuntu-latest 镜像迁移影响复现。
-- 隐私检查会审阅 Git index、忽略规则和公开连接配置，启发式扫描不能代替人工审阅。
+环境：WSL2 / Ubuntu 24.04，Ryzen 7 6800H，RTX 3050 Laptop 4 GB，Ollama 0.34.4。一次驻留一个模型，模型端并行 1、context 1024。实验时本地 78 项测试与 Ruff 通过。
+
+| 原始记录 | 请求数 | 内容 |
+| --- | ---: | --- |
+| `20261021T053001Z-mock-33f3d4` | 8,031 | Mock 开销、故障恢复和缓存对照 |
+| `20261021T054417Z-real-bdb4f7` | 308 | Qwen2.5 0.5B/1.5B 路由、SSE 与缓存对照 |
+
+已核对这两份已跟踪结果：JSONL 与 CSV 请求一致，数据集及源码快照指纹正确，从逐请求数据重新计算的 summary/comparisons 与保存值一致。已发布 HTML 中的 manifest、summary、comparisons、variability 与 GPU 采样也与对应原始文件一致。
+
+README 与 [BENCHMARK_RESULTS](BENCHMARK_RESULTS.md) 的数字来自上述 10 月 21 日记录。实验规模、冷热定义、统计口径和限制见 [BENCHMARK](BENCHMARK.md)，结果解释见 [FAILURE_ANALYSIS](FAILURE_ANALYSIS.md)。新增校园调用端没有混入这组实验。
+
+报告工作台在 1440 × 1200 桌面和 390 × 844 移动视口下无整页横向溢出或 JavaScript 异常。A–E 五个页签和真实数据筛选均可操作。
+
+## 容器与 CI 历史记录
+
+2026-10-20 已运行 Docker build、Compose 配置检查、容器健康检查与 smoke；容器使用 UID 10001、只读根文件系统、cap-drop ALL 和 no-new-privileges。
+
+[首次远端 CI](https://github.com/FouHe0720/llm-gateway-service/actions/runs/39436032137) 在提交 `49bd916` 上通过 Python 3.11/3.12/3.13、Ruff、Mock Demo、隐私扫描与 Docker Compose 检查，每个 Python 版本执行 62 项测试。后续状态以实际 workflow 为准，历史成功不代表当前提交已经运行远端检查。
 
 ## 可重复命令
 
 ```bash
 make install
-make lint test demo
+make lint test demo campus-demo
 .venv/bin/python -m scripts.privacy_check
+```
+
+容器检查需要可用 Docker daemon：
+
+```bash
+cp -n .env.example .env
 docker compose config --quiet
 docker build --check .
 docker compose up --build -d --wait
@@ -60,15 +56,4 @@ make smoke
 docker compose down
 ```
 
-README/DEMO 的持续服务命令需要先复制 `.env.example` 为 `.env`。
-
-## 2026-10-21 Serving / Benchmark 扩展
-
-环境再次审计：Ubuntu 24.04.5 WSL2，Ryzen 7 6800H（16 逻辑 CPU），WSL 可见约 7.4GiB RAM，
-RTX 3050 Laptop 4096MiB VRAM。初始 Ollama 已安装但未启动，指定 Qwen2.5 模型缺失；
-通过现有官方 CLI 下载 0.5B/1.5B，实际启动本地服务，限制一次驻留一个模型、并行 1、context 1024。
-没有运行 3B、训练、付费 API 或安装系统包。
-
-新增缓存/Fallback/任务路由、原生 Ollama、统计与数据集测试后，本地 **78 passed**，Ruff 通过。
-Mock/真实运行的全部数字与限制见 [BENCHMARK.md](BENCHMARK.md) 和 [FAILURE_ANALYSIS.md](FAILURE_ANALYSIS.md)。
-通过 `scripts/verify_benchmark_results.py` 从逐请求记录重新计算统计，并校验源码快照和数据集 SHA。
+隐私脚本审阅索引文件与忽略规则；启发式扫描不能代替来源、暂存差异和配置的人工检查。

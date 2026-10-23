@@ -1,8 +1,7 @@
 # 技术决策
 
-1. **项目级 uv 环境**：预检发现 Ubuntu Python 3.12 缺少 `ensurepip`，但已安装 uv。
-   使用 `uv venv .venv` / `uv pip install --python .venv/bin/python ...`；不使用 sudo，
-   不安装系统包。`scripts/install.sh` 同时兼容标准 venv/pip。
+1. **项目级虚拟环境和锁文件**：依赖安装在 `.venv`，由 `uv.lock` 固定解析结果。
+   安装脚本优先使用 uv，也支持标准 venv/pip，不修改系统 Python。
 2. **Chat Completions 文本子集**：不代理任意上游 JSON，不开放任意 URL；支持 system/user/
    assistant 与 temperature/top_p/max_tokens，模型别名仅由运维配置。
 3. **Protocol + composition**：Router 选择配置别名；HTTP 和 Local 共享异步传输实现，

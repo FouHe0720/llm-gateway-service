@@ -115,3 +115,7 @@ Compose 默认仅绑定 localhost、只读根文件系统、无 capabilities。�
 实验从客户端单调时钟量端到端与首块延迟，上游台账核对调用次数；原生 timing 只作模型内部指标。
 每次运行保存源码快照、硬件/模型/参数清单、逐请求记录、分组统计与多轮波动。
 HTML 报告只展示已生成的观测数据，截图来自真实离线浏览器渲染。
+
+## 校园调用示例
+
+`examples/campus_client.py` 负责检索后的资料版本检查、证据预算、段落引用和快照构建；输出已有 ChatRequest，不改变网关 API。`scripts/demo_campus.py` 使用同一个 App 工厂验证缓存和错误边界，Provider 固定 Mock。来源与验证范围见 [校园场景](CAMPUS_SCENARIO.md)。
