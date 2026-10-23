@@ -38,7 +38,7 @@ StreamingResponse 监测 ASGI 断开并取消任务。Service 透传 CancelledEr
 
 缓存只保存显式 temperature=0 的非流式成功响应，受 TTL、条目数和字节数限制。缓存键包含完整请求和模型映射。校园调用端还把资料快照写入请求，来源修订后不会复用旧键。
 
-缓存响应保留原始 usage，表示这份内容生成时的观测，并非本次又调用了模型。校园 `observed_cost` 接收显式 cache_hit 标记，命中时不将历史 usage 再计入推理费用。缺少 usage 或价格时也保留 null。
+缓存只保存答案；命中响应的 usage 和 timing 为 null，不复用上次推理观测。校园 `observed_cost` 接收显式 cache_hit 标记，命中时不将历史 usage 再计入推理费用。缺少 usage 或价格时也保留 null。
 
 ## 单实例状态与日志
 

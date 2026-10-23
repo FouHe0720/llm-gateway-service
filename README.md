@@ -6,7 +6,7 @@
 
 校园咨询是仓库里的一个具体调用场景：RAG 先检索山东大学威海校区资料，再把带出处的摘录交给网关。网关负责调用与资源边界，调用端负责资料版本和证据预算。
 
-[运行校园示例](#运行校园示例) · [来源与场景](docs/CAMPUS_SCENARIO.md) · [实测实验](docs/BENCHMARK_RESULTS.md) · [接口](docs/API.md)
+[完整使用手册](docs/USER_GUIDE.md) · [运行校园示例](#运行校园示例) · [来源与场景](docs/CAMPUS_SCENARIO.md) · [实测实验](docs/BENCHMARK_RESULTS.md) · [接口](docs/API.md)
 
 ## 校园咨询怎么接入
 

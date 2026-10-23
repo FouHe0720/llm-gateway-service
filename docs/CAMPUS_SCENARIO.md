@@ -32,7 +32,7 @@ Prompt 保留资料来源、年份和段号，并要求证据不足时说明无�
 
 默认证据上限 6,000 个字符、max_tokens=256。字符数是调用端上下文预算，不是 tokenizer 统计，也不用于估算 token 或账单。网关本身另有 body/总消息字符上限。
 
-`observed_cost` 只在 usage 完整且调用方明确提供输入/输出每百万 token 价格时计算，单位由价格币种决定。没有根据模型名自动猜价格。网关在缓存响应中保留原始生成的 usage；这不代表本次又调用了模型，因此调用 `observed_cost` 时必须透传 `cache_hit=metadata.cache_status == "hit"`。该函数对缓存命中返回 null，避免把同一份历史 token 重复算成新的推理费用；Mock 或未报 usage 时也保持 null。即使某次响应为零次上游尝试，null 也不能直接改写为零费用。
+`observed_cost` 只在 usage 完整且调用方明确提供输入/输出每百万 token 价格时计算，单位由价格币种决定。没有根据模型名自动猜价格。网关的缓存响应仅保留答案，本次 usage 与 timing 为 null；调用 `observed_cost` 时仍应透传 `cache_hit=metadata.cache_status == "hit"`，明确区分缓存命中和新推理。该函数对缓存命中返回 null，避免把同一份历史 token 重复算成新的推理费用；Mock 或未报 usage 时也保持 null。即使某次响应为零次上游尝试，null 也不能直接改写为零费用。
 
 ## 离线演示与测试
 
